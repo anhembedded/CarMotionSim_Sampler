@@ -1,0 +1,84 @@
+\hypertarget{ufl___t_i_m_8hpp}{}\doxysection{ufl\+\_\+\+TIM.\+hpp File Reference}
+\label{ufl___t_i_m_8hpp}\index{ufl\_TIM.hpp@{ufl\_TIM.hpp}}
+
+
+For the hardware abstract layer for timer7.  
+
+
+{\ttfamily \#include \char`\"{}main\+\_\+cpp.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ufl\+\_\+clk.\+hpp\char`\"{}}\newline
+Include dependency graph for ufl\+\_\+\+TIM.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{ufl___t_i_m_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___t_i_m7}{UFL\+\_\+\+TIM7}}
+\begin{DoxyCompactList}\small\item\em This is the hardware abstract layer for timer2. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt}{UFL\+\_\+\+TIM7\+::flag\+\_\+interrupt}}
+\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_1_1_u_i_f}{UFL\+\_\+\+TIM7\+::flag\+\_\+interrupt\+::\+UIF}}
+\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___t_i_mx}{UFL\+\_\+\+TIMx}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a304c3a0a193e93c5b20fae16ec7d090c}{UFL\+\_\+\+TIM7\+::initialize}} (\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Prescaler, \mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Auto\+Reload)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a0072d3cbebcaa4745f1bc61b5324415e}{UFL\+\_\+\+TIM7\+::set\+Prescaler}} (\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Prescaler)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a75bec9283ec7ce146045edeab38c1347}{UFL\+\_\+\+TIM7\+::set\+Auto\+Reload}} (\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Auto\+Reload)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a1850cffc770199117be7d453d3dbd17e}{UFL\+\_\+\+TIM7\+::enable\+Clk}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a8224509421075274c4998aa20cfbfcc4}{UFL\+\_\+\+TIM7\+::enable\+Counter\+Clk}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a90ad14a19d79dbf47c1f96b9e3b612f1}{UFL\+\_\+\+TIM7\+::disable\+Clk}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_aeed0ce9659a07f4dd122d57989691a5f}{UFL\+\_\+\+TIM7\+::enable\+Counting}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a6334de3f6f7a26a5e145b365d527f40a}{UFL\+\_\+\+TIM7\+::disable\+Update\+Event}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a93db8f5b064677fcfee9145d6a4a0aa4}{UFL\+\_\+\+TIM7\+::update\+Event}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_a175321606503cb3cf49b4c4701f3204d}{UFL\+\_\+\+TIM7\+::flag\+\_\+interrupt\+::enable\+Update\+Interrupt}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_1_1_u_i_f_ac6f0cba85741b74d57ccf273fd74cdfe}{UFL\+\_\+\+TIM7\+::flag\+\_\+interrupt\+::\+UIF\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_1_1_u_i_f_a099eb396777bb4e792f2e4342c59e3b5}{UFL\+\_\+\+TIM7\+::flag\+\_\+interrupt\+::\+UIF\+::clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_ab1a7bdbe8a672214febb1e0c5672524d}{UFL\+\_\+\+TIM7\+::this\+Timer\+Clk}} = \mbox{\hyperlink{namespaceclk_a373e41c2d5794a4eba3898300a4739b3}{clk\+::\+APB1\+Timer}}
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_acafc127a21eb6986f6f49e865070b19b}{UFL\+\_\+\+TIM7\+::timer\+Max\+Value}} = UINT16\+\_\+\+MAX
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a7251900082e0ac3348e1e0135ef5a380}{UFL\+\_\+\+TIM7\+::this\+Peripheral\+Clk}} = LL\+\_\+\+APB1\+\_\+\+GRP1\+\_\+\+PERIPH\+\_\+\+TIM7
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_af8fdd3c306d63dd4d9f5197e159314e5}{UFL\+\_\+\+TIM7\+::interrupt\+Number}} = TIM7\+\_\+\+IRQn
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+For the hardware abstract layer for timer7. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}\label{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}} 
+\index{ufl\_TIM.hpp@{ufl\_TIM.hpp}!TIM7\_T@{TIM7\_T}}
+\index{TIM7\_T@{TIM7\_T}!ufl\_TIM.hpp@{ufl\_TIM.hpp}}
+\doxysubsubsection{\texorpdfstring{TIM7\_T}{TIM7\_T}}
+{\footnotesize\ttfamily typedef uint16\+\_\+t \mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}}}
+

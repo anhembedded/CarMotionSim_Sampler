@@ -1,0 +1,104 @@
+\hypertarget{_u_f_l___u_s_a_r_t_8hpp}{}\doxysection{UFL\+\_\+\+USART.\+hpp File Reference}
+\label{_u_f_l___u_s_a_r_t_8hpp}\index{UFL\_USART.hpp@{UFL\_USART.hpp}}
+{\ttfamily \#include \char`\"{}main\+\_\+cpp.\+hpp\char`\"{}}\newline
+Include dependency graph for UFL\+\_\+\+USART.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{_u_f_l___u_s_a_r_t_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6}{UFL\+\_\+\+USART6}}
+\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT}}
+\begin{DoxyCompactList}\small\item\em Flag and Interrupt packets. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TC}}
+\begin{DoxyCompactList}\small\item\em Transmission Complete Flag. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TXE}}
+\begin{DoxyCompactList}\small\item\em Transmit Data Register Empty. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+IDLE}}
+\begin{DoxyCompactList}\small\item\em Idle Line Detected. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+ORE}}
+\begin{DoxyCompactList}\small\item\em Overrun error detected. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+RXNE}}
+\begin{DoxyCompactList}\small\item\em Received data ready to be read. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+PE}}
+\begin{DoxyCompactList}\small\item\em Parity error detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a7a52a6bb051520108030c1528e53fc62}{UFL\+\_\+\+USART6\+::data\+\_\+T}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aa105b03462fa17efc19fd912ea03560b}{UFL\+\_\+\+USART6\+::initialize}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad8a7db03bbcef394d04dd4bb422c9e90}{UFL\+\_\+\+USART6\+::enable}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aa9c6cd2d3864bff7f45b9c3e383b8bee}{UFL\+\_\+\+USART6\+::disable}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a84f4e297d2783a9027e918522b83c526}{UFL\+\_\+\+USART6\+::enable\+GPIOClock}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a61c182fc0bba0b4b05b46b17017aeb1b}{UFL\+\_\+\+USART6\+::enable\+Transmitter}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aeea4dd466ffc84386c7cdb211b2b7fb4}{UFL\+\_\+\+USART6\+::transmit\+Data}} (const data\+\_\+T data)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a38d8d04f495613b3f2dca99eccd74152}{UFL\+\_\+\+USART6\+::enable\+Perih\+Clock}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_ac99912551bf7f96788ba333575c42c23}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TC\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_adaff72365e22406208bb99ab051ae34d}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TC\+::clear}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_af2eff67e422c54f49905a270ea2f18af}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TC\+::enable\+IT}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_ab5a8cdcee7ab986afe80bfe4d2f4fe6a}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TC\+::clear\+Pending\+Bit}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_a01f35175b40e6dd99a0d83aa7ccb4be9}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TXE\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_ac6bfddf859c170a86d26880952093811}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TXE\+::clear}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_a68304490d852195115bcc3bbf0e14539}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TXE\+::enable\+IT}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_aaacf26c8c0c33c1f22edb351ec196f0c}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+TXE\+::clear\+Pending\+Bit}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_a1a8a136ebd40b408838419e8e28fc5dd}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+IDLE\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_a40f76ee5bd80f83f9727b7ba4f90cde0}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+IDLE\+::clear}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_af2f0a09e8e0bf38b4a1218225bfdc57a}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+IDLE\+::enable\+IT}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_a0fa00d5eeadcdfb23032ac7f59079d62}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+IDLE\+::clear\+Pending\+Bit}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a146a441cfabcfcbffb79f349b5cb5e67}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+ORE\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a84f0c5ad5c1ef7770b0f1d0b3a9012e6}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+ORE\+::clear}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a9c6ddf376b4f6dee4f37ec7ce6d2ffed}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+ORE\+::enable\+IT}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a81e0775b7cbb22d685909c011b2b840c}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+ORE\+::clear\+Pending\+Bit}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_aa91ffca6d09c8fe558b12df674d94f15}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+RXNE\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_aee0fb9d84fc3efdcfa66bbe8b5452116}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+RXNE\+::clear}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_a62bad3ad09bdb98e8f8ca19fe5273a3f}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+RXNE\+::enable\+IT}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_abe8c8b0e6ba5c5cd8a22c07e123ec952}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+RXNE\+::clear\+Pending\+Bit}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_a66d3b146f587bf3e21a55c5e88f3ceac}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+PE\+::is\+Set}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_af9a31c2806b3056ab2507ff7902ca536}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+PE\+::clear}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_ad49f66142f468faa41ac07d431fbec4e}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+PE\+::enable\+IT}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_a6433766d7f17ce6fb890424623f583d0}{UFL\+\_\+\+USART6\+::flag\+\_\+\+IT\+::\+PE\+::clear\+Pending\+Bit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const decltype(USART6) \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{UFL\+\_\+\+USART6\+::this\+Instance}} = USART6
+\end{DoxyCompactItemize}

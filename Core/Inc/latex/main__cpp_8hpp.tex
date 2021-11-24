@@ -1,0 +1,59 @@
+\hypertarget{main__cpp_8hpp}{}\doxysection{main\+\_\+cpp.\+hpp File Reference}
+\label{main__cpp_8hpp}\index{main\_cpp.hpp@{main\_cpp.hpp}}
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Firmwares/simtools.\+hpp\char`\"{}}\newline
+Include dependency graph for main\+\_\+cpp.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main__cpp_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main__cpp_8hpp_ab469a56e8a59aee61e758986f540b78e}{\+\_\+\+\_\+\+SFI}}~\+\_\+\+\_\+\+STATIC\+\_\+\+FORCEINLINE
+\item 
+\#define \mbox{\hyperlink{main__cpp_8hpp_aee33a15ccef73c744a2440934f5a3c1f}{UN\+\_\+\+WAIT\+\_\+\+UNTIL}}(condition)~while (!(condition))
+\item 
+\#define \mbox{\hyperlink{main__cpp_8hpp_a4973711a5da474ed802877eed401df76}{READ\+\_\+\+BIT\+\_\+\+MASK}}(data,  pos,  mask)~((data $>$$>$ pos) \& (mask))
+\item 
+\#define \mbox{\hyperlink{main__cpp_8hpp_ae111082e8d6ab8d5e6a5dc409eb85a4b}{wait\+Until}}~\mbox{\hyperlink{main__cpp_8hpp_aee33a15ccef73c744a2440934f5a3c1f}{UN\+\_\+\+WAIT\+\_\+\+UNTIL}}
+\item 
+\#define \mbox{\hyperlink{main__cpp_8hpp_a92f8f972a2c188371fcf0b561c44af97}{MASK}}(x)~(0b01 $<$$<$ (x))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main__cpp_8hpp_ab469a56e8a59aee61e758986f540b78e}\label{main__cpp_8hpp_ab469a56e8a59aee61e758986f540b78e}} 
+\index{main\_cpp.hpp@{main\_cpp.hpp}!\_\_SFI@{\_\_SFI}}
+\index{\_\_SFI@{\_\_SFI}!main\_cpp.hpp@{main\_cpp.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_SFI}{\_\_SFI}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+SFI~\+\_\+\+\_\+\+STATIC\+\_\+\+FORCEINLINE}
+
+\mbox{\Hypertarget{main__cpp_8hpp_a92f8f972a2c188371fcf0b561c44af97}\label{main__cpp_8hpp_a92f8f972a2c188371fcf0b561c44af97}} 
+\index{main\_cpp.hpp@{main\_cpp.hpp}!MASK@{MASK}}
+\index{MASK@{MASK}!main\_cpp.hpp@{main\_cpp.hpp}}
+\doxysubsubsection{\texorpdfstring{MASK}{MASK}}
+{\footnotesize\ttfamily \#define MASK(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(0b01 $<$$<$ (x))}
+
+\mbox{\Hypertarget{main__cpp_8hpp_a4973711a5da474ed802877eed401df76}\label{main__cpp_8hpp_a4973711a5da474ed802877eed401df76}} 
+\index{main\_cpp.hpp@{main\_cpp.hpp}!READ\_BIT\_MASK@{READ\_BIT\_MASK}}
+\index{READ\_BIT\_MASK@{READ\_BIT\_MASK}!main\_cpp.hpp@{main\_cpp.hpp}}
+\doxysubsubsection{\texorpdfstring{READ\_BIT\_MASK}{READ\_BIT\_MASK}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+BIT\+\_\+\+MASK(\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{pos,  }\item[{}]{mask }\end{DoxyParamCaption})~((data $>$$>$ pos) \& (mask))}
+
+\mbox{\Hypertarget{main__cpp_8hpp_aee33a15ccef73c744a2440934f5a3c1f}\label{main__cpp_8hpp_aee33a15ccef73c744a2440934f5a3c1f}} 
+\index{main\_cpp.hpp@{main\_cpp.hpp}!UN\_WAIT\_UNTIL@{UN\_WAIT\_UNTIL}}
+\index{UN\_WAIT\_UNTIL@{UN\_WAIT\_UNTIL}!main\_cpp.hpp@{main\_cpp.hpp}}
+\doxysubsubsection{\texorpdfstring{UN\_WAIT\_UNTIL}{UN\_WAIT\_UNTIL}}
+{\footnotesize\ttfamily \#define UN\+\_\+\+WAIT\+\_\+\+UNTIL(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})~while (!(condition))}
+
+\mbox{\Hypertarget{main__cpp_8hpp_ae111082e8d6ab8d5e6a5dc409eb85a4b}\label{main__cpp_8hpp_ae111082e8d6ab8d5e6a5dc409eb85a4b}} 
+\index{main\_cpp.hpp@{main\_cpp.hpp}!waitUntil@{waitUntil}}
+\index{waitUntil@{waitUntil}!main\_cpp.hpp@{main\_cpp.hpp}}
+\doxysubsubsection{\texorpdfstring{waitUntil}{waitUntil}}
+{\footnotesize\ttfamily \#define wait\+Until~\mbox{\hyperlink{main__cpp_8hpp_aee33a15ccef73c744a2440934f5a3c1f}{UN\+\_\+\+WAIT\+\_\+\+UNTIL}}}
+

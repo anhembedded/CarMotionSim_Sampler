@@ -1,0 +1,33 @@
+\hypertarget{stm32__assert_8h_source}{}\doxysection{stm32\+\_\+assert.\+h}
+\mbox{\hyperlink{stm32__assert_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{19 \textcolor{comment}{/* Define to prevent recursive inclusion -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#ifndef \_\_STM32\_ASSERT\_H}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define \_\_STM32\_ASSERT\_H}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{24  \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{comment}{/* Exported types -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{28 \textcolor{comment}{/* Exported constants -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{29 \textcolor{comment}{/* Includes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{30 \textcolor{comment}{/* Exported macro -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#ifdef  USE\_FULL\_ASSERT}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{ \#define assert\_param(expr) ((expr) ? (void)0U : assert\_failed((uint8\_t *)\_\_FILE\_\_, \_\_LINE\_\_))}}
+\DoxyCodeLine{41 \textcolor{comment}{/* Exported functions -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ */}}
+\DoxyCodeLine{42   \textcolor{keywordtype}{void} assert\_failed(uint8\_t* file, uint32\_t line);}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{  \#define assert\_param(expr) ((void)0U)}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* USE\_FULL\_ASSERT */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{48 \}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_STM32\_ASSERT\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{comment}{/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/}}
+
+\end{DoxyCode}

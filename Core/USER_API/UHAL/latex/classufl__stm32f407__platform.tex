@@ -1,0 +1,119 @@
+\hypertarget{classufl__stm32f407__platform}{}\doxysection{ufl\+\_\+stm32f407\+\_\+platform Class Reference}
+\label{classufl__stm32f407__platform}\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+
+
+{\ttfamily \#include $<$ufl\+\_\+stm32f407\+\_\+platform.\+hpp$>$}
+
+
+
+Inheritance diagram for ufl\+\_\+stm32f407\+\_\+platform\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classufl__stm32f407__platform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ufl\+\_\+stm32f407\+\_\+platform\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classufl__stm32f407__platform__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classufl__stm32f407__platform_ae8a50afa96c7abeb3b2ac97e266240c1}{pin\+Mode}} (uint16\+\_\+t pin, uint16\+\_\+t mode) final
+\item 
+void \mbox{\hyperlink{classufl__stm32f407__platform_a36fa8c792aa02d028c723bff7ead1535}{digital\+Write}} (uint16\+\_\+t pin, uint16\+\_\+t val) final
+\item 
+int \mbox{\hyperlink{classufl__stm32f407__platform_a2eb6783f531440d7325fa57deaa254a3}{digital\+Read}} (uint16\+\_\+t pin) final
+\item 
+unsigned long \mbox{\hyperlink{classufl__stm32f407__platform_a1040dc69879dc3a4dadd49d67c6ea6c8}{millis}} () final
+\item 
+unsigned long \mbox{\hyperlink{classufl__stm32f407__platform_add043a67a849ed1ba62b1f4957e611ea}{micros}} () final
+\item 
+void \mbox{\hyperlink{classufl__stm32f407__platform_a0afbcb9880ba0c50f601650391978e56}{delay}} (unsigned long ms) final
+\item 
+void \mbox{\hyperlink{classufl__stm32f407__platform_a4d277fdaaee3220f6ecc5c873475d7b2}{delay\+Microseconds}} (unsigned int us) final
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classufl__stm32f407__platform_a0afbcb9880ba0c50f601650391978e56}\label{classufl__stm32f407__platform_a0afbcb9880ba0c50f601650391978e56}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!delay@{delay}}
+\index{delay@{delay}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void ufl\+\_\+stm32f407\+\_\+platform\+::delay (\begin{DoxyParamCaption}\item[{unsigned long}]{ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_a2448d75b7f8c013d14f70d86fccc5895}{Arduino}}.
+
+\mbox{\Hypertarget{classufl__stm32f407__platform_a4d277fdaaee3220f6ecc5c873475d7b2}\label{classufl__stm32f407__platform_a4d277fdaaee3220f6ecc5c873475d7b2}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!delayMicroseconds@{delayMicroseconds}}
+\index{delayMicroseconds@{delayMicroseconds}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{delayMicroseconds()}{delayMicroseconds()}}
+{\footnotesize\ttfamily void ufl\+\_\+stm32f407\+\_\+platform\+::delay\+Microseconds (\begin{DoxyParamCaption}\item[{unsigned int}]{us }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_ae06dde604227e9430966cc8b3fc06a3f}{Arduino}}.
+
+\mbox{\Hypertarget{classufl__stm32f407__platform_a2eb6783f531440d7325fa57deaa254a3}\label{classufl__stm32f407__platform_a2eb6783f531440d7325fa57deaa254a3}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!digitalRead@{digitalRead}}
+\index{digitalRead@{digitalRead}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{digitalRead()}{digitalRead()}}
+{\footnotesize\ttfamily int ufl\+\_\+stm32f407\+\_\+platform\+::digital\+Read (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_af846a31d0f63858037f1655ce85e0807}{Arduino}}.
+
+\mbox{\Hypertarget{classufl__stm32f407__platform_a36fa8c792aa02d028c723bff7ead1535}\label{classufl__stm32f407__platform_a36fa8c792aa02d028c723bff7ead1535}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!digitalWrite@{digitalWrite}}
+\index{digitalWrite@{digitalWrite}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{digitalWrite()}{digitalWrite()}}
+{\footnotesize\ttfamily void ufl\+\_\+stm32f407\+\_\+platform\+::digital\+Write (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin,  }\item[{uint16\+\_\+t}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_aeed2db45fe48f0b70a38b11ef4e509b4}{Arduino}}.
+
+\mbox{\Hypertarget{classufl__stm32f407__platform_add043a67a849ed1ba62b1f4957e611ea}\label{classufl__stm32f407__platform_add043a67a849ed1ba62b1f4957e611ea}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!micros@{micros}}
+\index{micros@{micros}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{micros()}{micros()}}
+{\footnotesize\ttfamily unsigned long ufl\+\_\+stm32f407\+\_\+platform\+::micros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_a6654e0faca6dda8136e8f55dc88b465a}{Arduino}}.
+
+\mbox{\Hypertarget{classufl__stm32f407__platform_a1040dc69879dc3a4dadd49d67c6ea6c8}\label{classufl__stm32f407__platform_a1040dc69879dc3a4dadd49d67c6ea6c8}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!millis@{millis}}
+\index{millis@{millis}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{millis()}{millis()}}
+{\footnotesize\ttfamily unsigned long ufl\+\_\+stm32f407\+\_\+platform\+::millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_a44b70c2850c5959780309ec374378cef}{Arduino}}.
+
+\mbox{\Hypertarget{classufl__stm32f407__platform_ae8a50afa96c7abeb3b2ac97e266240c1}\label{classufl__stm32f407__platform_ae8a50afa96c7abeb3b2ac97e266240c1}} 
+\index{ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}!pinMode@{pinMode}}
+\index{pinMode@{pinMode}!ufl\_stm32f407\_platform@{ufl\_stm32f407\_platform}}
+\doxysubsubsection{\texorpdfstring{pinMode()}{pinMode()}}
+{\footnotesize\ttfamily void ufl\+\_\+stm32f407\+\_\+platform\+::pin\+Mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin,  }\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arduino_ae32b580d9971dae56938706d722d0dfc}{Arduino}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ufl__stm32f407__platform_8hpp}{ufl\+\_\+stm32f407\+\_\+platform.\+hpp}}\end{DoxyCompactItemize}

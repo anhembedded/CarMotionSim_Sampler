@@ -1,0 +1,92 @@
+\hypertarget{main_8h_source}{}\doxysection{main.\+h}
+\mbox{\hyperlink{main_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/* USER CODE BEGIN Header */}}
+\DoxyCodeLine{20 \textcolor{comment}{/* USER CODE END Header */}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{comment}{/* Define to prevent recursive inclusion -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#ifndef \_\_MAIN\_H}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define \_\_MAIN\_H}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{27 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{comment}{/* Includes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_rcc.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_bus.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_system.h"{}}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_exti.h"{}}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_cortex.h"{}}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_utils.h"{}}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_pwr.h"{}}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_dma.h"{}}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_tim.h"{}}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_usart.h"{}}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#include "{}stm32f4xx\_ll\_gpio.h"{}}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#if defined(USE\_FULL\_ASSERT)}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stm32__assert_8h}{stm32\_assert.h}}"{}}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* USE\_FULL\_ASSERT */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{comment}{/* Private includes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{49 \textcolor{comment}{/* USER CODE BEGIN Includes */}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{comment}{/* USER CODE END Includes */}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{comment}{/* Exported types -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{54 \textcolor{comment}{/* USER CODE BEGIN ET */}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{comment}{/* USER CODE END ET */}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{comment}{/* Exported constants -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{59 \textcolor{comment}{/* USER CODE BEGIN EC */}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{comment}{/* USER CODE END EC */}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{comment}{/* Exported macro -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{64 \textcolor{comment}{/* USER CODE BEGIN EM */}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{comment}{/* USER CODE END EM */}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{comment}{/* Exported functions prototypes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{69 \textcolor{keywordtype}{void} \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{comment}{/* USER CODE BEGIN EFP */}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{comment}{/* USER CODE END EFP */}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{comment}{/* Private defines -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#define LCD\_RS\_Pin LL\_GPIO\_PIN\_0}}
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#define LCD\_RS\_GPIO\_Port GPIOC}}
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#define LCD\_ENABLE\_Pin LL\_GPIO\_PIN\_1}}
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#define LCD\_ENABLE\_GPIO\_Port GPIOC}}
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#define LCD\_D4\_Pin LL\_GPIO\_PIN\_2}}
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#define LCD\_D4\_GPIO\_Port GPIOC}}
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#define LCD\_D5\_Pin LL\_GPIO\_PIN\_3}}
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#define LCD\_D5\_GPIO\_Port GPIOC}}
+\DoxyCodeLine{84 \textcolor{preprocessor}{\#define LCD\_D6\_Pin LL\_GPIO\_PIN\_4}}
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#define LCD\_D6\_GPIO\_Port GPIOC}}
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#define LCD\_D7\_Pin LL\_GPIO\_PIN\_5}}
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#define LCD\_D7\_GPIO\_Port GPIOC}}
+\DoxyCodeLine{88 \textcolor{preprocessor}{\#ifndef NVIC\_PRIORITYGROUP\_0}}
+\DoxyCodeLine{89 \textcolor{preprocessor}{\#define NVIC\_PRIORITYGROUP\_0         ((uint32\_t)0x00000007) }}
+\DoxyCodeLine{91 \textcolor{preprocessor}{\#define NVIC\_PRIORITYGROUP\_1         ((uint32\_t)0x00000006) }}
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#define NVIC\_PRIORITYGROUP\_2         ((uint32\_t)0x00000005) }}
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#define NVIC\_PRIORITYGROUP\_3         ((uint32\_t)0x00000004) }}
+\DoxyCodeLine{97 \textcolor{preprocessor}{\#define NVIC\_PRIORITYGROUP\_4         ((uint32\_t)0x00000003) }}
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{100 \textcolor{comment}{/* USER CODE BEGIN Private defines */}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{comment}{/* USER CODE END Private defines */}}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{105 \}}
+\DoxyCodeLine{106 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_MAIN\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{comment}{/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/}}
+
+\end{DoxyCode}

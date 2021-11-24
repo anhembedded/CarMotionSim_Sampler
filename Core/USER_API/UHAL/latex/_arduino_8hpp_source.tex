@@ -1,0 +1,88 @@
+\hypertarget{_arduino_8hpp_source}{}\doxysection{Arduino.\+hpp}
+\mbox{\hyperlink{_arduino_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by hoang on 11/6/2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef LCD\_ARDUINO\_HPP}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define LCD\_ARDUINO\_HPP}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define HIGH 0x1}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define LOW  0x0}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define INPUT 0x0}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define OUTPUT 0x1}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define INPUT\_PULLUP 0x2}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define PI 3.1415926535897932384626433832795}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define HALF\_PI 1.5707963267948966192313216916398}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define TWO\_PI 6.283185307179586476925286766559}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define DEG\_TO\_RAD 0.017453292519943295769236907684886}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define RAD\_TO\_DEG 57.295779513082320876798154814105}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define EULER 2.718281828459045235360287471352}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define SERIAL  0x0}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define DISPLAY 0x1}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define LSBFIRST 0}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define MSBFIRST 1}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define CHANGE 1}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define FALLING 2}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define RISING 3}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define round(x)     ((x)>=0?(long)((x)+0.5):(long)((x)-\/0.5))}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define radians(deg) ((deg)*DEG\_TO\_RAD)}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define degrees(rad) ((rad)*RAD\_TO\_DEG)}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define sq(x) ((x)*(x))}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define lowByte(w) ((uint16\_t) ((w) \& 0xff))}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define highByte(w) ((uint16\_t) ((w) >> 8))}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define bitRead(value, bit) (((value) >> (bit)) \& 0x01)}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define bitSet(value, bit) ((value) |= (1UL << (bit)))}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define bitClear(value, bit) ((value) \&= \string~(1UL << (bit)))}}
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define bitToggle(value, bit) ((value) \string^= (1UL << (bit)))}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define bitWrite(value, bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{_arduino_8hpp_abad51e07ab6d26bec9f1f786c8d65bcd}{word}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define bit(b) (1UL << (b))}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keyword}{typedef} \textcolor{keywordtype}{bool} \mbox{\hyperlink{_arduino_8hpp_af29b166bf5fea7f0bbc07f7014a8c6b5}{boolean}};}
+\DoxyCodeLine{58 \textcolor{keyword}{typedef} uint16\_t \mbox{\hyperlink{_arduino_8hpp_ae0aa21f6bcb621fe36c2c962aa0452fe}{byte}};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{keyword}{class }\mbox{\hyperlink{class_arduino}{Arduino}}}
+\DoxyCodeLine{64         \{}
+\DoxyCodeLine{65 \textcolor{keyword}{public}:}
+\DoxyCodeLine{66     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arduino_ae32b580d9971dae56938706d722d0dfc}{pinMode}}(uint16\_t pin, uint16\_t mode) = 0;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arduino_aeed2db45fe48f0b70a38b11ef4e509b4}{digitalWrite}}(uint16\_t pin, uint16\_t val) = 0;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_arduino_af846a31d0f63858037f1655ce85e0807}{digitalRead}}(uint16\_t pin)= 0;}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keyword}{virtual} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{class_arduino_a44b70c2850c5959780309ec374378cef}{millis}}()= 0;}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keyword}{virtual} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{class_arduino_a6654e0faca6dda8136e8f55dc88b465a}{micros}}()=0;}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arduino_a2448d75b7f8c013d14f70d86fccc5895}{delay}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} ms)=0;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arduino_ae06dde604227e9430966cc8b3fc06a3f}{delayMicroseconds}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} us)=0;}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//LCD\_ARDUINO\_HPP}}
+
+\end{DoxyCode}

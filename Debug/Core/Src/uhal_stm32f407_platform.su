@@ -1,0 +1,9 @@
+stm32f4xx_ll_gpio.h:882:22:void LL_GPIO_SetOutputPin(GPIO_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_gpio.h:911:22:void LL_GPIO_ResetOutputPin(GPIO_TypeDef*, uint32_t)	16	static
+uhal_stm32f407_platform.cpp:12:6:virtual void uhal_stm32f407_platform::pinMode(uint16_t, uint16_t)	16	static,ignoring_inline_asm
+uhal_stm32f407_platform.cpp:18:6:virtual void uhal_stm32f407_platform::digitalWrite(uint16_t, uint16_t)	16	static
+uhal_stm32f407_platform.cpp:29:47:virtual int uhal_stm32f407_platform::digitalRead(uint16_t)	16	static
+uhal_stm32f407_platform.cpp:33:57:virtual long unsigned int uhal_stm32f407_platform::millis()	16	static
+uhal_stm32f407_platform.cpp:38:57:virtual long unsigned int uhal_stm32f407_platform::micros()	16	static
+uhal_stm32f407_platform.cpp:42:6:virtual void uhal_stm32f407_platform::delay(long unsigned int)	16	static
+uhal_stm32f407_platform.cpp:46:6:virtual void uhal_stm32f407_platform::delayMicroseconds(unsigned int)	16	static,ignoring_inline_asm

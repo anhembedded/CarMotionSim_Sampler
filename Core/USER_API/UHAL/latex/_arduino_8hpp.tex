@@ -1,0 +1,301 @@
+\hypertarget{_arduino_8hpp}{}\doxysection{Arduino.\+hpp File Reference}
+\label{_arduino_8hpp}\index{Arduino.hpp@{Arduino.hpp}}
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+Include dependency graph for Arduino.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_arduino_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{_arduino_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_arduino}{Arduino}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a5bb885982ff66a2e0a0a45a8ee9c35e2}{HIGH}}~0x1
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_ab811d8c6ff3a505312d3276590444289}{LOW}}~0x0
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a1bb283bd7893b9855e2f23013891fc82}{INPUT}}~0x0
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a61a3c9a18380aafb6e430e79bf596557}{OUTPUT}}~0x1
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a6295096662a20dd56186396e535fbe92}{INPUT\+\_\+\+PULLUP}}~0x2
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+1415926535897932384626433832795
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_ae3ec3219e4eee3b0992bfd59c2e2bc42}{HALF\+\_\+\+PI}}~1.\+5707963267948966192313216916398
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a3b947f4b635461030ff2d87833e5049e}{TWO\+\_\+\+PI}}~6.\+283185307179586476925286766559
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a212460e743fecb084d717bb2180c5a56}{DEG\+\_\+\+TO\+\_\+\+RAD}}~0.\+017453292519943295769236907684886
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a89e47af0449640d4f15191aba5ca24c6}{RAD\+\_\+\+TO\+\_\+\+DEG}}~57.\+295779513082320876798154814105
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a7f4ee7567f891560bb62dfbda5f93088}{EULER}}~2.\+718281828459045235360287471352
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_aae3f0b4211ba45d265973d40ccbb5fd1}{SERIAL}}~0x0
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_ab4bf926a45354a2f328f1a7b94ebd3c5}{DISPLAY}}~0x1
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a5811613d98580676f67f0dde8125433e}{LSBFIRST}}~0
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a1c7ef42eff02618bde70868af4944d81}{MSBFIRST}}~1
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_aa39fdb6674592214dc56eacc0808eec4}{CHANGE}}~1
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_ac00eb6fc2047dc399280f31b0c5f4472}{FALLING}}~2
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_aeea2b49478f3b13faedba764985c6e96}{RISING}}~3
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a6ea10f4260b54a61665ead26cb995ba3}{round}}(x)~((x)$>$=0?(long)((x)+0.\+5)\+:(long)((x)-\/0.\+5))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a7571dba2995b9cb57259345fe49d2f97}{radians}}(deg)~((deg)$\ast$\mbox{\hyperlink{_arduino_8hpp_a212460e743fecb084d717bb2180c5a56}{DEG\+\_\+\+TO\+\_\+\+RAD}})
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_afe93c2c14da376a1621194c15c1de496}{degrees}}(rad)~((rad)$\ast$\mbox{\hyperlink{_arduino_8hpp_a89e47af0449640d4f15191aba5ca24c6}{RAD\+\_\+\+TO\+\_\+\+DEG}})
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_ae7616788b30810a219d9cdee95904ba4}{sq}}(x)~((x)$\ast$(x))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a57600234f6e26049357fbecfbdca9537}{low\+Byte}}(w)~((uint16\+\_\+t) ((w) \& 0xff))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a32fff07c58e569ce66ad409fe85c73bb}{high\+Byte}}(w)~((uint16\+\_\+t) ((w) $>$$>$ 8))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_aff20d8c0a05ad3043afa2e4ad9ebe768}{bit\+Read}}(value,  \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})~(((value) $>$$>$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})) \& 0x01)
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a6a8195c0e930f86c6af03ba6af8b41dd}{bit\+Set}}(value,  \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})~((value) $\vert$= (1UL $<$$<$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_abbe843c0521806a4ab2e7cffe44769e2}{bit\+Clear}}(value,  \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})~((value) \&= $\sim$(1UL $<$$<$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a8e2767cc4700e825fa3d276a39f1d0a7}{bit\+Toggle}}(value,  \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})~((value) $^\wedge$= (1UL $<$$<$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_a42c17f59f3f9a3112d01246760067a8e}{bit\+Write}}(value,  \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}},  bitvalue)~((bitvalue) ? \mbox{\hyperlink{_arduino_8hpp_a6a8195c0e930f86c6af03ba6af8b41dd}{bit\+Set}}(value, \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}}) \+: \mbox{\hyperlink{_arduino_8hpp_abbe843c0521806a4ab2e7cffe44769e2}{bit\+Clear}}(value, \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}}))
+\item 
+\#define \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}}(b)~(1UL $<$$<$ (b))
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \mbox{\hyperlink{_arduino_8hpp_abad51e07ab6d26bec9f1f786c8d65bcd}{word}}
+\item 
+typedef bool \mbox{\hyperlink{_arduino_8hpp_af29b166bf5fea7f0bbc07f7014a8c6b5}{boolean}}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{_arduino_8hpp_ae0aa21f6bcb621fe36c2c962aa0452fe}{byte}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}\label{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}} 
+\index{Arduino.hpp@{Arduino.hpp}!bit@{bit}}
+\index{bit@{bit}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{bit}{bit}}
+{\footnotesize\ttfamily \#define bit(\begin{DoxyParamCaption}\item[{}]{b }\end{DoxyParamCaption})~(1UL $<$$<$ (b))}
+
+\mbox{\Hypertarget{_arduino_8hpp_abbe843c0521806a4ab2e7cffe44769e2}\label{_arduino_8hpp_abbe843c0521806a4ab2e7cffe44769e2}} 
+\index{Arduino.hpp@{Arduino.hpp}!bitClear@{bitClear}}
+\index{bitClear@{bitClear}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{bitClear}{bitClear}}
+{\footnotesize\ttfamily \#define bit\+Clear(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}} }\end{DoxyParamCaption})~((value) \&= $\sim$(1UL $<$$<$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})))}
+
+\mbox{\Hypertarget{_arduino_8hpp_aff20d8c0a05ad3043afa2e4ad9ebe768}\label{_arduino_8hpp_aff20d8c0a05ad3043afa2e4ad9ebe768}} 
+\index{Arduino.hpp@{Arduino.hpp}!bitRead@{bitRead}}
+\index{bitRead@{bitRead}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{bitRead}{bitRead}}
+{\footnotesize\ttfamily \#define bit\+Read(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}} }\end{DoxyParamCaption})~(((value) $>$$>$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})) \& 0x01)}
+
+\mbox{\Hypertarget{_arduino_8hpp_a6a8195c0e930f86c6af03ba6af8b41dd}\label{_arduino_8hpp_a6a8195c0e930f86c6af03ba6af8b41dd}} 
+\index{Arduino.hpp@{Arduino.hpp}!bitSet@{bitSet}}
+\index{bitSet@{bitSet}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{bitSet}{bitSet}}
+{\footnotesize\ttfamily \#define bit\+Set(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}} }\end{DoxyParamCaption})~((value) $\vert$= (1UL $<$$<$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})))}
+
+\mbox{\Hypertarget{_arduino_8hpp_a8e2767cc4700e825fa3d276a39f1d0a7}\label{_arduino_8hpp_a8e2767cc4700e825fa3d276a39f1d0a7}} 
+\index{Arduino.hpp@{Arduino.hpp}!bitToggle@{bitToggle}}
+\index{bitToggle@{bitToggle}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{bitToggle}{bitToggle}}
+{\footnotesize\ttfamily \#define bit\+Toggle(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}} }\end{DoxyParamCaption})~((value) $^\wedge$= (1UL $<$$<$ (\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}})))}
+
+\mbox{\Hypertarget{_arduino_8hpp_a42c17f59f3f9a3112d01246760067a8e}\label{_arduino_8hpp_a42c17f59f3f9a3112d01246760067a8e}} 
+\index{Arduino.hpp@{Arduino.hpp}!bitWrite@{bitWrite}}
+\index{bitWrite@{bitWrite}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{bitWrite}{bitWrite}}
+{\footnotesize\ttfamily \#define bit\+Write(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{\mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}},  }\item[{}]{bitvalue }\end{DoxyParamCaption})~((bitvalue) ? \mbox{\hyperlink{_arduino_8hpp_a6a8195c0e930f86c6af03ba6af8b41dd}{bit\+Set}}(value, \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}}) \+: \mbox{\hyperlink{_arduino_8hpp_abbe843c0521806a4ab2e7cffe44769e2}{bit\+Clear}}(value, \mbox{\hyperlink{_arduino_8hpp_af419eea95c24741f969fbe9eb534404e}{bit}}))}
+
+\mbox{\Hypertarget{_arduino_8hpp_aa39fdb6674592214dc56eacc0808eec4}\label{_arduino_8hpp_aa39fdb6674592214dc56eacc0808eec4}} 
+\index{Arduino.hpp@{Arduino.hpp}!CHANGE@{CHANGE}}
+\index{CHANGE@{CHANGE}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{CHANGE}{CHANGE}}
+{\footnotesize\ttfamily \#define CHANGE~1}
+
+\mbox{\Hypertarget{_arduino_8hpp_a212460e743fecb084d717bb2180c5a56}\label{_arduino_8hpp_a212460e743fecb084d717bb2180c5a56}} 
+\index{Arduino.hpp@{Arduino.hpp}!DEG\_TO\_RAD@{DEG\_TO\_RAD}}
+\index{DEG\_TO\_RAD@{DEG\_TO\_RAD}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{DEG\_TO\_RAD}{DEG\_TO\_RAD}}
+{\footnotesize\ttfamily \#define DEG\+\_\+\+TO\+\_\+\+RAD~0.\+017453292519943295769236907684886}
+
+\mbox{\Hypertarget{_arduino_8hpp_afe93c2c14da376a1621194c15c1de496}\label{_arduino_8hpp_afe93c2c14da376a1621194c15c1de496}} 
+\index{Arduino.hpp@{Arduino.hpp}!degrees@{degrees}}
+\index{degrees@{degrees}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{degrees}{degrees}}
+{\footnotesize\ttfamily \#define degrees(\begin{DoxyParamCaption}\item[{}]{rad }\end{DoxyParamCaption})~((rad)$\ast$\mbox{\hyperlink{_arduino_8hpp_a89e47af0449640d4f15191aba5ca24c6}{RAD\+\_\+\+TO\+\_\+\+DEG}})}
+
+\mbox{\Hypertarget{_arduino_8hpp_ab4bf926a45354a2f328f1a7b94ebd3c5}\label{_arduino_8hpp_ab4bf926a45354a2f328f1a7b94ebd3c5}} 
+\index{Arduino.hpp@{Arduino.hpp}!DISPLAY@{DISPLAY}}
+\index{DISPLAY@{DISPLAY}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{DISPLAY}{DISPLAY}}
+{\footnotesize\ttfamily \#define DISPLAY~0x1}
+
+\mbox{\Hypertarget{_arduino_8hpp_a7f4ee7567f891560bb62dfbda5f93088}\label{_arduino_8hpp_a7f4ee7567f891560bb62dfbda5f93088}} 
+\index{Arduino.hpp@{Arduino.hpp}!EULER@{EULER}}
+\index{EULER@{EULER}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{EULER}{EULER}}
+{\footnotesize\ttfamily \#define EULER~2.\+718281828459045235360287471352}
+
+\mbox{\Hypertarget{_arduino_8hpp_ac00eb6fc2047dc399280f31b0c5f4472}\label{_arduino_8hpp_ac00eb6fc2047dc399280f31b0c5f4472}} 
+\index{Arduino.hpp@{Arduino.hpp}!FALLING@{FALLING}}
+\index{FALLING@{FALLING}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{FALLING}{FALLING}}
+{\footnotesize\ttfamily \#define FALLING~2}
+
+\mbox{\Hypertarget{_arduino_8hpp_ae3ec3219e4eee3b0992bfd59c2e2bc42}\label{_arduino_8hpp_ae3ec3219e4eee3b0992bfd59c2e2bc42}} 
+\index{Arduino.hpp@{Arduino.hpp}!HALF\_PI@{HALF\_PI}}
+\index{HALF\_PI@{HALF\_PI}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{HALF\_PI}{HALF\_PI}}
+{\footnotesize\ttfamily \#define HALF\+\_\+\+PI~1.\+5707963267948966192313216916398}
+
+\mbox{\Hypertarget{_arduino_8hpp_a5bb885982ff66a2e0a0a45a8ee9c35e2}\label{_arduino_8hpp_a5bb885982ff66a2e0a0a45a8ee9c35e2}} 
+\index{Arduino.hpp@{Arduino.hpp}!HIGH@{HIGH}}
+\index{HIGH@{HIGH}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{HIGH}{HIGH}}
+{\footnotesize\ttfamily \#define HIGH~0x1}
+
+\mbox{\Hypertarget{_arduino_8hpp_a32fff07c58e569ce66ad409fe85c73bb}\label{_arduino_8hpp_a32fff07c58e569ce66ad409fe85c73bb}} 
+\index{Arduino.hpp@{Arduino.hpp}!highByte@{highByte}}
+\index{highByte@{highByte}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{highByte}{highByte}}
+{\footnotesize\ttfamily \#define high\+Byte(\begin{DoxyParamCaption}\item[{}]{w }\end{DoxyParamCaption})~((uint16\+\_\+t) ((w) $>$$>$ 8))}
+
+\mbox{\Hypertarget{_arduino_8hpp_a1bb283bd7893b9855e2f23013891fc82}\label{_arduino_8hpp_a1bb283bd7893b9855e2f23013891fc82}} 
+\index{Arduino.hpp@{Arduino.hpp}!INPUT@{INPUT}}
+\index{INPUT@{INPUT}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{INPUT}{INPUT}}
+{\footnotesize\ttfamily \#define INPUT~0x0}
+
+\mbox{\Hypertarget{_arduino_8hpp_a6295096662a20dd56186396e535fbe92}\label{_arduino_8hpp_a6295096662a20dd56186396e535fbe92}} 
+\index{Arduino.hpp@{Arduino.hpp}!INPUT\_PULLUP@{INPUT\_PULLUP}}
+\index{INPUT\_PULLUP@{INPUT\_PULLUP}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{INPUT\_PULLUP}{INPUT\_PULLUP}}
+{\footnotesize\ttfamily \#define INPUT\+\_\+\+PULLUP~0x2}
+
+\mbox{\Hypertarget{_arduino_8hpp_ab811d8c6ff3a505312d3276590444289}\label{_arduino_8hpp_ab811d8c6ff3a505312d3276590444289}} 
+\index{Arduino.hpp@{Arduino.hpp}!LOW@{LOW}}
+\index{LOW@{LOW}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{LOW}{LOW}}
+{\footnotesize\ttfamily \#define LOW~0x0}
+
+\mbox{\Hypertarget{_arduino_8hpp_a57600234f6e26049357fbecfbdca9537}\label{_arduino_8hpp_a57600234f6e26049357fbecfbdca9537}} 
+\index{Arduino.hpp@{Arduino.hpp}!lowByte@{lowByte}}
+\index{lowByte@{lowByte}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{lowByte}{lowByte}}
+{\footnotesize\ttfamily \#define low\+Byte(\begin{DoxyParamCaption}\item[{}]{w }\end{DoxyParamCaption})~((uint16\+\_\+t) ((w) \& 0xff))}
+
+\mbox{\Hypertarget{_arduino_8hpp_a5811613d98580676f67f0dde8125433e}\label{_arduino_8hpp_a5811613d98580676f67f0dde8125433e}} 
+\index{Arduino.hpp@{Arduino.hpp}!LSBFIRST@{LSBFIRST}}
+\index{LSBFIRST@{LSBFIRST}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{LSBFIRST}{LSBFIRST}}
+{\footnotesize\ttfamily \#define LSBFIRST~0}
+
+\mbox{\Hypertarget{_arduino_8hpp_a1c7ef42eff02618bde70868af4944d81}\label{_arduino_8hpp_a1c7ef42eff02618bde70868af4944d81}} 
+\index{Arduino.hpp@{Arduino.hpp}!MSBFIRST@{MSBFIRST}}
+\index{MSBFIRST@{MSBFIRST}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{MSBFIRST}{MSBFIRST}}
+{\footnotesize\ttfamily \#define MSBFIRST~1}
+
+\mbox{\Hypertarget{_arduino_8hpp_a61a3c9a18380aafb6e430e79bf596557}\label{_arduino_8hpp_a61a3c9a18380aafb6e430e79bf596557}} 
+\index{Arduino.hpp@{Arduino.hpp}!OUTPUT@{OUTPUT}}
+\index{OUTPUT@{OUTPUT}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{OUTPUT}{OUTPUT}}
+{\footnotesize\ttfamily \#define OUTPUT~0x1}
+
+\mbox{\Hypertarget{_arduino_8hpp_a598a3330b3c21701223ee0ca14316eca}\label{_arduino_8hpp_a598a3330b3c21701223ee0ca14316eca}} 
+\index{Arduino.hpp@{Arduino.hpp}!PI@{PI}}
+\index{PI@{PI}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+1415926535897932384626433832795}
+
+\mbox{\Hypertarget{_arduino_8hpp_a89e47af0449640d4f15191aba5ca24c6}\label{_arduino_8hpp_a89e47af0449640d4f15191aba5ca24c6}} 
+\index{Arduino.hpp@{Arduino.hpp}!RAD\_TO\_DEG@{RAD\_TO\_DEG}}
+\index{RAD\_TO\_DEG@{RAD\_TO\_DEG}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{RAD\_TO\_DEG}{RAD\_TO\_DEG}}
+{\footnotesize\ttfamily \#define RAD\+\_\+\+TO\+\_\+\+DEG~57.\+295779513082320876798154814105}
+
+\mbox{\Hypertarget{_arduino_8hpp_a7571dba2995b9cb57259345fe49d2f97}\label{_arduino_8hpp_a7571dba2995b9cb57259345fe49d2f97}} 
+\index{Arduino.hpp@{Arduino.hpp}!radians@{radians}}
+\index{radians@{radians}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{radians}{radians}}
+{\footnotesize\ttfamily \#define radians(\begin{DoxyParamCaption}\item[{}]{deg }\end{DoxyParamCaption})~((deg)$\ast$\mbox{\hyperlink{_arduino_8hpp_a212460e743fecb084d717bb2180c5a56}{DEG\+\_\+\+TO\+\_\+\+RAD}})}
+
+\mbox{\Hypertarget{_arduino_8hpp_aeea2b49478f3b13faedba764985c6e96}\label{_arduino_8hpp_aeea2b49478f3b13faedba764985c6e96}} 
+\index{Arduino.hpp@{Arduino.hpp}!RISING@{RISING}}
+\index{RISING@{RISING}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{RISING}{RISING}}
+{\footnotesize\ttfamily \#define RISING~3}
+
+\mbox{\Hypertarget{_arduino_8hpp_a6ea10f4260b54a61665ead26cb995ba3}\label{_arduino_8hpp_a6ea10f4260b54a61665ead26cb995ba3}} 
+\index{Arduino.hpp@{Arduino.hpp}!round@{round}}
+\index{round@{round}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \#define round(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)$>$=0?(long)((x)+0.\+5)\+:(long)((x)-\/0.\+5))}
+
+\mbox{\Hypertarget{_arduino_8hpp_aae3f0b4211ba45d265973d40ccbb5fd1}\label{_arduino_8hpp_aae3f0b4211ba45d265973d40ccbb5fd1}} 
+\index{Arduino.hpp@{Arduino.hpp}!SERIAL@{SERIAL}}
+\index{SERIAL@{SERIAL}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{SERIAL}{SERIAL}}
+{\footnotesize\ttfamily \#define SERIAL~0x0}
+
+\mbox{\Hypertarget{_arduino_8hpp_ae7616788b30810a219d9cdee95904ba4}\label{_arduino_8hpp_ae7616788b30810a219d9cdee95904ba4}} 
+\index{Arduino.hpp@{Arduino.hpp}!sq@{sq}}
+\index{sq@{sq}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{sq}{sq}}
+{\footnotesize\ttfamily \#define sq(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)$\ast$(x))}
+
+\mbox{\Hypertarget{_arduino_8hpp_a3b947f4b635461030ff2d87833e5049e}\label{_arduino_8hpp_a3b947f4b635461030ff2d87833e5049e}} 
+\index{Arduino.hpp@{Arduino.hpp}!TWO\_PI@{TWO\_PI}}
+\index{TWO\_PI@{TWO\_PI}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{TWO\_PI}{TWO\_PI}}
+{\footnotesize\ttfamily \#define TWO\+\_\+\+PI~6.\+283185307179586476925286766559}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_arduino_8hpp_af29b166bf5fea7f0bbc07f7014a8c6b5}\label{_arduino_8hpp_af29b166bf5fea7f0bbc07f7014a8c6b5}} 
+\index{Arduino.hpp@{Arduino.hpp}!boolean@{boolean}}
+\index{boolean@{boolean}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{boolean}{boolean}}
+{\footnotesize\ttfamily typedef bool \mbox{\hyperlink{_arduino_8hpp_af29b166bf5fea7f0bbc07f7014a8c6b5}{boolean}}}
+
+\mbox{\Hypertarget{_arduino_8hpp_ae0aa21f6bcb621fe36c2c962aa0452fe}\label{_arduino_8hpp_ae0aa21f6bcb621fe36c2c962aa0452fe}} 
+\index{Arduino.hpp@{Arduino.hpp}!byte@{byte}}
+\index{byte@{byte}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{byte}{byte}}
+{\footnotesize\ttfamily typedef uint16\+\_\+t \mbox{\hyperlink{_arduino_8hpp_ae0aa21f6bcb621fe36c2c962aa0452fe}{byte}}}
+
+\mbox{\Hypertarget{_arduino_8hpp_abad51e07ab6d26bec9f1f786c8d65bcd}\label{_arduino_8hpp_abad51e07ab6d26bec9f1f786c8d65bcd}} 
+\index{Arduino.hpp@{Arduino.hpp}!word@{word}}
+\index{word@{word}!Arduino.hpp@{Arduino.hpp}}
+\doxysubsubsection{\texorpdfstring{word}{word}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{_arduino_8hpp_abad51e07ab6d26bec9f1f786c8d65bcd}{word}}}
+

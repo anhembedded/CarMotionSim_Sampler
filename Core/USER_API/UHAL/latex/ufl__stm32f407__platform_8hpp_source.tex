@@ -1,0 +1,44 @@
+\hypertarget{ufl__stm32f407__platform_8hpp_source}{}\doxysection{ufl\+\_\+stm32f407\+\_\+platform.\+hpp}
+\mbox{\hyperlink{ufl__stm32f407__platform_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * ufl\_stm32f407\_platform.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ *  Created on: Nov 6, 2021}}
+\DoxyCodeLine{5 \textcolor{comment}{ *      Author: hoang}}
+\DoxyCodeLine{6 \textcolor{comment}{ */}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef INC\_UFL\_STM32F407\_PLATFORM\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define INC\_UFL\_STM32F407\_PLATFORM\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_arduino_8hpp}{Arduino.hpp}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}main\_cpp.hpp"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classufl__stm32f407__platform}{ufl\_stm32f407\_platform}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_arduino}{Arduino}}}
+\DoxyCodeLine{17         \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     \textcolor{keyword}{const} \textcolor{keyword}{decltype}(GPIOC)  arduino\_port = GPIOC;}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21      \textcolor{keywordtype}{void} \mbox{\hyperlink{classufl__stm32f407__platform_ae8a50afa96c7abeb3b2ac97e266240c1}{pinMode}}(uint16\_t pin, uint16\_t mode) \textcolor{keyword}{final};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23      \textcolor{keywordtype}{void} \mbox{\hyperlink{classufl__stm32f407__platform_a36fa8c792aa02d028c723bff7ead1535}{digitalWrite}}(uint16\_t pin, uint16\_t val) \textcolor{keyword}{final};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25      \textcolor{keywordtype}{int} \mbox{\hyperlink{classufl__stm32f407__platform_a2eb6783f531440d7325fa57deaa254a3}{digitalRead}}(uint16\_t pin) \textcolor{keyword}{final};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{classufl__stm32f407__platform_a1040dc69879dc3a4dadd49d67c6ea6c8}{millis}}() final;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{classufl__stm32f407__platform_add043a67a849ed1ba62b1f4957e611ea}{micros}}() final;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31      \textcolor{keywordtype}{void} \mbox{\hyperlink{classufl__stm32f407__platform_a0afbcb9880ba0c50f601650391978e56}{delay}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} ms) final;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33      \textcolor{keywordtype}{void} \mbox{\hyperlink{classufl__stm32f407__platform_a4d277fdaaee3220f6ecc5c873475d7b2}{delayMicroseconds}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} us) final;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* INC\_UFL\_STM32F407\_PLATFORM\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

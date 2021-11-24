@@ -1,0 +1,114 @@
+\hypertarget{_liquid_crystal_8h_source}{}\doxysection{Liquid\+Crystal.\+h}
+\mbox{\hyperlink{_liquid_crystal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LiquidCrystal\_h}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LiquidCrystal\_h}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../Firmwares/ufl\_stm32f407\_platform.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cinttypes>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../Firmwares/Print.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{comment}{// commands}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define LCD\_CLEARDISPLAY 0x01}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define LCD\_RETURNHOME 0x02}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define LCD\_ENTRYMODESET 0x04}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define LCD\_DISPLAYCONTROL 0x08}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define LCD\_CURSORSHIFT 0x10}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define LCD\_FUNCTIONSET 0x20}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define LCD\_SETCGRAMADDR 0x40}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define LCD\_SETDDRAMADDR 0x80}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{// flags for display entry mode}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define LCD\_ENTRYRIGHT 0x00}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define LCD\_ENTRYLEFT 0x02}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define LCD\_ENTRYSHIFTINCREMENT 0x01}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define LCD\_ENTRYSHIFTDECREMENT 0x00}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{comment}{// flags for display on/off control}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define LCD\_DISPLAYON 0x04}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define LCD\_DISPLAYOFF 0x00}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define LCD\_CURSORON 0x02}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define LCD\_CURSOROFF 0x00}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define LCD\_BLINKON 0x01}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define LCD\_BLINKOFF 0x00}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{comment}{// flags for display/cursor shift}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define LCD\_DISPLAYMOVE 0x08}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define LCD\_CURSORMOVE 0x00}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define LCD\_MOVERIGHT 0x04}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define LCD\_MOVELEFT 0x00}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{comment}{// flags for function set}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define LCD\_8BITMODE 0x10}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define LCD\_4BITMODE 0x00}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define LCD\_2LINE 0x08}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define LCD\_1LINE 0x00}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define LCD\_5x10DOTS 0x04}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define LCD\_5x8DOTS 0x00}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{class }\mbox{\hyperlink{class_liquid_crystal}{LiquidCrystal}} : \textcolor{keyword}{public} ufl\_stm32f407\_platform, \textcolor{keyword}{public} Print \{}
+\DoxyCodeLine{47 \textcolor{keyword}{public}:}
+\DoxyCodeLine{48   \mbox{\hyperlink{class_liquid_crystal_a7963096e20a15100ab7fe51e8c1d29cf}{LiquidCrystal}}(uint16\_t rs, uint16\_t enable,}
+\DoxyCodeLine{49         uint16\_t d0, uint16\_t d1, uint16\_t d2, uint16\_t d3,}
+\DoxyCodeLine{50         uint16\_t d4, uint16\_t d5, uint16\_t d6, uint16\_t d7);}
+\DoxyCodeLine{51   \mbox{\hyperlink{class_liquid_crystal_aac3384924960ad20e65628565121e774}{LiquidCrystal}}(uint16\_t rs, uint16\_t rw, uint16\_t enable,}
+\DoxyCodeLine{52         uint16\_t d0, uint16\_t d1, uint16\_t d2, uint16\_t d3,}
+\DoxyCodeLine{53         uint16\_t d4, uint16\_t d5, uint16\_t d6, uint16\_t d7);}
+\DoxyCodeLine{54   \mbox{\hyperlink{class_liquid_crystal_a81948075ffab885ad2870162ec32d1ab}{LiquidCrystal}}(uint16\_t rs, uint16\_t rw, uint16\_t enable,}
+\DoxyCodeLine{55         uint16\_t d0, uint16\_t d1, uint16\_t d2, uint16\_t d3);}
+\DoxyCodeLine{56   \mbox{\hyperlink{class_liquid_crystal_a35ec9c75f523bba7163ad948a36f2465}{LiquidCrystal}}(uint16\_t rs, uint16\_t enable,}
+\DoxyCodeLine{57         uint16\_t d0, uint16\_t d1, uint16\_t d2, uint16\_t d3);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a281917c3c63af5c6896cb985e1155835}{init}}(uint16\_t fourbitmode, uint16\_t rs, uint16\_t rw, uint16\_t enable,}
+\DoxyCodeLine{60         uint16\_t d0, uint16\_t d1, uint16\_t d2, uint16\_t d3,}
+\DoxyCodeLine{61         uint16\_t d4, uint16\_t d5, uint16\_t d6, uint16\_t d7);}
+\DoxyCodeLine{62     }
+\DoxyCodeLine{63   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a44f945b07fb637c593e4d331e2b3f1b4}{begin}}(uint16\_t cols, uint16\_t rows, uint16\_t charsize = \mbox{\hyperlink{_liquid_crystal_8h_a9ef57e724c1b846dae0f531aff6fb464}{LCD\_5x8DOTS}});}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a8c2ee5196df87db7a3541f947135df13}{clear}}();}
+\DoxyCodeLine{66   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_aeabdf852b59e8155ef7df8db008c8d55}{home}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a85bbecc7cebc6e44972b191fbd175c23}{noDisplay}}();}
+\DoxyCodeLine{69   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a81bb76db1b82a8e55a07de6cb0a262b2}{display}}();}
+\DoxyCodeLine{70   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a05d4fa9025c421a833081090cb8039ac}{noBlink}}();}
+\DoxyCodeLine{71   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a3eadecb726b55a400f08d5e520f9cb9b}{blink}}();}
+\DoxyCodeLine{72   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_ab2ec8e89fe805e3e0e842e53a45aaeae}{noCursor}}();}
+\DoxyCodeLine{73   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a31f590023c937a6faabdfc50dfb18717}{cursor}}();}
+\DoxyCodeLine{74   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_afa91cf6e72bfc07537a3ad79f4864f29}{scrollDisplayLeft}}();}
+\DoxyCodeLine{75   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a271b5da2427321ae09da303b83567e90}{scrollDisplayRight}}();}
+\DoxyCodeLine{76   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_ae489f88dfac1680cbe61caf355026874}{leftToRight}}();}
+\DoxyCodeLine{77   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a19018898bae01eb687442258cc60ffc9}{rightToLeft}}();}
+\DoxyCodeLine{78   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_aa5ac50d6a2053eb1c06abe62614131b4}{autoscroll}}();}
+\DoxyCodeLine{79   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_ad4c142852e49b6fc2284a0fbc234172c}{noAutoscroll}}();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_aff7f790aecc51bc80c54db12dbd38129}{setRowOffsets}}(\textcolor{keywordtype}{int} row1, \textcolor{keywordtype}{int} row2, \textcolor{keywordtype}{int} row3, \textcolor{keywordtype}{int} row4);}
+\DoxyCodeLine{82   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_a55b76344bc38d15647afc8074d1ac16d}{createChar}}(uint16\_t, uint16\_t[]);}
+\DoxyCodeLine{83   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_afcafa8fad940a1aae79310e72610a242}{setCursor}}(uint16\_t, uint16\_t); }
+\DoxyCodeLine{84   \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_liquid_crystal_aa15e8ced2dddec7a65e5e0f06e97ddcf}{write}}(uint8\_t);}
+\DoxyCodeLine{85   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liquid_crystal_afbe515ef9e2d559c5445639055292eaf}{command}}(uint16\_t);}
+\DoxyCodeLine{86   }
+\DoxyCodeLine{87   \textcolor{keyword}{using} Print::write;}
+\DoxyCodeLine{88 \textcolor{keyword}{private}:}
+\DoxyCodeLine{89   \textcolor{keywordtype}{void} send(uint16\_t, uint16\_t);}
+\DoxyCodeLine{90   \textcolor{keywordtype}{void} write4bits(uint16\_t);}
+\DoxyCodeLine{91   \textcolor{keywordtype}{void} write8bits(uint16\_t);}
+\DoxyCodeLine{92   \textcolor{keywordtype}{void} pulseEnable();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94   uint16\_t \_rs\_pin; \textcolor{comment}{// LOW: command.  HIGH: character.}}
+\DoxyCodeLine{95   uint16\_t \_rw\_pin; \textcolor{comment}{// LOW: write to LCD.  HIGH: read from LCD.}}
+\DoxyCodeLine{96   uint16\_t \_enable\_pin; \textcolor{comment}{// activated by a HIGH pulse.}}
+\DoxyCodeLine{97   uint16\_t \_data\_pins[8];}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99   uint16\_t \_displayfunction;}
+\DoxyCodeLine{100   uint16\_t \_displaycontrol;}
+\DoxyCodeLine{101   uint16\_t \_displaymode;}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103   uint16\_t \_initialized;}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105   uint16\_t \_numlines;}
+\DoxyCodeLine{106   uint16\_t \_row\_offsets[4];}
+\DoxyCodeLine{107 \};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,200 @@
+\hypertarget{main_8h}{}\doxysection{main.\+h File Reference}
+\label{main_8h}\index{main.h@{main.h}}
+
+
+\+: Header for main.\+c file. This file contains the common defines of the application.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+rcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+bus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+exti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+cortex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+pwr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+dma.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+tim.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+usart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+ll\+\_\+gpio.\+h\char`\"{}}\newline
+Include dependency graph for main.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{main_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8h_a84cf65c2b017bc8fe002c811705bc846}{LCD\+\_\+\+RS\+\_\+\+Pin}}~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+0
+\item 
+\#define \mbox{\hyperlink{main_8h_a7a7bf8fda04f0139622a654cc9ca5530}{LCD\+\_\+\+RS\+\_\+\+GPIO\+\_\+\+Port}}~GPIOC
+\item 
+\#define \mbox{\hyperlink{main_8h_a90ebda691ae137b8274861963ef0a456}{LCD\+\_\+\+ENABLE\+\_\+\+Pin}}~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+1
+\item 
+\#define \mbox{\hyperlink{main_8h_a69070dd6d1b092f5ffe1f5205d00ca63}{LCD\+\_\+\+ENABLE\+\_\+\+GPIO\+\_\+\+Port}}~GPIOC
+\item 
+\#define \mbox{\hyperlink{main_8h_abb2684e750191210c0e4e3929babcb0a}{LCD\+\_\+\+D4\+\_\+\+Pin}}~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+2
+\item 
+\#define \mbox{\hyperlink{main_8h_aa05fd750a9a62de2bdb8568cfdb09076}{LCD\+\_\+\+D4\+\_\+\+GPIO\+\_\+\+Port}}~GPIOC
+\item 
+\#define \mbox{\hyperlink{main_8h_ac87b3cda0ef2f915a686c40923b87348}{LCD\+\_\+\+D5\+\_\+\+Pin}}~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+3
+\item 
+\#define \mbox{\hyperlink{main_8h_a93df360fe1d36333db0665f3fa0bcf65}{LCD\+\_\+\+D5\+\_\+\+GPIO\+\_\+\+Port}}~GPIOC
+\item 
+\#define \mbox{\hyperlink{main_8h_adca1e6ee0f52cd22f8ca3b84d0800f98}{LCD\+\_\+\+D6\+\_\+\+Pin}}~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+4
+\item 
+\#define \mbox{\hyperlink{main_8h_aaabeecb0506ef73983dfb5b142285d93}{LCD\+\_\+\+D6\+\_\+\+GPIO\+\_\+\+Port}}~GPIOC
+\item 
+\#define \mbox{\hyperlink{main_8h_af9a02c31a2dc1c28e86cfdf505732029}{LCD\+\_\+\+D7\+\_\+\+Pin}}~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+5
+\item 
+\#define \mbox{\hyperlink{main_8h_ac297f9c095004eafd7756ca2b891d03a}{LCD\+\_\+\+D7\+\_\+\+GPIO\+\_\+\+Port}}~GPIOC
+\item 
+\#define \mbox{\hyperlink{main_8h_a5e97dcff77680602c86e44f23f5ffa1a}{NVIC\+\_\+\+PRIORITYGROUP\+\_\+0}}~((uint32\+\_\+t)0x00000007)
+\item 
+\#define \mbox{\hyperlink{main_8h_a702227137b010421c3a3b6434005a132}{NVIC\+\_\+\+PRIORITYGROUP\+\_\+1}}~((uint32\+\_\+t)0x00000006)
+\item 
+\#define \mbox{\hyperlink{main_8h_aa43a3fd37850c120ce567ab2743d11b4}{NVIC\+\_\+\+PRIORITYGROUP\+\_\+2}}~((uint32\+\_\+t)0x00000005)
+\item 
+\#define \mbox{\hyperlink{main_8h_a8ddb24962e6f0fc3273139d45d374b09}{NVIC\+\_\+\+PRIORITYGROUP\+\_\+3}}~((uint32\+\_\+t)0x00000004)
+\item 
+\#define \mbox{\hyperlink{main_8h_ae6eab9140204bc938255aa148e597c45}{NVIC\+\_\+\+PRIORITYGROUP\+\_\+4}}~((uint32\+\_\+t)0x00000003)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Header for main.\+c file. This file contains the common defines of the application. 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2021 STMicroelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under BSD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+BSD-\/3-\/\+Clause 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8h_aa05fd750a9a62de2bdb8568cfdb09076}\label{main_8h_aa05fd750a9a62de2bdb8568cfdb09076}} 
+\index{main.h@{main.h}!LCD\_D4\_GPIO\_Port@{LCD\_D4\_GPIO\_Port}}
+\index{LCD\_D4\_GPIO\_Port@{LCD\_D4\_GPIO\_Port}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D4\_GPIO\_Port}{LCD\_D4\_GPIO\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D4\+\_\+\+GPIO\+\_\+\+Port~GPIOC}
+
+\mbox{\Hypertarget{main_8h_abb2684e750191210c0e4e3929babcb0a}\label{main_8h_abb2684e750191210c0e4e3929babcb0a}} 
+\index{main.h@{main.h}!LCD\_D4\_Pin@{LCD\_D4\_Pin}}
+\index{LCD\_D4\_Pin@{LCD\_D4\_Pin}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D4\_Pin}{LCD\_D4\_Pin}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D4\+\_\+\+Pin~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+2}
+
+\mbox{\Hypertarget{main_8h_a93df360fe1d36333db0665f3fa0bcf65}\label{main_8h_a93df360fe1d36333db0665f3fa0bcf65}} 
+\index{main.h@{main.h}!LCD\_D5\_GPIO\_Port@{LCD\_D5\_GPIO\_Port}}
+\index{LCD\_D5\_GPIO\_Port@{LCD\_D5\_GPIO\_Port}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D5\_GPIO\_Port}{LCD\_D5\_GPIO\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D5\+\_\+\+GPIO\+\_\+\+Port~GPIOC}
+
+\mbox{\Hypertarget{main_8h_ac87b3cda0ef2f915a686c40923b87348}\label{main_8h_ac87b3cda0ef2f915a686c40923b87348}} 
+\index{main.h@{main.h}!LCD\_D5\_Pin@{LCD\_D5\_Pin}}
+\index{LCD\_D5\_Pin@{LCD\_D5\_Pin}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D5\_Pin}{LCD\_D5\_Pin}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D5\+\_\+\+Pin~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+3}
+
+\mbox{\Hypertarget{main_8h_aaabeecb0506ef73983dfb5b142285d93}\label{main_8h_aaabeecb0506ef73983dfb5b142285d93}} 
+\index{main.h@{main.h}!LCD\_D6\_GPIO\_Port@{LCD\_D6\_GPIO\_Port}}
+\index{LCD\_D6\_GPIO\_Port@{LCD\_D6\_GPIO\_Port}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D6\_GPIO\_Port}{LCD\_D6\_GPIO\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D6\+\_\+\+GPIO\+\_\+\+Port~GPIOC}
+
+\mbox{\Hypertarget{main_8h_adca1e6ee0f52cd22f8ca3b84d0800f98}\label{main_8h_adca1e6ee0f52cd22f8ca3b84d0800f98}} 
+\index{main.h@{main.h}!LCD\_D6\_Pin@{LCD\_D6\_Pin}}
+\index{LCD\_D6\_Pin@{LCD\_D6\_Pin}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D6\_Pin}{LCD\_D6\_Pin}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D6\+\_\+\+Pin~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+4}
+
+\mbox{\Hypertarget{main_8h_ac297f9c095004eafd7756ca2b891d03a}\label{main_8h_ac297f9c095004eafd7756ca2b891d03a}} 
+\index{main.h@{main.h}!LCD\_D7\_GPIO\_Port@{LCD\_D7\_GPIO\_Port}}
+\index{LCD\_D7\_GPIO\_Port@{LCD\_D7\_GPIO\_Port}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D7\_GPIO\_Port}{LCD\_D7\_GPIO\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D7\+\_\+\+GPIO\+\_\+\+Port~GPIOC}
+
+\mbox{\Hypertarget{main_8h_af9a02c31a2dc1c28e86cfdf505732029}\label{main_8h_af9a02c31a2dc1c28e86cfdf505732029}} 
+\index{main.h@{main.h}!LCD\_D7\_Pin@{LCD\_D7\_Pin}}
+\index{LCD\_D7\_Pin@{LCD\_D7\_Pin}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_D7\_Pin}{LCD\_D7\_Pin}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+D7\+\_\+\+Pin~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+5}
+
+\mbox{\Hypertarget{main_8h_a69070dd6d1b092f5ffe1f5205d00ca63}\label{main_8h_a69070dd6d1b092f5ffe1f5205d00ca63}} 
+\index{main.h@{main.h}!LCD\_ENABLE\_GPIO\_Port@{LCD\_ENABLE\_GPIO\_Port}}
+\index{LCD\_ENABLE\_GPIO\_Port@{LCD\_ENABLE\_GPIO\_Port}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_ENABLE\_GPIO\_Port}{LCD\_ENABLE\_GPIO\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+ENABLE\+\_\+\+GPIO\+\_\+\+Port~GPIOC}
+
+\mbox{\Hypertarget{main_8h_a90ebda691ae137b8274861963ef0a456}\label{main_8h_a90ebda691ae137b8274861963ef0a456}} 
+\index{main.h@{main.h}!LCD\_ENABLE\_Pin@{LCD\_ENABLE\_Pin}}
+\index{LCD\_ENABLE\_Pin@{LCD\_ENABLE\_Pin}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_ENABLE\_Pin}{LCD\_ENABLE\_Pin}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+ENABLE\+\_\+\+Pin~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+1}
+
+\mbox{\Hypertarget{main_8h_a7a7bf8fda04f0139622a654cc9ca5530}\label{main_8h_a7a7bf8fda04f0139622a654cc9ca5530}} 
+\index{main.h@{main.h}!LCD\_RS\_GPIO\_Port@{LCD\_RS\_GPIO\_Port}}
+\index{LCD\_RS\_GPIO\_Port@{LCD\_RS\_GPIO\_Port}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_RS\_GPIO\_Port}{LCD\_RS\_GPIO\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+RS\+\_\+\+GPIO\+\_\+\+Port~GPIOC}
+
+\mbox{\Hypertarget{main_8h_a84cf65c2b017bc8fe002c811705bc846}\label{main_8h_a84cf65c2b017bc8fe002c811705bc846}} 
+\index{main.h@{main.h}!LCD\_RS\_Pin@{LCD\_RS\_Pin}}
+\index{LCD\_RS\_Pin@{LCD\_RS\_Pin}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_RS\_Pin}{LCD\_RS\_Pin}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+RS\+\_\+\+Pin~LL\+\_\+\+GPIO\+\_\+\+PIN\+\_\+0}
+
+\mbox{\Hypertarget{main_8h_a5e97dcff77680602c86e44f23f5ffa1a}\label{main_8h_a5e97dcff77680602c86e44f23f5ffa1a}} 
+\index{main.h@{main.h}!NVIC\_PRIORITYGROUP\_0@{NVIC\_PRIORITYGROUP\_0}}
+\index{NVIC\_PRIORITYGROUP\_0@{NVIC\_PRIORITYGROUP\_0}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_PRIORITYGROUP\_0}{NVIC\_PRIORITYGROUP\_0}}
+{\footnotesize\ttfamily \#define NVIC\+\_\+\+PRIORITYGROUP\+\_\+0~((uint32\+\_\+t)0x00000007)}
+
+0 bit for pre-\/emption priority, 4 bits for subpriority \mbox{\Hypertarget{main_8h_a702227137b010421c3a3b6434005a132}\label{main_8h_a702227137b010421c3a3b6434005a132}} 
+\index{main.h@{main.h}!NVIC\_PRIORITYGROUP\_1@{NVIC\_PRIORITYGROUP\_1}}
+\index{NVIC\_PRIORITYGROUP\_1@{NVIC\_PRIORITYGROUP\_1}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_PRIORITYGROUP\_1}{NVIC\_PRIORITYGROUP\_1}}
+{\footnotesize\ttfamily \#define NVIC\+\_\+\+PRIORITYGROUP\+\_\+1~((uint32\+\_\+t)0x00000006)}
+
+1 bit for pre-\/emption priority, 3 bits for subpriority \mbox{\Hypertarget{main_8h_aa43a3fd37850c120ce567ab2743d11b4}\label{main_8h_aa43a3fd37850c120ce567ab2743d11b4}} 
+\index{main.h@{main.h}!NVIC\_PRIORITYGROUP\_2@{NVIC\_PRIORITYGROUP\_2}}
+\index{NVIC\_PRIORITYGROUP\_2@{NVIC\_PRIORITYGROUP\_2}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_PRIORITYGROUP\_2}{NVIC\_PRIORITYGROUP\_2}}
+{\footnotesize\ttfamily \#define NVIC\+\_\+\+PRIORITYGROUP\+\_\+2~((uint32\+\_\+t)0x00000005)}
+
+2 bits for pre-\/emption priority, 2 bits for subpriority \mbox{\Hypertarget{main_8h_a8ddb24962e6f0fc3273139d45d374b09}\label{main_8h_a8ddb24962e6f0fc3273139d45d374b09}} 
+\index{main.h@{main.h}!NVIC\_PRIORITYGROUP\_3@{NVIC\_PRIORITYGROUP\_3}}
+\index{NVIC\_PRIORITYGROUP\_3@{NVIC\_PRIORITYGROUP\_3}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_PRIORITYGROUP\_3}{NVIC\_PRIORITYGROUP\_3}}
+{\footnotesize\ttfamily \#define NVIC\+\_\+\+PRIORITYGROUP\+\_\+3~((uint32\+\_\+t)0x00000004)}
+
+3 bits for pre-\/emption priority, 1 bit for subpriority \mbox{\Hypertarget{main_8h_ae6eab9140204bc938255aa148e597c45}\label{main_8h_ae6eab9140204bc938255aa148e597c45}} 
+\index{main.h@{main.h}!NVIC\_PRIORITYGROUP\_4@{NVIC\_PRIORITYGROUP\_4}}
+\index{NVIC\_PRIORITYGROUP\_4@{NVIC\_PRIORITYGROUP\_4}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_PRIORITYGROUP\_4}{NVIC\_PRIORITYGROUP\_4}}
+{\footnotesize\ttfamily \#define NVIC\+\_\+\+PRIORITYGROUP\+\_\+4~((uint32\+\_\+t)0x00000003)}
+
+4 bits for pre-\/emption priority, 0 bit for subpriority 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8h_a1730ffe1e560465665eb47d9264826f9}\label{main_8h_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.h@{main.h}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

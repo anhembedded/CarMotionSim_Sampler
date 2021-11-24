@@ -1,0 +1,196 @@
+\hypertarget{_u_f_l___u_s_a_r_t_8hpp_source}{}\doxysection{UFL\+\_\+\+USART.\+hpp}
+\mbox{\hyperlink{_u_f_l___u_s_a_r_t_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_UFL\_USART\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_UFL\_USART\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}main\_cpp.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6}{UFL\_USART6}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keyword}{const} \textcolor{keyword}{decltype}(USART6) \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}} = USART6;}
+\DoxyCodeLine{10     \textcolor{keyword}{typedef} uint8\_t \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a7a52a6bb051520108030c1528e53fc62}{data\_T}};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aa105b03462fa17efc19fd912ea03560b}{initialize}}();}
+\DoxyCodeLine{13     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad8a7db03bbcef394d04dd4bb422c9e90}{enable}}();}
+\DoxyCodeLine{14     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aa9c6cd2d3864bff7f45b9c3e383b8bee}{disable}}();}
+\DoxyCodeLine{15     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a84f4e297d2783a9027e918522b83c526}{enableGPIOClock}}();}
+\DoxyCodeLine{16     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a61c182fc0bba0b4b05b46b17017aeb1b}{enableTransmitter}}();}
+\DoxyCodeLine{17     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aeea4dd466ffc84386c7cdb211b2b7fb4}{transmitData}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a7a52a6bb051520108030c1528e53fc62}{data\_T}} data);}
+\DoxyCodeLine{18     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a38d8d04f495613b3f2dca99eccd74152}{enablePerihClock}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21     \textcolor{keyword}{inline} \textcolor{keyword}{namespace }flag\_IT}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{23         \textcolor{comment}{/*Note flag\_IT Abstraction layer include 4 routines}}
+\DoxyCodeLine{24 \textcolor{comment}{          isSet, clear, enableIT, clearPendingBit.}}
+\DoxyCodeLine{25 \textcolor{comment}{         */}}
+\DoxyCodeLine{26         \textcolor{keyword}{namespace }TC    }
+\DoxyCodeLine{27         \{}
+\DoxyCodeLine{28             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_ac99912551bf7f96788ba333575c42c23}{isSet}}();}
+\DoxyCodeLine{29             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_adaff72365e22406208bb99ab051ae34d}{clear}}();}
+\DoxyCodeLine{30             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_af2eff67e422c54f49905a270ea2f18af}{enableIT}}();}
+\DoxyCodeLine{31             [[deprecated(\textcolor{stringliteral}{"{}this flag no pending"{}})]]}
+\DoxyCodeLine{32             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_ab5a8cdcee7ab986afe80bfe4d2f4fe6a}{clearPendingBit}}();}
+\DoxyCodeLine{33         \}}
+\DoxyCodeLine{34         \textcolor{keyword}{namespace }TXE }
+\DoxyCodeLine{35         \{}
+\DoxyCodeLine{36             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_a01f35175b40e6dd99a0d83aa7ccb4be9}{isSet}}();}
+\DoxyCodeLine{37             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_ac6bfddf859c170a86d26880952093811}{clear}}();}
+\DoxyCodeLine{38             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_a68304490d852195115bcc3bbf0e14539}{enableIT}}();}
+\DoxyCodeLine{39             [[deprecated(\textcolor{stringliteral}{"{}this flag no pending"{}})]]}
+\DoxyCodeLine{40             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_aaacf26c8c0c33c1f22edb351ec196f0c}{clearPendingBit}}();}
+\DoxyCodeLine{41         \}}
+\DoxyCodeLine{42         \textcolor{keyword}{namespace }IDLE }
+\DoxyCodeLine{43         \{}
+\DoxyCodeLine{44             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_a1a8a136ebd40b408838419e8e28fc5dd}{isSet}}() \{}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{return} LL\_USART\_IsActiveFlag\_IDLE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{46             \}}
+\DoxyCodeLine{47             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_a40f76ee5bd80f83f9727b7ba4f90cde0}{clear}}()\{}
+\DoxyCodeLine{48                 LL\_USART\_ClearFlag\_IDLE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{49             \};}
+\DoxyCodeLine{50             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_af2f0a09e8e0bf38b4a1218225bfdc57a}{enableIT}}()\{}
+\DoxyCodeLine{51                 LL\_USART\_EnableIT\_IDLE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{52             \};}
+\DoxyCodeLine{53             [[deprecated(\textcolor{stringliteral}{"{}this flag no pending"{}})]]}
+\DoxyCodeLine{54             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_i_d_l_e_a0fa00d5eeadcdfb23032ac7f59079d62}{clearPendingBit}}()\{}
+\DoxyCodeLine{55             \};}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57         \textcolor{keyword}{namespace }ORE }
+\DoxyCodeLine{58         \{}
+\DoxyCodeLine{59             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a146a441cfabcfcbffb79f349b5cb5e67}{isSet}}() \{}
+\DoxyCodeLine{60                 \textcolor{keywordflow}{return} LL\_USART\_IsActiveFlag\_ORE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{61             \}}
+\DoxyCodeLine{62             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a84f0c5ad5c1ef7770b0f1d0b3a9012e6}{clear}}()\{}
+\DoxyCodeLine{63                 LL\_USART\_ClearFlag\_ORE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{64             \};}
+\DoxyCodeLine{65             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a9c6ddf376b4f6dee4f37ec7ce6d2ffed}{enableIT}}()\{}
+\DoxyCodeLine{66                 LL\_USART\_EnableIT\_RXNE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{67             \};}
+\DoxyCodeLine{68             [[deprecated(\textcolor{stringliteral}{"{}this flag no pending"{}})]]}
+\DoxyCodeLine{69             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_o_r_e_a81e0775b7cbb22d685909c011b2b840c}{clearPendingBit}}()\{}
+\DoxyCodeLine{70             \};}
+\DoxyCodeLine{71         \}}
+\DoxyCodeLine{72         \textcolor{keyword}{namespace }RXNE }
+\DoxyCodeLine{73         \{}
+\DoxyCodeLine{74             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_aa91ffca6d09c8fe558b12df674d94f15}{isSet}}() \{}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{return} LL\_USART\_IsActiveFlag\_RXNE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{76             \}}
+\DoxyCodeLine{77             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_aee0fb9d84fc3efdcfa66bbe8b5452116}{clear}}()\{}
+\DoxyCodeLine{78                 LL\_USART\_ClearFlag\_RXNE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{79             \};}
+\DoxyCodeLine{80             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_a62bad3ad09bdb98e8f8ca19fe5273a3f}{enableIT}}()\{}
+\DoxyCodeLine{81                 LL\_USART\_EnableIT\_RXNE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{82             \};}
+\DoxyCodeLine{83             [[deprecated(\textcolor{stringliteral}{"{}this flag no pending"{}})]]}
+\DoxyCodeLine{84             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_r_x_n_e_abe8c8b0e6ba5c5cd8a22c07e123ec952}{clearPendingBit}}()\{}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86             \};}
+\DoxyCodeLine{87         \}}
+\DoxyCodeLine{88         \textcolor{keyword}{namespace }PE }
+\DoxyCodeLine{89         \{}
+\DoxyCodeLine{90             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_a66d3b146f587bf3e21a55c5e88f3ceac}{isSet}}() \{}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{return} LL\_USART\_IsActiveFlag\_PE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{92             \}}
+\DoxyCodeLine{93             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_af9a31c2806b3056ab2507ff7902ca536}{clear}}()\{}
+\DoxyCodeLine{94                 LL\_USART\_ClearFlag\_PE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{95             \};}
+\DoxyCodeLine{96             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_ad49f66142f468faa41ac07d431fbec4e}{enableIT}}()\{}
+\DoxyCodeLine{97                 LL\_USART\_EnableIT\_PE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{98             \};}
+\DoxyCodeLine{99             [[deprecated(\textcolor{stringliteral}{"{}this flag no pending"{}})]]}
+\DoxyCodeLine{100             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_p_e_a6433766d7f17ce6fb890424623f583d0}{clearPendingBit}}()\{}
+\DoxyCodeLine{101             \};}
+\DoxyCodeLine{102         \}}
+\DoxyCodeLine{103     \}}
+\DoxyCodeLine{104 \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a84f4e297d2783a9027e918522b83c526}{UFL\_USART6::enableGPIOClock}}()}
+\DoxyCodeLine{107 \{}
+\DoxyCodeLine{108     LL\_AHB1\_GRP1\_EnableClock(LL\_AHB1\_GRP1\_PERIPH\_GPIOC);}
+\DoxyCodeLine{109 \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a38d8d04f495613b3f2dca99eccd74152}{UFL\_USART6::enablePerihClock}}()}
+\DoxyCodeLine{112 \{}
+\DoxyCodeLine{113     LL\_APB2\_GRP1\_EnableClock(LL\_APB2\_GRP1\_PERIPH\_USART6);}
+\DoxyCodeLine{114 \}}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aa105b03462fa17efc19fd912ea03560b}{UFL\_USART6::initialize}}()}
+\DoxyCodeLine{117 \{}
+\DoxyCodeLine{118     LL\_USART\_InitTypeDef USART\_InitStruct = \{0\};}
+\DoxyCodeLine{119     LL\_GPIO\_InitTypeDef GPIO\_InitStruct = \{0\};}
+\DoxyCodeLine{120     \textcolor{comment}{/* Peripheral clock enable */}}
+\DoxyCodeLine{121     LL\_APB2\_GRP1\_EnableClock(LL\_APB2\_GRP1\_PERIPH\_USART6);}
+\DoxyCodeLine{122     LL\_AHB1\_GRP1\_EnableClock(LL\_AHB1\_GRP1\_PERIPH\_GPIOC);}
+\DoxyCodeLine{127     GPIO\_InitStruct.Pin = LL\_GPIO\_PIN\_6|LL\_GPIO\_PIN\_7;}
+\DoxyCodeLine{128     GPIO\_InitStruct.Mode = LL\_GPIO\_MODE\_ALTERNATE;}
+\DoxyCodeLine{129     GPIO\_InitStruct.Speed = LL\_GPIO\_SPEED\_FREQ\_VERY\_HIGH;}
+\DoxyCodeLine{130     GPIO\_InitStruct.OutputType = LL\_GPIO\_OUTPUT\_PUSHPULL;}
+\DoxyCodeLine{131     GPIO\_InitStruct.Pull = LL\_GPIO\_PULL\_NO;}
+\DoxyCodeLine{132     GPIO\_InitStruct.Alternate = LL\_GPIO\_AF\_8;}
+\DoxyCodeLine{133     LL\_GPIO\_Init(GPIOC, \&GPIO\_InitStruct);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135     USART\_InitStruct.BaudRate = 115200;}
+\DoxyCodeLine{136     USART\_InitStruct.DataWidth = LL\_USART\_DATAWIDTH\_8B;}
+\DoxyCodeLine{137     USART\_InitStruct.StopBits = LL\_USART\_STOPBITS\_1;}
+\DoxyCodeLine{138     USART\_InitStruct.Parity = LL\_USART\_PARITY\_EVEN;}
+\DoxyCodeLine{139     USART\_InitStruct.TransferDirection = LL\_USART\_DIRECTION\_TX\_RX;}
+\DoxyCodeLine{140     USART\_InitStruct.HardwareFlowControl = LL\_USART\_HWCONTROL\_NONE;}
+\DoxyCodeLine{141     USART\_InitStruct.OverSampling = LL\_USART\_OVERSAMPLING\_16;}
+\DoxyCodeLine{142     LL\_USART\_Init(USART6, \&USART\_InitStruct);}
+\DoxyCodeLine{143     LL\_USART\_ConfigAsyncMode(USART6);}
+\DoxyCodeLine{144   \textcolor{comment}{//  LL\_USART\_Enable(USART6);}}
+\DoxyCodeLine{145    }
+\DoxyCodeLine{146   \textcolor{comment}{//  NVIC\_SetPriority(USART6\_IRQn, NVIC\_EncodePriority(NVIC\_GetPriorityGrouping(), 0, 0));}}
+\DoxyCodeLine{147   \textcolor{comment}{//  NVIC\_EnableIRQ(USART6\_IRQn);}}
+\DoxyCodeLine{148 \}}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad8a7db03bbcef394d04dd4bb422c9e90}{UFL\_USART6::enable}}()\{}
+\DoxyCodeLine{151     LL\_USART\_Enable(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{152 \}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a61c182fc0bba0b4b05b46b17017aeb1b}{UFL\_USART6::enableTransmitter}}() \{}
+\DoxyCodeLine{155     LL\_USART\_EnableDirectionTx(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{156 \}}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aeea4dd466ffc84386c7cdb211b2b7fb4}{UFL\_USART6::transmitData}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_a7a52a6bb051520108030c1528e53fc62}{data\_T}} data) \{}
+\DoxyCodeLine{159     LL\_USART\_TransmitData8(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}}, data);}
+\DoxyCodeLine{160 \}}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_aa9c6cd2d3864bff7f45b9c3e383b8bee}{UFL\_USART6::disable}}() \{}
+\DoxyCodeLine{163     LL\_USART\_Disable(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{164 \}}
+\DoxyCodeLine{165 \_\_STATIC\_FORCEINLINE \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_ac99912551bf7f96788ba333575c42c23}{UFL\_USART6::flag\_IT::TC::isSet}}()\{}
+\DoxyCodeLine{166     \textcolor{keywordflow}{return} LL\_USART\_IsActiveFlag\_TC(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{167 \}}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_adaff72365e22406208bb99ab051ae34d}{UFL\_USART6::flag\_IT::TC::clear}}() \{}
+\DoxyCodeLine{170     LL\_USART\_ClearFlag\_TC(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{171 \}}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_af2eff67e422c54f49905a270ea2f18af}{UFL\_USART6::flag\_IT::TC::enableIT}}() \{}
+\DoxyCodeLine{174     LL\_USART\_EnableIT\_TC(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{175 \}}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177  \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_c_ab5a8cdcee7ab986afe80bfe4d2f4fe6a}{UFL\_USART6::flag\_IT::TC::clearPendingBit}}()\{}
+\DoxyCodeLine{178     \textcolor{keywordflow}{return} UHAL\_ERROR::DEPRECATED;}
+\DoxyCodeLine{179 \}}
+\DoxyCodeLine{180 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_a01f35175b40e6dd99a0d83aa7ccb4be9}{UFL\_USART6::flag\_IT::TXE::isSet}}() \{}
+\DoxyCodeLine{181  \textcolor{keywordflow}{return} LL\_USART\_IsActiveFlag\_TXE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{182 \}}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_a68304490d852195115bcc3bbf0e14539}{UFL\_USART6::flag\_IT::TXE::enableIT}}() \{}
+\DoxyCodeLine{185     LL\_USART\_EnableIT\_TXE(\mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_ad5d10f83cda1ffda7d029acd27f7aefa}{thisInstance}});}
+\DoxyCodeLine{186 \}}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_aaacf26c8c0c33c1f22edb351ec196f0c}{UFL\_USART6::flag\_IT::TXE::clearPendingBit}}() \{}
+\DoxyCodeLine{189    \textcolor{keywordflow}{return} UHAL\_ERROR::DEPRECATED;}
+\DoxyCodeLine{190 \}}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192 \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___u_s_a_r_t6_1_1flag___i_t_1_1_t_x_e_ac6bfddf859c170a86d26880952093811}{UFL\_USART6::flag\_IT::TXE::clear}}() \{}
+\DoxyCodeLine{193    \textcolor{keywordflow}{return} UHAL\_ERROR::DEPRECATED;}
+\DoxyCodeLine{194 \}}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_UFL\_USART\_H\_\_}}
+
+\end{DoxyCode}

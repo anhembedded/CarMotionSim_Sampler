@@ -1,0 +1,110 @@
+\hypertarget{class_arduino}{}\doxysection{Arduino Class Reference}
+\label{class_arduino}\index{Arduino@{Arduino}}
+
+
+{\ttfamily \#include $<$Arduino.\+hpp$>$}
+
+
+
+Inheritance diagram for Arduino\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_arduino__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_arduino_ae32b580d9971dae56938706d722d0dfc}{pin\+Mode}} (uint16\+\_\+t pin, uint16\+\_\+t mode)=0
+\item 
+virtual void \mbox{\hyperlink{class_arduino_aeed2db45fe48f0b70a38b11ef4e509b4}{digital\+Write}} (uint16\+\_\+t pin, uint16\+\_\+t val)=0
+\item 
+virtual int \mbox{\hyperlink{class_arduino_af846a31d0f63858037f1655ce85e0807}{digital\+Read}} (uint16\+\_\+t pin)=0
+\item 
+virtual unsigned long \mbox{\hyperlink{class_arduino_a44b70c2850c5959780309ec374378cef}{millis}} ()=0
+\item 
+virtual unsigned long \mbox{\hyperlink{class_arduino_a6654e0faca6dda8136e8f55dc88b465a}{micros}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_arduino_a2448d75b7f8c013d14f70d86fccc5895}{delay}} (unsigned long ms)=0
+\item 
+virtual void \mbox{\hyperlink{class_arduino_ae06dde604227e9430966cc8b3fc06a3f}{delay\+Microseconds}} (unsigned int us)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arduino_a2448d75b7f8c013d14f70d86fccc5895}\label{class_arduino_a2448d75b7f8c013d14f70d86fccc5895}} 
+\index{Arduino@{Arduino}!delay@{delay}}
+\index{delay@{delay}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily virtual void Arduino\+::delay (\begin{DoxyParamCaption}\item[{unsigned long}]{ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_a0afbcb9880ba0c50f601650391978e56}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+\mbox{\Hypertarget{class_arduino_ae06dde604227e9430966cc8b3fc06a3f}\label{class_arduino_ae06dde604227e9430966cc8b3fc06a3f}} 
+\index{Arduino@{Arduino}!delayMicroseconds@{delayMicroseconds}}
+\index{delayMicroseconds@{delayMicroseconds}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{delayMicroseconds()}{delayMicroseconds()}}
+{\footnotesize\ttfamily virtual void Arduino\+::delay\+Microseconds (\begin{DoxyParamCaption}\item[{unsigned int}]{us }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_a4d277fdaaee3220f6ecc5c873475d7b2}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+\mbox{\Hypertarget{class_arduino_af846a31d0f63858037f1655ce85e0807}\label{class_arduino_af846a31d0f63858037f1655ce85e0807}} 
+\index{Arduino@{Arduino}!digitalRead@{digitalRead}}
+\index{digitalRead@{digitalRead}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{digitalRead()}{digitalRead()}}
+{\footnotesize\ttfamily virtual int Arduino\+::digital\+Read (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_a2eb6783f531440d7325fa57deaa254a3}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+\mbox{\Hypertarget{class_arduino_aeed2db45fe48f0b70a38b11ef4e509b4}\label{class_arduino_aeed2db45fe48f0b70a38b11ef4e509b4}} 
+\index{Arduino@{Arduino}!digitalWrite@{digitalWrite}}
+\index{digitalWrite@{digitalWrite}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{digitalWrite()}{digitalWrite()}}
+{\footnotesize\ttfamily virtual void Arduino\+::digital\+Write (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin,  }\item[{uint16\+\_\+t}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_a36fa8c792aa02d028c723bff7ead1535}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+\mbox{\Hypertarget{class_arduino_a6654e0faca6dda8136e8f55dc88b465a}\label{class_arduino_a6654e0faca6dda8136e8f55dc88b465a}} 
+\index{Arduino@{Arduino}!micros@{micros}}
+\index{micros@{micros}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{micros()}{micros()}}
+{\footnotesize\ttfamily virtual unsigned long Arduino\+::micros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_add043a67a849ed1ba62b1f4957e611ea}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+\mbox{\Hypertarget{class_arduino_a44b70c2850c5959780309ec374378cef}\label{class_arduino_a44b70c2850c5959780309ec374378cef}} 
+\index{Arduino@{Arduino}!millis@{millis}}
+\index{millis@{millis}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{millis()}{millis()}}
+{\footnotesize\ttfamily virtual unsigned long Arduino\+::millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_a1040dc69879dc3a4dadd49d67c6ea6c8}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+\mbox{\Hypertarget{class_arduino_ae32b580d9971dae56938706d722d0dfc}\label{class_arduino_ae32b580d9971dae56938706d722d0dfc}} 
+\index{Arduino@{Arduino}!pinMode@{pinMode}}
+\index{pinMode@{pinMode}!Arduino@{Arduino}}
+\doxysubsubsection{\texorpdfstring{pinMode()}{pinMode()}}
+{\footnotesize\ttfamily virtual void Arduino\+::pin\+Mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin,  }\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classufl__stm32f407__platform_ae8a50afa96c7abeb3b2ac97e266240c1}{ufl\+\_\+stm32f407\+\_\+platform}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_arduino_8hpp}{Arduino.\+hpp}}\end{DoxyCompactItemize}

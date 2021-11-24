@@ -1,0 +1,100 @@
+\hypertarget{_print_8h_source}{}\doxysection{Print.\+h}
+\mbox{\hyperlink{_print_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{  Print.h -\/ Base class that provides print() and println()}}
+\DoxyCodeLine{3 \textcolor{comment}{  Copyright (c) 2008 David A. Mellis.  All right reserved.}}
+\DoxyCodeLine{4 \textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{  This library is free software; you can redistribute it and/or}}
+\DoxyCodeLine{6 \textcolor{comment}{  modify it under the terms of the GNU Lesser General Public}}
+\DoxyCodeLine{7 \textcolor{comment}{  License as published by the Free Software Foundation; either}}
+\DoxyCodeLine{8 \textcolor{comment}{  version 2.1 of the License, or (at your option) any later version.}}
+\DoxyCodeLine{9 \textcolor{comment}{}}
+\DoxyCodeLine{10 \textcolor{comment}{  This library is distributed in the hope that it will be useful,}}
+\DoxyCodeLine{11 \textcolor{comment}{  but WITHOUT ANY WARRANTY; without even the implied warranty of}}
+\DoxyCodeLine{12 \textcolor{comment}{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU}}
+\DoxyCodeLine{13 \textcolor{comment}{  Lesser General Public License for more details.}}
+\DoxyCodeLine{14 \textcolor{comment}{}}
+\DoxyCodeLine{15 \textcolor{comment}{  You should have received a copy of the GNU Lesser General Public}}
+\DoxyCodeLine{16 \textcolor{comment}{  License along with this library; if not, write to the Free Software}}
+\DoxyCodeLine{17 \textcolor{comment}{  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-\/1301  USA}}
+\DoxyCodeLine{18 \textcolor{comment}{*/}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#ifndef Print\_h}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define Print\_h}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <cinttypes>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <cstdio>} \textcolor{comment}{// for size\_t}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{27 \textcolor{comment}{//\#include "{}WString"{}}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{using} std::string;}
+\DoxyCodeLine{30 \textcolor{keyword}{typedef} \textcolor{keywordtype}{string} \mbox{\hyperlink{_print_8h_a5ad9c3b780b61b0913ce6bccd6f7d058}{String}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define DEC 10}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define HEX 16}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define OCT 8}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#ifdef BIN }\textcolor{comment}{// Prevent warnings if BIN is previously defined in "{}iotnx4.h"{} or similar}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#undef BIN}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define BIN 2}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{class_print}{Print}}}
+\DoxyCodeLine{42 \{}
+\DoxyCodeLine{43   \textcolor{keyword}{private}:}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} write\_error;}
+\DoxyCodeLine{45     \textcolor{keywordtype}{size\_t} printNumber(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}, uint8\_t);}
+\DoxyCodeLine{46     \textcolor{keywordtype}{size\_t} printFloat(\textcolor{keywordtype}{double}, uint8\_t);}
+\DoxyCodeLine{47   \textcolor{keyword}{protected}:}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_print_a46656410e23c0ec14d7a01b38b3b6f00}{setWriteError}}(\textcolor{keywordtype}{int} err = 1) \{ write\_error = err; \}}
+\DoxyCodeLine{49   \textcolor{keyword}{public}:}
+\DoxyCodeLine{50     \mbox{\hyperlink{class_print_a1b9fe938883bb7b4bce8fba012dab112}{Print}}() : write\_error(0) \{\}}
+\DoxyCodeLine{51   }
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_print_a88a4a829fb5d589efb43955ad0cbddcc}{getWriteError}}() \{ \textcolor{keywordflow}{return} write\_error; \}}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_print_aec9ecf84cc6d9087a650def3cefc459e}{clearWriteError}}() \{ \mbox{\hyperlink{class_print_a46656410e23c0ec14d7a01b38b3b6f00}{setWriteError}}(0); \}}
+\DoxyCodeLine{54     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a5be30d49adae2406a270c29ba9a3e0a3}{write}}(uint8\_t) = 0;}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a5b40e0e9cab1f2fe5bb0cb22ffe5adda}{write}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *str) \{}
+\DoxyCodeLine{57       \textcolor{keywordflow}{if} (str == NULL) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{58       \textcolor{keywordflow}{return} \mbox{\hyperlink{class_print_a5be30d49adae2406a270c29ba9a3e0a3}{write}}((\textcolor{keyword}{const} uint8\_t *)str, strlen(str));}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a88864e109589a5be9b0f5ba1327f8421}{write}}(\textcolor{keyword}{const} uint8\_t *buffer, \textcolor{keywordtype}{size\_t} size);}
+\DoxyCodeLine{61     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_abfdd93a61c4b95a3ba41680188505e73}{write}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *buffer, \textcolor{keywordtype}{size\_t} size) \{}
+\DoxyCodeLine{62       \textcolor{keywordflow}{return} \mbox{\hyperlink{class_print_a5be30d49adae2406a270c29ba9a3e0a3}{write}}((\textcolor{keyword}{const} uint8\_t *)buffer, size);}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{comment}{// default to zero, meaning "{}a single write may block"{}}}
+\DoxyCodeLine{66     \textcolor{comment}{// should be overriden by subclasses with buffering}}
+\DoxyCodeLine{67     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_print_ae278602698f895c25820f18da4e765be}{availableForWrite}}() \{ \textcolor{keywordflow}{return} 0; \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a157007ca7ea8334ba7eb4bc705740216}{print}}(\textcolor{keyword}{const} \mbox{\hyperlink{_print_8h_a5ad9c3b780b61b0913ce6bccd6f7d058}{String}} \&);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_acfe80773011eb17dfb52c2fba517a093}{print}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}[]);}
+\DoxyCodeLine{71     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a1e411d07a8ffec5faf7ce485bac0f029}{print}}(\textcolor{keywordtype}{char});}
+\DoxyCodeLine{72     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a97bd44df9222fa4a51a1266fab8d3bc1}{print}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{73     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a32cb3cf32d701c797b2b2d1080052dfe}{print}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{74     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a87275de35583868a370f43ce1c887750}{print}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{75     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_ab1fb2a2384c7b9f628943f5046e7d1c1}{print}}(\textcolor{keywordtype}{long}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{76     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a26a40be7a557c0bc391a15dce9f06954}{print}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{77     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_ae8b4c025786c820afe0a90aeea01c9c5}{print}}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{int} = 2);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_afd6cc6e2c1163f94c60855ad233899bd}{println}}(\textcolor{keyword}{const} \mbox{\hyperlink{_print_8h_a5ad9c3b780b61b0913ce6bccd6f7d058}{String}} \&s);}
+\DoxyCodeLine{82     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_ad337ce3f7977411b7d34d47a51e5737e}{println}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}[]);}
+\DoxyCodeLine{83     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a554896a71162f967b5794401239d7a01}{println}}(\textcolor{keywordtype}{char});}
+\DoxyCodeLine{84     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_ac9afe80f50f0118d735295aec7727e50}{println}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{85     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a738c88471cfb8eac7c8a804699971413}{println}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{86     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_ac87eed1fcb78641169ba2244278c899e}{println}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{87     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a833fbec3ceba92e3ec95f51e026e4569}{println}}(\textcolor{keywordtype}{long}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{88     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_aebee3c33ee5d8f10b6f378d5273742d0}{println}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}, \textcolor{keywordtype}{int} = \mbox{\hyperlink{_print_8h_afe38ec6126e35e40049e27fdf4586ba5}{DEC}});}
+\DoxyCodeLine{89     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a56e976b079361b6021ef7c2bedb397a2}{println}}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{int} = 2);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_print_a169b128f9e22f0c15883768f580541a2}{println}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_print_add7f8450dfdc7f94eeec685f220573f7}{flush}}() \{ \textcolor{comment}{/* Empty implementation for backward compatibility */} \}}
+\DoxyCodeLine{93 \};}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

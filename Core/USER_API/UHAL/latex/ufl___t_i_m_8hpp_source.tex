@@ -1,0 +1,81 @@
+\hypertarget{ufl___t_i_m_8hpp_source}{}\doxysection{ufl\+\_\+\+TIM.\+hpp}
+\mbox{\hyperlink{ufl___t_i_m_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef CARMOTIONSIM\_SAMPLER\_UFL\_TIM\_HPP}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define CARMOTIONSIM\_SAMPLER\_UFL\_TIM\_HPP}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}main\_cpp.hpp"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ufl__clk_8hpp}{ufl\_clk.hpp}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{typedef} uint16\_t \mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\_T}};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_u_f_l___t_i_m7}{UFL\_TIM7}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{22     \textcolor{keyword}{constexpr} \textcolor{keyword}{auto}  \mbox{\hyperlink{namespace_u_f_l___t_i_m7_ab1a7bdbe8a672214febb1e0c5672524d}{thisTimerClk}} = \mbox{\hyperlink{namespaceclk_a373e41c2d5794a4eba3898300a4739b3}{clk::APB1Timer}};}
+\DoxyCodeLine{23     \textcolor{keyword}{constexpr} \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_acafc127a21eb6986f6f49e865070b19b}{timerMaxValue}} = UINT16\_MAX;}
+\DoxyCodeLine{24     \textcolor{comment}{// thisInstance = TIM7;}}
+\DoxyCodeLine{25     \textcolor{keyword}{constexpr} \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a7251900082e0ac3348e1e0135ef5a380}{thisPeripheralClk}} = LL\_APB1\_GRP1\_PERIPH\_TIM7;}
+\DoxyCodeLine{26     \textcolor{keyword}{constexpr} \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_af8fdd3c306d63dd4d9f5197e159314e5}{interruptNumber}} = TIM7\_IRQn;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a304c3a0a193e93c5b20fae16ec7d090c}{initialize}}(\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\_T}} Prescaler, \mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\_T}} AutoReload);}
+\DoxyCodeLine{29     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a0072d3cbebcaa4745f1bc61b5324415e}{setPrescaler}}(\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\_T}} Prescaler);}
+\DoxyCodeLine{30     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a75bec9283ec7ce146045edeab38c1347}{setAutoReload}}(\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\_T}} AutoReload);}
+\DoxyCodeLine{31     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a1850cffc770199117be7d453d3dbd17e}{enableClk}}();}
+\DoxyCodeLine{32     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a8224509421075274c4998aa20cfbfcc4}{enableCounterClk}}();}
+\DoxyCodeLine{33     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a90ad14a19d79dbf47c1f96b9e3b612f1}{disableClk}}();}
+\DoxyCodeLine{34     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_aeed0ce9659a07f4dd122d57989691a5f}{enableCounting}}();}
+\DoxyCodeLine{35     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a6334de3f6f7a26a5e145b365d527f40a}{disableUpdateEvent}}();}
+\DoxyCodeLine{36     \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a93db8f5b064677fcfee9145d6a4a0aa4}{updateEvent}}();}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38     \textcolor{keyword}{namespace }flag\_interrupt}
+\DoxyCodeLine{39     \{}
+\DoxyCodeLine{40         \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_a175321606503cb3cf49b4c4701f3204d}{enableUpdateInterrupt}}();}
+\DoxyCodeLine{41         \textcolor{keyword}{namespace }UIF}
+\DoxyCodeLine{42         \{}
+\DoxyCodeLine{43             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_1_1_u_i_f_ac6f0cba85741b74d57ccf273fd74cdfe}{isSet}}();}
+\DoxyCodeLine{44             \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt_1_1_u_i_f_a099eb396777bb4e792f2e4342c59e3b5}{clear}}();}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_u_f_l___t_i_mx}{UFL\_TIMx}}}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{comment}{// definition}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a304c3a0a193e93c5b20fae16ec7d090c}{UFL\_TIM7::initialize}}(uint16\_t Prescaler = 500, uint16\_t Autoreload = 65535)}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     LL\_TIM\_InitTypeDef TIM\_InitStruct = \{0\};}
+\DoxyCodeLine{61     TIM\_InitStruct.Prescaler = Prescaler;}
+\DoxyCodeLine{62     TIM\_InitStruct.CounterMode = LL\_TIM\_COUNTERMODE\_UP;}
+\DoxyCodeLine{63     TIM\_InitStruct.Autoreload = Autoreload;}
+\DoxyCodeLine{64     LL\_TIM\_Init(TIM7, \&TIM\_InitStruct);}
+\DoxyCodeLine{65     LL\_TIM\_DisableARRPreload(TIM7);}
+\DoxyCodeLine{66     LL\_TIM\_SetTriggerOutput(TIM7, LL\_TIM\_TRGO\_RESET);}
+\DoxyCodeLine{67     LL\_TIM\_DisableMasterSlaveMode(TIM7);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a1850cffc770199117be7d453d3dbd17e}{UFL\_TIM7::enableClk}}()}
+\DoxyCodeLine{72 \{}
+\DoxyCodeLine{73     LL\_APB1\_GRP1\_EnableClock(LL\_APB1\_GRP1\_PERIPH\_TIM7);}
+\DoxyCodeLine{74 \}}
+\DoxyCodeLine{75 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a90ad14a19d79dbf47c1f96b9e3b612f1}{UFL\_TIM7::disableClk}}()}
+\DoxyCodeLine{76 \{}
+\DoxyCodeLine{77     LL\_APB1\_GRP1\_DisableClock(\mbox{\hyperlink{namespace_u_f_l___t_i_m7_a7251900082e0ac3348e1e0135ef5a380}{thisPeripheralClk}});}
+\DoxyCodeLine{78 \}}
+\DoxyCodeLine{79 \_\_SFI \textcolor{keyword}{auto} \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a8224509421075274c4998aa20cfbfcc4}{UFL\_TIM7::enableCounterClk}}()}
+\DoxyCodeLine{80 \{  }
+\DoxyCodeLine{81     SET\_BIT(TIM7-\/>CR1, TIM\_CR1\_CEN);}
+\DoxyCodeLine{82 \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CARMOTIONSIM\_SAMPLER\_UFL\_TIM\_HPP}}
+
+\end{DoxyCode}

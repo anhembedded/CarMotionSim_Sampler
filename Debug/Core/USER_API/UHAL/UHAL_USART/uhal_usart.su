@@ -1,0 +1,24 @@
+core_cm4.h:1676:26:uint32_t __NVIC_GetPriorityGrouping()	4	static
+core_cm4.h:1688:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+core_cm4.h:1816:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+core_cm4.h:1863:26:uint32_t NVIC_EncodePriority(uint32_t, uint32_t, uint32_t)	40	static
+stm32f4xx_ll_bus.h:1772:26:uint32_t LL_APB2_GRP1_IsEnabledClock(uint32_t)	16	static
+stm32f4xx_ll_usart.h:411:22:void LL_USART_Enable(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:447:22:void LL_USART_EnableDirectionRx(USART_TypeDef*)	40	static,ignoring_inline_asm
+stm32f4xx_ll_usart.h:469:22:void LL_USART_EnableDirectionTx(USART_TypeDef*)	40	static,ignoring_inline_asm
+stm32f4xx_ll_usart.h:1804:26:uint32_t LL_USART_IsActiveFlag_TC(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1815:26:uint32_t LL_USART_IsActiveFlag_TXE(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:2036:22:void LL_USART_EnableIT_RXNE(USART_TypeDef*)	40	static,ignoring_inline_asm
+stm32f4xx_ll_usart.h:2058:22:void LL_USART_EnableIT_TXE(USART_TypeDef*)	40	static,ignoring_inline_asm
+stm32f4xx_ll_usart.h:2427:22:void LL_USART_TransmitData8(USART_TypeDef*, uint8_t)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+uhal_usart.cpp:11:7:void UHAL_USART6::send(UHAL_USART6::data_T)	24	static
+uhal_usart.cpp:23:6:void UHAL_USART6::send(uint8_t*)	24	static
+uhal_usart.cpp:33:6:void UHAL_USART6::send(const string&)	40	static
+uhal_usart.cpp:48:6:void UHAL_USART6::send(const char*)	32	static
+uhal_usart.cpp:64:8:void UHAL_USART6::interruptTransInit()	16	static
+uhal_usart.cpp:73:6:void UHAL_USART6::interruptReceiveInit()	16	static
+stl_iterator.h:907:5:bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&) [with _Iterator = const char*; _Container = std::__cxx11::basic_string<char>]	24	static
+stl_iterator.h:827:7:__gnu_cxx::__normal_iterator<_Iterator, _Container>& __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator++() [with _Iterator = const char*; _Container = std::__cxx11::basic_string<char>]	16	static
+stl_iterator.h:819:7:__gnu_cxx::__normal_iterator<_Iterator, _Container>::reference __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator*() const [with _Iterator = const char*; _Container = std::__cxx11::basic_string<char>]	16	static
+stl_iterator.h:871:7:const _Iterator& __gnu_cxx::__normal_iterator<_Iterator, _Container>::base() const [with _Iterator = const char*; _Container = std::__cxx11::basic_string<char>]	16	static

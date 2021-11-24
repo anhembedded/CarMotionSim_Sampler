@@ -1,0 +1,131 @@
+\hypertarget{namespace_u_f_l___t_i_m7}{}\doxysection{UFL\+\_\+\+TIM7 Namespace Reference}
+\label{namespace_u_f_l___t_i_m7}\index{UFL\_TIM7@{UFL\_TIM7}}
+
+
+This is the hardware abstract layer for timer2.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_u_f_l___t_i_m7_1_1flag__interrupt}{flag\+\_\+interrupt}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a304c3a0a193e93c5b20fae16ec7d090c}{initialize}} (\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Prescaler, \mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Auto\+Reload)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a0072d3cbebcaa4745f1bc61b5324415e}{set\+Prescaler}} (\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Prescaler)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a75bec9283ec7ce146045edeab38c1347}{set\+Auto\+Reload}} (\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}} Auto\+Reload)
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a1850cffc770199117be7d453d3dbd17e}{enable\+Clk}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a8224509421075274c4998aa20cfbfcc4}{enable\+Counter\+Clk}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a90ad14a19d79dbf47c1f96b9e3b612f1}{disable\+Clk}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_aeed0ce9659a07f4dd122d57989691a5f}{enable\+Counting}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a6334de3f6f7a26a5e145b365d527f40a}{disable\+Update\+Event}} ()
+\item 
+\+\_\+\+\_\+\+SFI auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a93db8f5b064677fcfee9145d6a4a0aa4}{update\+Event}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_ab1a7bdbe8a672214febb1e0c5672524d}{this\+Timer\+Clk}} = \mbox{\hyperlink{namespaceclk_a373e41c2d5794a4eba3898300a4739b3}{clk\+::\+APB1\+Timer}}
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_acafc127a21eb6986f6f49e865070b19b}{timer\+Max\+Value}} = UINT16\+\_\+\+MAX
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_a7251900082e0ac3348e1e0135ef5a380}{this\+Peripheral\+Clk}} = LL\+\_\+\+APB1\+\_\+\+GRP1\+\_\+\+PERIPH\+\_\+\+TIM7
+\item 
+constexpr auto \mbox{\hyperlink{namespace_u_f_l___t_i_m7_af8fdd3c306d63dd4d9f5197e159314e5}{interrupt\+Number}} = TIM7\+\_\+\+IRQn
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the hardware abstract layer for timer2. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a90ad14a19d79dbf47c1f96b9e3b612f1}\label{namespace_u_f_l___t_i_m7_a90ad14a19d79dbf47c1f96b9e3b612f1}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!disableClk@{disableClk}}
+\index{disableClk@{disableClk}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{disableClk()}{disableClk()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::disable\+Clk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a6334de3f6f7a26a5e145b365d527f40a}\label{namespace_u_f_l___t_i_m7_a6334de3f6f7a26a5e145b365d527f40a}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!disableUpdateEvent@{disableUpdateEvent}}
+\index{disableUpdateEvent@{disableUpdateEvent}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{disableUpdateEvent()}{disableUpdateEvent()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::disable\+Update\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a1850cffc770199117be7d453d3dbd17e}\label{namespace_u_f_l___t_i_m7_a1850cffc770199117be7d453d3dbd17e}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!enableClk@{enableClk}}
+\index{enableClk@{enableClk}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{enableClk()}{enableClk()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::enable\+Clk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a8224509421075274c4998aa20cfbfcc4}\label{namespace_u_f_l___t_i_m7_a8224509421075274c4998aa20cfbfcc4}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!enableCounterClk@{enableCounterClk}}
+\index{enableCounterClk@{enableCounterClk}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{enableCounterClk()}{enableCounterClk()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::enable\+Counter\+Clk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_aeed0ce9659a07f4dd122d57989691a5f}\label{namespace_u_f_l___t_i_m7_aeed0ce9659a07f4dd122d57989691a5f}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!enableCounting@{enableCounting}}
+\index{enableCounting@{enableCounting}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{enableCounting()}{enableCounting()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::enable\+Counting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a304c3a0a193e93c5b20fae16ec7d090c}\label{namespace_u_f_l___t_i_m7_a304c3a0a193e93c5b20fae16ec7d090c}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!initialize@{initialize}}
+\index{initialize@{initialize}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}}}]{Prescaler = {\ttfamily 500},  }\item[{\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}}}]{Auto\+Reload = {\ttfamily 65535} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a75bec9283ec7ce146045edeab38c1347}\label{namespace_u_f_l___t_i_m7_a75bec9283ec7ce146045edeab38c1347}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!setAutoReload@{setAutoReload}}
+\index{setAutoReload@{setAutoReload}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{setAutoReload()}{setAutoReload()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::set\+Auto\+Reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}}}]{Auto\+Reload }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a0072d3cbebcaa4745f1bc61b5324415e}\label{namespace_u_f_l___t_i_m7_a0072d3cbebcaa4745f1bc61b5324415e}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!setPrescaler@{setPrescaler}}
+\index{setPrescaler@{setPrescaler}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{setPrescaler()}{setPrescaler()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::set\+Prescaler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ufl___t_i_m_8hpp_a2fa7a5ed0ce6308144d40bc89fefeb6f}{TIM7\+\_\+T}}}]{Prescaler }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a93db8f5b064677fcfee9145d6a4a0aa4}\label{namespace_u_f_l___t_i_m7_a93db8f5b064677fcfee9145d6a4a0aa4}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!updateEvent@{updateEvent}}
+\index{updateEvent@{updateEvent}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{updateEvent()}{updateEvent()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+SFI auto UFL\+\_\+\+TIM7\+::update\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_af8fdd3c306d63dd4d9f5197e159314e5}\label{namespace_u_f_l___t_i_m7_af8fdd3c306d63dd4d9f5197e159314e5}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!interruptNumber@{interruptNumber}}
+\index{interruptNumber@{interruptNumber}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{interruptNumber}{interruptNumber}}
+{\footnotesize\ttfamily constexpr auto UFL\+\_\+\+TIM7\+::interrupt\+Number = TIM7\+\_\+\+IRQn\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_a7251900082e0ac3348e1e0135ef5a380}\label{namespace_u_f_l___t_i_m7_a7251900082e0ac3348e1e0135ef5a380}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!thisPeripheralClk@{thisPeripheralClk}}
+\index{thisPeripheralClk@{thisPeripheralClk}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{thisPeripheralClk}{thisPeripheralClk}}
+{\footnotesize\ttfamily constexpr auto UFL\+\_\+\+TIM7\+::this\+Peripheral\+Clk = LL\+\_\+\+APB1\+\_\+\+GRP1\+\_\+\+PERIPH\+\_\+\+TIM7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_ab1a7bdbe8a672214febb1e0c5672524d}\label{namespace_u_f_l___t_i_m7_ab1a7bdbe8a672214febb1e0c5672524d}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!thisTimerClk@{thisTimerClk}}
+\index{thisTimerClk@{thisTimerClk}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{thisTimerClk}{thisTimerClk}}
+{\footnotesize\ttfamily constexpr auto UFL\+\_\+\+TIM7\+::this\+Timer\+Clk = \mbox{\hyperlink{namespaceclk_a373e41c2d5794a4eba3898300a4739b3}{clk\+::\+APB1\+Timer}}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespace_u_f_l___t_i_m7_acafc127a21eb6986f6f49e865070b19b}\label{namespace_u_f_l___t_i_m7_acafc127a21eb6986f6f49e865070b19b}} 
+\index{UFL\_TIM7@{UFL\_TIM7}!timerMaxValue@{timerMaxValue}}
+\index{timerMaxValue@{timerMaxValue}!UFL\_TIM7@{UFL\_TIM7}}
+\doxysubsubsection{\texorpdfstring{timerMaxValue}{timerMaxValue}}
+{\footnotesize\ttfamily constexpr auto UFL\+\_\+\+TIM7\+::timer\+Max\+Value = UINT16\+\_\+\+MAX\hspace{0.3cm}{\ttfamily [constexpr]}}
+

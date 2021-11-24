@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "DEBUG",
+                "STM32F407xx",
+                "USE_FULL_LL_DRIVER",
+                "HSE_VALUE=8000000",
+                "HSE_STARTUP_TIMEOUT=100",
+                "LSE_STARTUP_TIMEOUT=5000",
+                "LSE_VALUE=32768",
+                "EXTERNAL_CLOCK_VALUE=12288000",
+                "HSI_VALUE=16000000",
+                "LSI_VALUE=32000",
+                "VDD_VALUE=3300",
+                "PREFETCH_ENABLE=1",
+                "INSTRUCTION_CACHE_ENABLE=1",
+                "DATA_CACHE_ENABLE=1"
+            ],
+            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2021.10\\bin\\arm-none-eabi-c++",
+            "cStandard": "gnu17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
