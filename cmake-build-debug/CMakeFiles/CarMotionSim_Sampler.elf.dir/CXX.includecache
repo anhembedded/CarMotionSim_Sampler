@@ -56,10 +56,6 @@ uhal_systemConfig.hpp
 
 ../Core/Inc/stm32_assert.h
 
-../Core/Inc/stm32f4xx_it.hpp
-main_cpp.hpp
-../Core/Inc/main_cpp.hpp
-
 ../Core/Inc/uhal_systemConfig.hpp
 
 ../Core/USER_API/UHAL/Arduino.hpp
@@ -253,22 +249,18 @@ D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarM
 D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
 string
 -
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/stm32f4xx_it.cpp
-stm32f4xx_it.hpp
+algorithm
 -
-main.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main.h
-main_cpp.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main_cpp.hpp
-../USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
+array
+-
 
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp
-uhal_usart.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-cstring
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/cstring
+D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp
+uhal_tim.hpp
+D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp
+
+D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp
+main_cpp.hpp
+D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/main_cpp.hpp
 
 D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
 main_cpp.hpp

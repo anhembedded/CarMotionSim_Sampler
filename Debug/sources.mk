@@ -32,6 +32,7 @@ CPP_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Core/USER_API/UHAL/UHAL_TIM \
 Core/USER_API/UHAL/UHAL_USART \
 Drivers/STM32F4xx_HAL_Driver/Src \
 

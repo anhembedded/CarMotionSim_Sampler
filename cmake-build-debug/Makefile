@@ -424,6 +424,30 @@ Core/Startup/startup_stm32f407vgtx.s.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj
 .PHONY : Core/Startup/startup_stm32f407vgtx.s.obj
 
+Core/USER_API/UHAL/UHAL_TIM/uhal_tim.obj: Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.obj
+
+# target to build an object file
+Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+
+Core/USER_API/UHAL/UHAL_TIM/uhal_tim.i: Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.i
+
+# target to preprocess a source file
+Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.i
+
+Core/USER_API/UHAL/UHAL_TIM/uhal_tim.s: Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.s
+
+# target to generate assembly for a file
+Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.s
+
 Core/USER_API/UHAL/UHAL_USART/uhal_usart.obj: Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj
 .PHONY : Core/USER_API/UHAL/UHAL_USART/uhal_usart.obj
 
@@ -662,6 +686,9 @@ help:
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
 	@echo ... Core/Startup/startup_stm32f407vgtx.obj
+	@echo ... Core/USER_API/UHAL/UHAL_TIM/uhal_tim.obj
+	@echo ... Core/USER_API/UHAL/UHAL_TIM/uhal_tim.i
+	@echo ... Core/USER_API/UHAL/UHAL_TIM/uhal_tim.s
 	@echo ... Core/USER_API/UHAL/UHAL_USART/uhal_usart.obj
 	@echo ... Core/USER_API/UHAL/UHAL_USART/uhal_usart.i
 	@echo ... Core/USER_API/UHAL/UHAL_USART/uhal_usart.s

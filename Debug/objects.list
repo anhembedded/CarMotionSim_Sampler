@@ -11,6 +11,7 @@
 "./Core/Src/uhal_stm32f407_platform.o"
 "./Core/Src/usart.o"
 "./Core/Startup/startup_stm32f407vgtx.o"
+"./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o"
 "./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o"

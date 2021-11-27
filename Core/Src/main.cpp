@@ -28,9 +28,9 @@
 #include <array>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-    uint8_t _surge;
-      uint8_t _sway;
-     uint8_t _traction;
+uint8_t _surge;
+uint8_t _sway;
+uint8_t _traction;
 
 
 volatile uint8_t _uartBuffer = 0;
@@ -61,14 +61,14 @@ void  getData(std::array<uint8_t,10> &data,uint8_t &surge, uint8_t &sway, uint8_
     constexpr auto nextByte = 1;
     constexpr auto startByte = '[';
 
-    auto A_iter  =   std::find(data.begin(),  data.end(),'A');
+    auto A_iter = std::find(data.begin(),  data.end(),'A');
     auto B_iter = std::find(data.begin(), data.end(), 'B');
     auto C_iter = std::find(data.begin(), data.end(), 'C');
 
 
     auto exam = [data](decltype(A_iter) praIter)
     {
-        if(praIter != data.end() && praIter != data.begin() )
+        if((praIter != data.end()) && (praIter != data.begin()))
         {
             return 1;
         }
@@ -98,26 +98,13 @@ void  getData(std::array<uint8_t,10> &data,uint8_t &surge, uint8_t &sway, uint8_
     }
 
 }
-/* USER CODE END PM */
 
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config();
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -126,60 +113,26 @@ void SystemClock_Config();
 const char *myName = "TranHoangAnh";
 int main()
 {
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-
+  
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
 
   NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_0);
 
-  /* System interrupt init*/
-  
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
+  SystemClock_Config();  
   MX_GPIO_Init();
 
-  // MX_USART6_UART_Init();
-
-  /* USER CODE BEGIN 2 */
+  
   UHAL_USART6::initialize();
   UHAL_USART6::interruptReceiveInit();
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+  
   while (true)
   {
-    /* USER CODE END WHILE */
-	 //UHAL_USART6::send("TranHoangAnh");
-
-	// LL_mDelay(200);
-    /* USER CODE BEGIN 3 */
+    
   }
-  /* USER CODE END 3 */
+  
 }
 
-
-
-/**
-  * @brief This function handles USART6 global interrupt.
-  */
 
 extern "C"
 {
@@ -187,11 +140,14 @@ void USART6_IRQHandler(void)
 {
     using namespace UHAL_USART6;
     using namespace UHAL_USART6::flag_IT;
+
 //    if(TXE::isSet())
 //    {
 //        transmitData(_uartBuffer);
 //        TXE::clear();
 //    }
+
+
     if(RXNE::isSet())
     {
     	if(_index <10)

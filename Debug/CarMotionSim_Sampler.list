@@ -29,21 +29,21 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  12 .ARM.attributes 00000030  00000000  00000000  00020068  2**0
                   CONTENTS, READONLY
- 13 .debug_info   000307fb  00000000  00000000  00020098  2**0
+ 13 .debug_info   000307f1  00000000  00000000  00020098  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 0000324f  00000000  00000000  00050893  2**0
+ 14 .debug_abbrev 00003210  00000000  00000000  00050889  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 000007e8  00000000  00000000  00053ae8  2**3
+ 15 .debug_aranges 000007e8  00000000  00000000  00053aa0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_ranges 00000730  00000000  00000000  000542d0  2**3
+ 16 .debug_ranges 00000730  00000000  00000000  00054288  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00006041  00000000  00000000  00054a00  2**0
+ 17 .debug_line   0000603d  00000000  00000000  000549b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000188be  00000000  00000000  0005aa41  2**0
+ 18 .debug_str    000188be  00000000  00000000  0005a9f5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000732ff  2**0
+ 19 .comment      00000053  00000000  00000000  000732b3  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00003958  00000000  00000000  00073354  2**2
+ 20 .debug_frame  00003958  00000000  00000000  00073308  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1508,11 +1508,7 @@ int main()
  8000bbc:	b580      	push	{r7, lr}
  8000bbe:	b08e      	sub	sp, #56	; 0x38
  8000bc0:	af00      	add	r7, sp, #0
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-
+  
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
  8000bc2:	f44f 4080 	mov.w	r0, #16384	; 0x4000
  8000bc6:	f7ff fe77 	bl	80008b8 <LL_APB2_GRP1_EnableClock>
@@ -1523,18 +1519,12 @@ int main()
   NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_0);
  8000bd2:	2007      	movs	r0, #7
  8000bd4:	f7ff fd22 	bl	800061c <__NVIC_SetPriorityGrouping>
-  /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
+  
   SystemClock_Config();
  8000bd8:	f000 f890 	bl	8000cfc <_Z18SystemClock_Configv>
-  /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
+  
   MX_GPIO_Init();
  8000bdc:	f7ff fcf4 	bl	80005c8 <MX_GPIO_Init>
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_USART6);
@@ -1628,16 +1618,11 @@ __SFI auto UHAL_USART6::initialize()
 }
  8000c66:	bf00      	nop
 
-  // MX_USART6_UART_Init();
-
-  /* USER CODE BEGIN 2 */
+  
   UHAL_USART6::initialize();
   UHAL_USART6::interruptReceiveInit();
  8000c68:	f000 fee8 	bl	8001a3c <_ZN11UHAL_USART620interruptReceiveInitEv>
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+  
   while (true)
  8000c6c:	e7fe      	b.n	8000c6c <main+0xb0>
  8000c6e:	bf00      	nop
@@ -1645,7 +1630,7 @@ __SFI auto UHAL_USART6::initialize()
  8000c74:	40011400 	.word	0x40011400
 
 08000c78 <USART6_IRQHandler>:
-  */
+
 
 extern "C"
 {
@@ -1658,11 +1643,11 @@ void USART6_IRQHandler(void)
  8000c7e:	f7ff fe7f 	bl	8000980 <LL_USART_IsActiveFlag_RXNE>
  8000c82:	4603      	mov	r3, r0
  8000c84:	bf00      	nop
-//    if(TXE::isSet())
-//    {
 //        transmitData(_uartBuffer);
 //        TXE::clear();
 //    }
+
+
     if(RXNE::isSet())
  8000c86:	2b00      	cmp	r3, #0
  8000c88:	bf14      	ite	ne

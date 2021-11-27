@@ -610,6 +610,84 @@ Discarded input sections
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f407vgtx.o
  .data          0x0000000000000000        0x0 ./Core/Startup/startup_stm32f407vgtx.o
  .bss           0x0000000000000000        0x0 ./Core/Startup/startup_stm32f407vgtx.o
+ .text          0x0000000000000000        0x0 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .data          0x0000000000000000        0x0 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .bss           0x0000000000000000        0x0 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.__NVIC_GetPriorityGrouping
+                0x0000000000000000       0x1c ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.__NVIC_EnableIRQ
+                0x0000000000000000       0x3c ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.__NVIC_SetPriority
+                0x0000000000000000       0x54 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.NVIC_EncodePriority
+                0x0000000000000000       0x62 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_AHB1_GRP1_EnableClock
+                0x0000000000000000       0x30 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_APB1_GRP1_EnableClock
+                0x0000000000000000       0x30 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL17STREAM_OFFSET_TAB
+                0x0000000000000000        0x8 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetDataTransferDirection
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetMode
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetPeriphIncMode
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetMemoryIncMode
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetPeriphSize
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetMemorySize
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetStreamPriorityLevel
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_SetChannelSelection
+                0x0000000000000000       0x48 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_DMA_DisableFifoMode
+                0x0000000000000000       0x40 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL16OFFSET_TAB_CCMRx
+                0x0000000000000000        0x7 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL14SHIFT_TAB_OCxx
+                0x0000000000000000        0x7 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL14SHIFT_TAB_ICxx
+                0x0000000000000000        0x7 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL14SHIFT_TAB_CCxP
+                0x0000000000000000        0x7 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL14SHIFT_TAB_OISx
+                0x0000000000000000        0x7 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_TIM_EnableARRPreload
+                0x0000000000000000       0x20 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_TIM_OC_DisableFast
+                0x0000000000000000       0x8c ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_TIM_OC_EnablePreload
+                0x0000000000000000       0x88 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_TIM_SetTriggerOutput
+                0x0000000000000000       0x26 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text.LL_TIM_DisableMasterSlaveMode
+                0x0000000000000000       0x20 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZL11systemDebug
+                0x0000000000000000        0x4 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZN8TIM5_PWML12thisInstanceE
+                0x0000000000000000        0x4 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZN8TIM5_PWML16thisInstanceGPIOE
+                0x0000000000000000        0x4 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .rodata._ZN8TIM5_PWML8thisIRQnE
+                0x0000000000000000        0x1 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text._ZN8TIM5_PWM10initializeEv
+                0x0000000000000000      0x1bc ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .text._ZN8TIM5_PWM15enableInterruptEv
+                0x0000000000000000       0x28 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_info    0x0000000000000000     0x1408 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_abbrev  0x0000000000000000      0x315 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_aranges
+                0x0000000000000000       0xc8 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_ranges  0x0000000000000000       0xb8 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_line    0x0000000000000000      0xa4f ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_str     0x0000000000000000     0x105d ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .comment       0x0000000000000000       0x54 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_frame   0x0000000000000000      0x368 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
  .group         0x0000000000000000        0xc ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
  .group         0x0000000000000000        0x8 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
  .group         0x0000000000000000        0x8 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
@@ -1779,6 +1857,7 @@ LOAD ./Core/Src/tim.o
 LOAD ./Core/Src/uhal_stm32f407_platform.o
 LOAD ./Core/Src/usart.o
 LOAD ./Core/Startup/startup_stm32f407vgtx.o
+LOAD ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
 LOAD ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
 LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.o
 LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
@@ -2736,33 +2815,33 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x0000000000000000    0x307fb
+.debug_info     0x0000000000000000    0x307f1
  .debug_info    0x0000000000000000      0x511 ./Core/Src/gpio.o
- .debug_info    0x0000000000000511    0x1176b ./Core/Src/main.o
- .debug_info    0x0000000000011c7c     0xba03 ./Core/Src/stm32f4xx_it.o
- .debug_info    0x000000000001d67f      0xfa4 ./Core/Src/syscalls.o
- .debug_info    0x000000000001e623      0xa21 ./Core/Src/sysmem.o
- .debug_info    0x000000000001f044      0x542 ./Core/Src/system_stm32f4xx.o
- .debug_info    0x000000000001f586       0x22 ./Core/Startup/startup_stm32f407vgtx.o
- .debug_info    0x000000000001f5a8     0xf040 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
- .debug_info    0x000000000002e5e8      0x8ba ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_info    0x000000000002eea2      0x80d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
- .debug_info    0x000000000002f6af      0x7c2 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
- .debug_info    0x000000000002fe71      0x98a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_info    0x0000000000000511    0x11761 ./Core/Src/main.o
+ .debug_info    0x0000000000011c72     0xba03 ./Core/Src/stm32f4xx_it.o
+ .debug_info    0x000000000001d675      0xfa4 ./Core/Src/syscalls.o
+ .debug_info    0x000000000001e619      0xa21 ./Core/Src/sysmem.o
+ .debug_info    0x000000000001f03a      0x542 ./Core/Src/system_stm32f4xx.o
+ .debug_info    0x000000000001f57c       0x22 ./Core/Startup/startup_stm32f407vgtx.o
+ .debug_info    0x000000000001f59e     0xf040 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
+ .debug_info    0x000000000002e5de      0x8ba ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_info    0x000000000002ee98      0x80d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
+ .debug_info    0x000000000002f6a5      0x7c2 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
+ .debug_info    0x000000000002fe67      0x98a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_abbrev   0x0000000000000000     0x324f
+.debug_abbrev   0x0000000000000000     0x3210
  .debug_abbrev  0x0000000000000000      0x17a ./Core/Src/gpio.o
- .debug_abbrev  0x000000000000017a      0xea4 ./Core/Src/main.o
- .debug_abbrev  0x000000000000101e      0x8d9 ./Core/Src/stm32f4xx_it.o
- .debug_abbrev  0x00000000000018f7      0x283 ./Core/Src/syscalls.o
- .debug_abbrev  0x0000000000001b7a      0x1bc ./Core/Src/sysmem.o
- .debug_abbrev  0x0000000000001d36      0x126 ./Core/Src/system_stm32f4xx.o
- .debug_abbrev  0x0000000000001e5c       0x12 ./Core/Startup/startup_stm32f407vgtx.o
- .debug_abbrev  0x0000000000001e6e      0xb9b ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
- .debug_abbrev  0x0000000000002a09      0x238 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_abbrev  0x0000000000002c41      0x1f7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
- .debug_abbrev  0x0000000000002e38      0x1ee ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
- .debug_abbrev  0x0000000000003026      0x229 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_abbrev  0x000000000000017a      0xe65 ./Core/Src/main.o
+ .debug_abbrev  0x0000000000000fdf      0x8d9 ./Core/Src/stm32f4xx_it.o
+ .debug_abbrev  0x00000000000018b8      0x283 ./Core/Src/syscalls.o
+ .debug_abbrev  0x0000000000001b3b      0x1bc ./Core/Src/sysmem.o
+ .debug_abbrev  0x0000000000001cf7      0x126 ./Core/Src/system_stm32f4xx.o
+ .debug_abbrev  0x0000000000001e1d       0x12 ./Core/Startup/startup_stm32f407vgtx.o
+ .debug_abbrev  0x0000000000001e2f      0xb9b ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
+ .debug_abbrev  0x00000000000029ca      0x238 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_abbrev  0x0000000000002c02      0x1f7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
+ .debug_abbrev  0x0000000000002df9      0x1ee ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
+ .debug_abbrev  0x0000000000002fe7      0x229 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .debug_aranges  0x0000000000000000      0x7e8
  .debug_aranges
@@ -2804,19 +2883,19 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x00000000000005d0       0x78 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
  .debug_ranges  0x0000000000000648       0xe8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_line     0x0000000000000000     0x6041
+.debug_line     0x0000000000000000     0x603d
  .debug_line    0x0000000000000000      0x321 ./Core/Src/gpio.o
- .debug_line    0x0000000000000321     0x1999 ./Core/Src/main.o
- .debug_line    0x0000000000001cba      0xcaf ./Core/Src/stm32f4xx_it.o
- .debug_line    0x0000000000002969      0x5d4 ./Core/Src/syscalls.o
- .debug_line    0x0000000000002f3d      0x2f4 ./Core/Src/sysmem.o
- .debug_line    0x0000000000003231      0x2ea ./Core/Src/system_stm32f4xx.o
- .debug_line    0x000000000000351b       0x88 ./Core/Startup/startup_stm32f407vgtx.o
- .debug_line    0x00000000000035a3     0x1139 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
- .debug_line    0x00000000000046dc      0x57b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_line    0x0000000000004c57      0x734 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
- .debug_line    0x000000000000538b      0x4fa ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
- .debug_line    0x0000000000005885      0x7bc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_line    0x0000000000000321     0x1995 ./Core/Src/main.o
+ .debug_line    0x0000000000001cb6      0xcaf ./Core/Src/stm32f4xx_it.o
+ .debug_line    0x0000000000002965      0x5d4 ./Core/Src/syscalls.o
+ .debug_line    0x0000000000002f39      0x2f4 ./Core/Src/sysmem.o
+ .debug_line    0x000000000000322d      0x2ea ./Core/Src/system_stm32f4xx.o
+ .debug_line    0x0000000000003517       0x88 ./Core/Startup/startup_stm32f407vgtx.o
+ .debug_line    0x000000000000359f     0x1139 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
+ .debug_line    0x00000000000046d8      0x57b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_line    0x0000000000004c53      0x734 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
+ .debug_line    0x0000000000005387      0x4fa ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
+ .debug_line    0x0000000000005881      0x7bc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .debug_str      0x0000000000000000    0x188be
  .debug_str     0x0000000000000000      0x3a8 ./Core/Src/gpio.o

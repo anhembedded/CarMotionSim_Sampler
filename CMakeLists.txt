@@ -52,7 +52,7 @@ add_definitions(-DDEBUG -DUSE_FULL_LL_DRIVER -DSTM32F407xx -DHSE_VALUE=8000000 -
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*")
 
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407VGTX_FLASH.ld)
+set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407VGTX_FLASH.ld Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 add_link_options(-mcpu=cortex-m4 -mthumb -mthumb-interwork)

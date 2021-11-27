@@ -234,9 +234,22 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Startup/startup_stm32f407vgtx.s.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Startup/startup_stm32f407vgtx.s.s"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Core\Startup\startup_stm32f407vgtx.s" -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Core\Startup\startup_stm32f407vgtx.s.s
 
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj: ../Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj"
+	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Core\USER_API\UHAL\UHAL_TIM\uhal_tim.cpp.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Core\USER_API\UHAL\UHAL_TIM\uhal_tim.cpp"
+
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.i"
+	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Core\USER_API\UHAL\UHAL_TIM\uhal_tim.cpp" > CMakeFiles\CarMotionSim_Sampler.elf.dir\Core\USER_API\UHAL\UHAL_TIM\uhal_tim.cpp.i
+
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.s"
+	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Core\USER_API\UHAL\UHAL_TIM\uhal_tim.cpp" -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Core\USER_API\UHAL\UHAL_TIM\uhal_tim.cpp.s
+
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj: ../Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Core\USER_API\UHAL\UHAL_USART\uhal_usart.cpp.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Core\USER_API\UHAL\UHAL_USART\uhal_usart.cpp"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.i: cmake_force
@@ -249,7 +262,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_dma.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_dma.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i: cmake_force
@@ -262,7 +275,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_exti.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_exti.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i: cmake_force
@@ -275,7 +288,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_gpio.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_gpio.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i: cmake_force
@@ -288,7 +301,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_rcc.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_rcc.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i: cmake_force
@@ -301,7 +314,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_tim.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_tim.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i: cmake_force
@@ -314,7 +327,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usart.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usart.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i: cmake_force
@@ -327,7 +340,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj: CMakeFiles/CarMotionSim_Sampler.elf.dir/flags.make
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj"
 	C:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CarMotionSim_Sampler.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c.obj -c "D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c"
 
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i: cmake_force
@@ -353,6 +366,7 @@ CarMotionSim_Sampler_elf_OBJECTS = \
 "CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/uhal_stm32f407_platform.cpp.obj" \
 "CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/usart.c.obj" \
 "CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj" \
+"CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj" \
 "CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj" \
 "CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj" \
 "CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj" \
@@ -378,6 +392,7 @@ CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/tim.c
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/uhal_stm32f407_platform.cpp.obj
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/usart.c.obj
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj
+CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
@@ -388,7 +403,7 @@ CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/build.make
 CarMotionSim_Sampler.elf: CMakeFiles/CarMotionSim_Sampler.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable CarMotionSim_Sampler.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable CarMotionSim_Sampler.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CarMotionSim_Sampler.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/CarMotionSim_Sampler.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/CarMotionSim_Sampler.bin"
