@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_ranges 00000730  00000000  00000000  00054288  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000603d  00000000  00000000  000549b8  2**0
+ 17 .debug_line   0000603b  00000000  00000000  000549b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000188be  00000000  00000000  0005a9f5  2**0
+ 18 .debug_str    000188be  00000000  00000000  0005a9f3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000732b3  2**0
+ 19 .comment      00000053  00000000  00000000  000732b1  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00003958  00000000  00000000  00073308  2**2
+ 20 .debug_frame  00003958  00000000  00000000  00073304  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1295,7 +1295,7 @@ __STATIC_INLINE uint16_t LL_USART_ReceiveData9(USART_TypeDef *USARTx)
  8000a50:	bd80      	pop	{r7, pc}
 
 08000a52 <_ZZ7getDataRSt5arrayIhLj10EERhS2_S2_ENKUlPhE_clES3_>:
-    auto A_iter  =   std::find(data.begin(),  data.end(),'A');
+    auto A_iter = std::find(data.begin(),  data.end(),'A');
     auto B_iter = std::find(data.begin(), data.end(), 'B');
     auto C_iter = std::find(data.begin(), data.end(), 'C');
 
@@ -1307,7 +1307,7 @@ __STATIC_INLINE uint16_t LL_USART_ReceiveData9(USART_TypeDef *USARTx)
  8000a58:	6078      	str	r0, [r7, #4]
  8000a5a:	6039      	str	r1, [r7, #0]
     {
-        if(praIter != data.end() && praIter != data.begin() )
+        if((praIter != data.end()) && (praIter != data.begin()))
  8000a5c:	687b      	ldr	r3, [r7, #4]
  8000a5e:	4618      	mov	r0, r3
  8000a60:	f7ff ffde 	bl	8000a20 <_ZNKSt5arrayIhLj10EE3endEv>
@@ -1355,7 +1355,7 @@ __STATIC_INLINE uint16_t LL_USART_ReceiveData9(USART_TypeDef *USARTx)
     constexpr auto startByte = '[';
  8000aa6:	235b      	movs	r3, #91	; 0x5b
  8000aa8:	f887 3033 	strb.w	r3, [r7, #51]	; 0x33
-    auto A_iter  =   std::find(data.begin(),  data.end(),'A');
+    auto A_iter = std::find(data.begin(),  data.end(),'A');
  8000aac:	68f8      	ldr	r0, [r7, #12]
  8000aae:	f000 fa36 	bl	8000f1e <_ZNSt5arrayIhLj10EE5beginEv>
  8000ab2:	4604      	mov	r4, r0
@@ -1520,11 +1520,8 @@ int main()
  8000bd2:	2007      	movs	r0, #7
  8000bd4:	f7ff fd22 	bl	800061c <__NVIC_SetPriorityGrouping>
 
-  
-  SystemClock_Config();
+  SystemClock_Config();  
  8000bd8:	f000 f890 	bl	8000cfc <_Z18SystemClock_Configv>
-
-  
   MX_GPIO_Init();
  8000bdc:	f7ff fcf4 	bl	80005c8 <MX_GPIO_Init>
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_USART6);

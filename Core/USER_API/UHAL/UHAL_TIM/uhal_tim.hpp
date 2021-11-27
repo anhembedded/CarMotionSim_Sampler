@@ -1,66 +1,8 @@
 //
-// Created by hoang on 11/25/2021.
+// Created by hoang on 11/27/2021.
 //
 
 #ifndef CARMOTIONSIM_SAMPLER_UHAL_TIM_HPP
 #define CARMOTIONSIM_SAMPLER_UHAL_TIM_HPP
-#include "main_cpp.hpp"
-
-
-
-namespace TIM5_PWM /// @brief User hardware abstraction layer for timer 5 with PWM
-{
-
-    const decltype(TIM5) thisInstance = TIM5;
-    const decltype(GPIOA) thisInstanceGPIO = GPIOA;
-    const auto thisIRQn = TIM5_IRQn;
-    typedef uint32_t thisTimerType_T;
-    typedef uint16_t thisTimerPrescaler_T;
-
-  __SFI auto isPeripheralClKEnabled()
-	{
-		return LL_APB1_GRP1_IsEnabledClock(LL_APB1_GRP1_PERIPH_TIM5);
-	}
-    __SFI auto isGPIOClKEnabled()
-    {
-      return LL_AHB1_GRP1_IsEnabledClock(LL_AHB1_GRP1_PERIPH_GPIOA);
-    }
-
-     void  initialize();
-    __SFI auto enable(); ///@note No implement
-    __SFI auto disable();
-    void startCounter();
-    void stopCounter();
-    void upCountingDirection(); /// init
-    void downCountingDirection(); /// init
-    void selectClock(); /// External or anythings else. init
-    void channelPwmModeSelection(); /// init
-    void enablePreloadForChannel(); /// init
-    void holdOnUpdateEvent();
-    void releaseUpdateEvent();
-    void updateEventGenerating();
-    /// @brief selecting polarity for channel x
-    void OCxPolarity();
-    void setPrescaler(thisTimerPrescaler_T prescalerVar); // 1 - 16bit
-    void setAutoReload(thisTimerType_T autoReloadVar);
-    void setCaptureCompare(thisTimerType_T autoCaptureCompareVar); /// @note must be smaller than autoReloadVar
-    void enableInterrupt();
-    void disableInterrupt();
-
-
-    __SFI auto enableGPIOClock();
-    __SFI auto disableGPIOClock();
-    __SFI auto enablePerihClock();
-    __SFI auto disablePerihClock();
-
-    namespace flag_IT::flagX
-        {
-            __SFI auto isSet();
-            __SFI auto clear();
-            __SFI auto enableInterrupt();
-            __SFI auto  clearPendingBit();
-        }
-
-}
 
 #endif //CARMOTIONSIM_SAMPLER_UHAL_TIM_HPP

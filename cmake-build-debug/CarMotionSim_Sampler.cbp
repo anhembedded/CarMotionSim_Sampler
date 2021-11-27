@@ -1595,6 +1595,12 @@
 		<Unit filename="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp">
 			<Option target="CarMotionSim_Sampler.elf"/>
 		</Unit>
+		<Unit filename="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim_cpp.txt">
+			<Option target="CarMotionSim_Sampler.elf"/>
+		</Unit>
+		<Unit filename="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim_hpp.txt">
+			<Option target="CarMotionSim_Sampler.elf"/>
+		</Unit>
 		<Unit filename="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp">
 			<Option target="CarMotionSim_Sampler.elf"/>
 		</Unit>

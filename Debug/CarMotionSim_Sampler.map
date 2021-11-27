@@ -674,18 +674,16 @@ Discarded input sections
  .rodata._ZN8TIM5_PWML8thisIRQnE
                 0x0000000000000000        0x1 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
  .text._ZN8TIM5_PWM10initializeEv
-                0x0000000000000000      0x1bc ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .text._ZN8TIM5_PWM15enableInterruptEv
-                0x0000000000000000       0x28 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .debug_info    0x0000000000000000     0x1408 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .debug_abbrev  0x0000000000000000      0x315 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+                0x0000000000000000      0x1dc ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_info    0x0000000000000000     0x13ed ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_abbrev  0x0000000000000000      0x305 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
  .debug_aranges
-                0x0000000000000000       0xc8 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .debug_ranges  0x0000000000000000       0xb8 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .debug_line    0x0000000000000000      0xa4f ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .debug_str     0x0000000000000000     0x105d ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+                0x0000000000000000       0xc0 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_ranges  0x0000000000000000       0xb0 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_line    0x0000000000000000      0xa38 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_str     0x0000000000000000     0x102d ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
  .comment       0x0000000000000000       0x54 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
- .debug_frame   0x0000000000000000      0x368 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
+ .debug_frame   0x0000000000000000      0x34c ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/USER_API/UHAL/UHAL_TIM/uhal_tim.o
  .group         0x0000000000000000        0xc ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
@@ -2883,19 +2881,19 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x00000000000005d0       0x78 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
  .debug_ranges  0x0000000000000648       0xe8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_line     0x0000000000000000     0x603d
+.debug_line     0x0000000000000000     0x603b
  .debug_line    0x0000000000000000      0x321 ./Core/Src/gpio.o
- .debug_line    0x0000000000000321     0x1995 ./Core/Src/main.o
- .debug_line    0x0000000000001cb6      0xcaf ./Core/Src/stm32f4xx_it.o
- .debug_line    0x0000000000002965      0x5d4 ./Core/Src/syscalls.o
- .debug_line    0x0000000000002f39      0x2f4 ./Core/Src/sysmem.o
- .debug_line    0x000000000000322d      0x2ea ./Core/Src/system_stm32f4xx.o
- .debug_line    0x0000000000003517       0x88 ./Core/Startup/startup_stm32f407vgtx.o
- .debug_line    0x000000000000359f     0x1139 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
- .debug_line    0x00000000000046d8      0x57b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_line    0x0000000000004c53      0x734 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
- .debug_line    0x0000000000005387      0x4fa ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
- .debug_line    0x0000000000005881      0x7bc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_line    0x0000000000000321     0x1993 ./Core/Src/main.o
+ .debug_line    0x0000000000001cb4      0xcaf ./Core/Src/stm32f4xx_it.o
+ .debug_line    0x0000000000002963      0x5d4 ./Core/Src/syscalls.o
+ .debug_line    0x0000000000002f37      0x2f4 ./Core/Src/sysmem.o
+ .debug_line    0x000000000000322b      0x2ea ./Core/Src/system_stm32f4xx.o
+ .debug_line    0x0000000000003515       0x88 ./Core/Startup/startup_stm32f407vgtx.o
+ .debug_line    0x000000000000359d     0x1139 ./Core/USER_API/UHAL/UHAL_USART/uhal_usart.o
+ .debug_line    0x00000000000046d6      0x57b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_line    0x0000000000004c51      0x734 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
+ .debug_line    0x0000000000005385      0x4fa ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
+ .debug_line    0x000000000000587f      0x7bc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .debug_str      0x0000000000000000    0x188be
  .debug_str     0x0000000000000000      0x3a8 ./Core/Src/gpio.o
