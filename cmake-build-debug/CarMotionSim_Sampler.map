@@ -838,11 +838,24 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
- .debug_line    0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
- .debug_str     0x00000000      0x1c6 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .text._ZN8TIM5_PWM10initializeEv
+                0x00000000      0x1d0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .ARM.extab.text._ZN8TIM5_PWM10initializeEv
+                0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .ARM.exidx.text._ZN8TIM5_PWM10initializeEv
+                0x00000000        0x8 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_info    0x00000000     0x1a41 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_abbrev  0x00000000      0x390 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_loc     0x00000000      0x6e2 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_aranges
+                0x00000000       0x20 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_ranges  0x00000000       0x10 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_line    0x00000000      0xa01 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_str     0x00000000     0x1082 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
  .comment       0x00000000       0x4e CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+ .debug_frame   0x00000000       0x38 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
  .ARM.attributes
-                0x00000000       0x33 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
+                0x00000000       0x2e CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.obj

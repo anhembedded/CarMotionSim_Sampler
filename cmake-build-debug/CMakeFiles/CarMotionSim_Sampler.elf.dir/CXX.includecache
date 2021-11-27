@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Core/Inc/LiquidCrystal.h
-../USER_API/UHAL/uhal_stm32f407_platform.hpp
-../Core/USER_API/UHAL/uhal_stm32f407_platform.hpp
-cinttypes
--
-../USER_API/UHAL/Print.h
-../Core/USER_API/UHAL/Print.h
-
-../Core/Inc/gpio.h
-main.h
-../Core/Inc/main.h
-
 ../Core/Inc/main.h
 stm32f4xx_ll_rcc.h
 ../Core/Inc/stm32f4xx_ll_rcc.h
@@ -56,41 +44,11 @@ uhal_systemConfig.hpp
 
 ../Core/Inc/stm32_assert.h
 
-../Core/Inc/stm32f4xx_it.hpp
-main_cpp.hpp
-../Core/Inc/main_cpp.hpp
-
 ../Core/Inc/uhal_systemConfig.hpp
-
-../Core/USER_API/UHAL/Arduino.hpp
-cstdlib
--
-cstring
--
-cmath
--
-cstdint
--
-
-../Core/USER_API/UHAL/Print.h
-cinttypes
--
-cstdio
--
-cstring
--
-string
--
 
 ../Core/USER_API/UHAL/simtools.hpp
 main.h
 ../Core/USER_API/UHAL/main.h
-
-../Core/USER_API/UHAL/uhal_stm32f407_platform.hpp
-Arduino.hpp
-../Core/USER_API/UHAL/Arduino.hpp
-main_cpp.hpp
-../Core/USER_API/UHAL/main_cpp.hpp
 
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 core_cm4.h
@@ -240,103 +198,11 @@ stm32f4xx.h
 stm32f4xx.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx.h
 
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/Arduino.cpp
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/LiquidCrystal.cpp
-LiquidCrystal.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/LiquidCrystal.h
-cstdio
--
-cstring
--
-cinttypes
--
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/Print.cpp
-stdlib.h
--
-stdio.h
--
-string
--
-math.h
--
-../USER_API/UHAL/Print.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/Print.h
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main.cpp
-main.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main.h
-gpio.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/gpio.h
-main_cpp.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main_cpp.hpp
-LiquidCrystal.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/LiquidCrystal.h
-../USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-string
--
-algorithm
--
-array
--
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/stm32f4xx_it.cpp
-stm32f4xx_it.hpp
--
-main.h
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main.h
-main_cpp.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/main_cpp.hpp
-../USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/Src/uhal_stm32f407_platform.cpp
-../USER_API/UHAL/uhal_stm32f407_platform.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/uhal_stm32f407_platform.hpp
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/Arduino.hpp
-cstdlib
--
-cstring
--
-cmath
--
-cstdint
--
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/Print.h
-cinttypes
--
-cstdio
--
-cstring
--
-string
--
-
 D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp
 uhal_tim.hpp
 D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp
 
 D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp
-uhal_usart.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
-cstring
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/cstring
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
 main_cpp.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/main_cpp.hpp
-string
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_USART/string
-
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/uhal_stm32f407_platform.hpp
-Arduino.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/Arduino.hpp
-main_cpp.hpp
-D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/main_cpp.hpp
+D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/Core/USER_API/UHAL/UHAL_TIM/main_cpp.hpp
 
