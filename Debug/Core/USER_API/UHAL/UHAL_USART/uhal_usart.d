@@ -21,8 +21,8 @@ Core/USER_API/UHAL/UHAL_USART/uhal_usart.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- ../Core/Inc/stm32_assert.h ../Core/Inc/../USER_API/UHAL/simtools.hpp \
- ../Core/Inc/main.h ../Core/Inc/uhal_systemConfig.hpp
+ ../Core/Inc/stm32_assert.h ../Core/Inc/uhal_systemConfig.hpp \
+ ../Core/USER_API/UHAL/UHAL_USART/../UHAL_DMA/UHAL_DMA.hpp
 
 ../Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp:
 
@@ -70,8 +70,6 @@ Core/USER_API/UHAL/UHAL_USART/uhal_usart.o: \
 
 ../Core/Inc/stm32_assert.h:
 
-../Core/Inc/../USER_API/UHAL/simtools.hpp:
-
-../Core/Inc/main.h:
-
 ../Core/Inc/uhal_systemConfig.hpp:
+
+../Core/USER_API/UHAL/UHAL_USART/../UHAL_DMA/UHAL_DMA.hpp:

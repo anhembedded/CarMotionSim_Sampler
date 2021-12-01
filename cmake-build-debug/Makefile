@@ -424,6 +424,102 @@ Core/Startup/startup_stm32f407vgtx.s.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj
 .PHONY : Core/Startup/startup_stm32f407vgtx.s.obj
 
+Core/UAPP/UAPP_SIMTOOL.obj: Core/UAPP/UAPP_SIMTOOL.cpp.obj
+.PHONY : Core/UAPP/UAPP_SIMTOOL.obj
+
+# target to build an object file
+Core/UAPP/UAPP_SIMTOOL.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/UAPP/UAPP_SIMTOOL.cpp.obj
+.PHONY : Core/UAPP/UAPP_SIMTOOL.cpp.obj
+
+Core/UAPP/UAPP_SIMTOOL.i: Core/UAPP/UAPP_SIMTOOL.cpp.i
+.PHONY : Core/UAPP/UAPP_SIMTOOL.i
+
+# target to preprocess a source file
+Core/UAPP/UAPP_SIMTOOL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/UAPP/UAPP_SIMTOOL.cpp.i
+.PHONY : Core/UAPP/UAPP_SIMTOOL.cpp.i
+
+Core/UAPP/UAPP_SIMTOOL.s: Core/UAPP/UAPP_SIMTOOL.cpp.s
+.PHONY : Core/UAPP/UAPP_SIMTOOL.s
+
+# target to generate assembly for a file
+Core/UAPP/UAPP_SIMTOOL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/UAPP/UAPP_SIMTOOL.cpp.s
+.PHONY : Core/UAPP/UAPP_SIMTOOL.cpp.s
+
+Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.obj: Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.obj
+
+# target to build an object file
+Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.obj
+
+Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.i: Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.i
+
+# target to preprocess a source file
+Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.i
+
+Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.s: Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.s
+
+# target to generate assembly for a file
+Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.s
+
+Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.obj: Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.obj
+
+# target to build an object file
+Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.obj
+
+Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.i: Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.i
+
+# target to preprocess a source file
+Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.i
+
+Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.s: Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.s
+
+# target to generate assembly for a file
+Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.s
+
+Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.obj: Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.obj
+
+# target to build an object file
+Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.obj
+.PHONY : Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.obj
+
+Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.i: Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.i
+
+# target to preprocess a source file
+Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.i
+.PHONY : Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.i
+
+Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.s: Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.s
+
+# target to generate assembly for a file
+Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.s
+.PHONY : Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.s
+
 Core/USER_API/UHAL/UHAL_TIM/uhal_tim.obj: Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj
 .PHONY : Core/USER_API/UHAL/UHAL_TIM/uhal_tim.obj
 
@@ -471,6 +567,30 @@ Core/USER_API/UHAL/UHAL_USART/uhal_usart.s: Core/USER_API/UHAL/UHAL_USART/uhal_u
 Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.s
 .PHONY : Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp.s
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj
+
+# target to build an object file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i
+
+# target to preprocess a source file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s
+
+# target to generate assembly for a file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CarMotionSim_Sampler.elf.dir\build.make CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj
@@ -686,12 +806,27 @@ help:
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
 	@echo ... Core/Startup/startup_stm32f407vgtx.obj
+	@echo ... Core/UAPP/UAPP_SIMTOOL.obj
+	@echo ... Core/UAPP/UAPP_SIMTOOL.i
+	@echo ... Core/UAPP/UAPP_SIMTOOL.s
+	@echo ... Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.obj
+	@echo ... Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.i
+	@echo ... Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.s
+	@echo ... Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.obj
+	@echo ... Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.i
+	@echo ... Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.s
+	@echo ... Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.obj
+	@echo ... Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.i
+	@echo ... Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.s
 	@echo ... Core/USER_API/UHAL/UHAL_TIM/uhal_tim.obj
 	@echo ... Core/USER_API/UHAL/UHAL_TIM/uhal_tim.i
 	@echo ... Core/USER_API/UHAL/UHAL_TIM/uhal_tim.s
 	@echo ... Core/USER_API/UHAL/UHAL_USART/uhal_usart.obj
 	@echo ... Core/USER_API/UHAL/UHAL_USART/uhal_usart.i
 	@echo ... Core/USER_API/UHAL/UHAL_USART/uhal_usart.s
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.s

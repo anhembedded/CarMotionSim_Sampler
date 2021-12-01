@@ -22,8 +22,7 @@ Core/Src/LiquidCrystal.o: ../Core/Src/LiquidCrystal.cpp \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- ../Core/Inc/stm32_assert.h ../Core/Inc/../USER_API/UHAL/simtools.hpp \
- ../Core/Inc/main.h ../Core/Inc/uhal_systemConfig.hpp \
+ ../Core/Inc/stm32_assert.h ../Core/Inc/uhal_systemConfig.hpp \
  ../Core/Inc/../USER_API/UHAL/Print.h
 
 ../Core/Inc/LiquidCrystal.h:
@@ -75,10 +74,6 @@ Core/Src/LiquidCrystal.o: ../Core/Src/LiquidCrystal.cpp \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
 
 ../Core/Inc/stm32_assert.h:
-
-../Core/Inc/../USER_API/UHAL/simtools.hpp:
-
-../Core/Inc/main.h:
 
 ../Core/Inc/uhal_systemConfig.hpp:
 

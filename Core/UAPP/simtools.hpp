@@ -22,7 +22,7 @@ namespace simTools
         _500000 = 500000,
         _921600 = 921600
     };
-};
+}
 
 using serialData_T = simTools::SIMTOOL_SERIAL_DATA_Type_T;
 

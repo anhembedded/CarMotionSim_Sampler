@@ -101,6 +101,22 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/usart.c.obj: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
  ../Core/Src/usart.c
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj: \
+ ../Core/Inc/stm32_assert.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm4.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj: \
  ../Core/Inc/stm32_assert.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
@@ -224,7 +240,6 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/LiquidCrystal.cpp.obj: \
  ../Core/Inc/uhal_systemConfig.hpp \
  ../Core/USER_API/UHAL/Arduino.hpp \
  ../Core/USER_API/UHAL/Print.h \
- ../Core/USER_API/UHAL/simtools.hpp \
  ../Core/USER_API/UHAL/uhal_stm32f407_platform.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -261,7 +276,6 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/main.cpp.obj: \
  ../Core/Inc/uhal_systemConfig.hpp \
  ../Core/USER_API/UHAL/Arduino.hpp \
  ../Core/USER_API/UHAL/Print.h \
- ../Core/USER_API/UHAL/simtools.hpp \
  ../Core/USER_API/UHAL/uhal_stm32f407_platform.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -274,6 +288,7 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/main.cpp.obj: \
  ../Drivers/CMSIS/Include/cmsis_version.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
@@ -286,6 +301,9 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/main.cpp.obj: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
  ../Core/Src/main.cpp \
+ ../Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.hpp \
+ ../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.hpp \
+ ../Core/USER_API/UHAL/UHAL_TIM/uhal_tim.hpp \
  ../Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/stm32f4xx_it.cpp.obj: \
  ../Core/Inc/main.h \
@@ -293,7 +311,6 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/stm32f4xx_it.cpp.obj: \
  ../Core/Inc/stm32_assert.h \
  ../Core/Inc/stm32f4xx_it.hpp \
  ../Core/Inc/uhal_systemConfig.hpp \
- ../Core/USER_API/UHAL/simtools.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
@@ -317,13 +334,13 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/stm32f4xx_it.cpp.obj: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
  ../Core/Src/stm32f4xx_it.cpp \
+ ../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.hpp \
  ../Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/uhal_stm32f407_platform.cpp.obj: \
  ../Core/Inc/main.h \
  ../Core/Inc/main_cpp.hpp \
  ../Core/Inc/stm32_assert.h \
  ../Core/Inc/uhal_systemConfig.hpp \
- ../Core/USER_API/UHAL/simtools.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
@@ -349,12 +366,129 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/Src/uhal_stm32f407_platform.cpp.obj
  ../Core/Src/uhal_stm32f407_platform.cpp \
  ../Core/USER_API/UHAL/Arduino.hpp \
  ../Core/USER_API/UHAL/uhal_stm32f407_platform.hpp
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/UAPP/UAPP_SIMTOOL.cpp.obj: \
+ ../Core/Inc/main.h \
+ ../Core/Inc/main_cpp.hpp \
+ ../Core/Inc/stm32_assert.h \
+ ../Core/Inc/uhal_systemConfig.hpp \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm4.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
+ ../Core/UAPP/UAPP_SIMTOOL.cpp \
+ ../Core/UAPP/UAPP_SIMTOOL.hpp
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp.obj: \
+ ../Core/Inc/main.h \
+ ../Core/Inc/main_cpp.hpp \
+ ../Core/Inc/stm32_assert.h \
+ ../Core/Inc/uhal_systemConfig.hpp \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm4.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
+ ../Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.cpp \
+ ../Core/USER_API/UHAL/UHAL_ADC/UHAL_ADC.hpp \
+ ../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.hpp
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp.obj: \
+ ../Core/Inc/main.h \
+ ../Core/Inc/main_cpp.hpp \
+ ../Core/Inc/stm32_assert.h \
+ ../Core/Inc/uhal_systemConfig.hpp \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm4.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
+ ../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp \
+ ../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.hpp
+CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT_HANDLER.cpp.obj: \
+ ../Core/Inc/main.h \
+ ../Core/Inc/main_cpp.hpp \
+ ../Core/Inc/stm32_assert.h \
+ ../Core/Inc/uhal_systemConfig.hpp \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm4.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
+ ../Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.cpp \
+ ../Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.hpp
 CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_TIM/uhal_tim.cpp.obj: \
  ../Core/Inc/main.h \
  ../Core/Inc/main_cpp.hpp \
  ../Core/Inc/stm32_assert.h \
  ../Core/Inc/uhal_systemConfig.hpp \
- ../Core/USER_API/UHAL/simtools.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
@@ -384,7 +518,6 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart
  ../Core/Inc/main_cpp.hpp \
  ../Core/Inc/stm32_assert.h \
  ../Core/Inc/uhal_systemConfig.hpp \
- ../Core/USER_API/UHAL/simtools.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
@@ -407,5 +540,6 @@ CMakeFiles/CarMotionSim_Sampler.elf.dir/Core/USER_API/UHAL/UHAL_USART/uhal_usart
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
+ ../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.hpp \
  ../Core/USER_API/UHAL/UHAL_USART/uhal_usart.cpp \
  ../Core/USER_API/UHAL/UHAL_USART/uhal_usart.hpp
