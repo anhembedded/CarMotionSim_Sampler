@@ -48,21 +48,26 @@ void UHAL_USART6::initialize(uint32_t baudRate) {
 
     LL_DMA_SetMemorySize(DMA2, LL_DMA_STREAM_1, LL_DMA_MDATAALIGN_BYTE);
 
-    // LL_DMA_EnableFifoMode(DMA2, LL_DMA_STREAM_1);
+    LL_DMA_EnableFifoMode(DMA2, LL_DMA_STREAM_1);
 
-    // LL_DMA_SetFIFOThreshold(DMA2, LL_DMA_STREAM_1, LL_DMA_FIFOTHRESHOLD_1_4);
+    LL_DMA_SetFIFOThreshold(DMA2, LL_DMA_STREAM_1, LL_DMA_FIFOTHRESHOLD_1_4);
 
-    // LL_DMA_SetMemoryBurstxfer(DMA2, LL_DMA_STREAM_1, LL_DMA_MBURST_SINGLE);
+   LL_DMA_SetMemoryBurstxfer(DMA2, LL_DMA_STREAM_1, LL_DMA_MBURST_SINGLE);
 
-    // LL_DMA_SetPeriphBurstxfer(DMA2, LL_DMA_STREAM_1, LL_DMA_PBURST_SINGLE);
+    LL_DMA_SetPeriphBurstxfer(DMA2, LL_DMA_STREAM_1, LL_DMA_PBURST_SINGLE);
 
 
-    NVIC_SetPriority(USART6_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
-    NVIC_EnableIRQ(USART6_IRQn);
+
+    UHAL_DMA2::DMA_USART6::flag_IT::FEIF::enableInterrupt();
+    UHAL_DMA2::DMA_USART6::flag_IT::DMEIF::enableInterrupt();
+    UHAL_DMA2::DMA_USART6::flag_IT::HTIF::enableInterrupt();
+    UHAL_DMA2::DMA_USART6::flag_IT::TCIF::enableInterrupt();
+    UHAL_DMA2::DMA_USART6::flag_IT::TEIF::enableInterrupt();
+
 
 
     USART_InitStruct.BaudRate = baudRate;
-    USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
+    USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_9B;
     USART_InitStruct.StopBits = LL_USART_STOPBITS_1;
     USART_InitStruct.Parity = LL_USART_PARITY_EVEN;
     USART_InitStruct.TransferDirection = LL_USART_DIRECTION_TX_RX;
@@ -71,10 +76,8 @@ void UHAL_USART6::initialize(uint32_t baudRate) {
     LL_USART_Init(USART6, &USART_InitStruct);
     LL_USART_ConfigAsyncMode(USART6);
 
-
-
-//  LL_USART_EnableDMAReq_RX(thisInstance);
-    //LL_USART_Enable(USART6);
+  LL_USART_EnableDMAReq_RX(thisInstance);
+ //   LL_USART_Enable(USART6);
 
 }
 
@@ -141,19 +144,24 @@ void UHAL_USART6::interruptReceiveInit() {
         assert_param(posAssert);
     }
     using namespace UHAL_USART6::flag_IT;
-    RXNE::enableIT();
-    //PE::enableIT();
+    FE::enableIT();
+    ORE::enableIT();
+    PE::enableIT();
+    IDLE::enableIT();
+    NF::enableIT();
     enableReceiver();
-    enableInterruptHandle();
+    enableInterruptHandle(0,0);
 }
 
 void UHAL_USART6::developing::fristRun(uintptr_t addressBuffer, uint16_t numberOfData) {
 
-    initialize();
+    initialize(115200);
     enableTransmitter();
+    enableReceiver();
     UHAL_DMA2::DMA_USART6::setPeripheralADDress(reinterpret_cast<uintptr_t>(&thisInstance->DR));
     UHAL_DMA2::DMA_USART6::setBufferAddress(addressBuffer);
     UHAL_DMA2::DMA_USART6::setNumberOfDataTransfer(numberOfData);
+    UHAL_DMA2::DMA_USART6::enable();
     interruptReceiveInit();
     enable();
 }

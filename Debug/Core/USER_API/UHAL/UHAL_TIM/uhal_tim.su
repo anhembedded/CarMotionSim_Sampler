@@ -1,0 +1,42 @@
+core_cm4.h:1676:26:uint32_t __NVIC_GetPriorityGrouping()	4	static
+core_cm4.h:1688:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+core_cm4.h:1724:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
+core_cm4.h:1816:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+core_cm4.h:1863:26:uint32_t NVIC_EncodePriority(uint32_t, uint32_t, uint32_t)	40	static
+stm32f4xx_ll_bus.h:411:22:void LL_AHB1_GRP1_EnableClock(uint32_t)	24	static
+stm32f4xx_ll_bus.h:475:26:uint32_t LL_AHB1_GRP1_IsEnabledClock(uint32_t)	16	static
+stm32f4xx_ll_bus.h:535:22:void LL_AHB1_GRP1_DisableClock(uint32_t)	16	static
+stm32f4xx_ll_bus.h:1187:22:void LL_APB1_GRP1_EnableClock(uint32_t)	24	static
+stm32f4xx_ll_bus.h:1265:26:uint32_t LL_APB1_GRP1_IsEnabledClock(uint32_t)	16	static
+stm32f4xx_ll_bus.h:1339:22:void LL_APB1_GRP1_DisableClock(uint32_t)	16	static
+stm32f4xx_ll_tim.h:1125:22:void LL_TIM_EnableCounter(TIM_TypeDef*)	16	static
+stm32f4xx_ll_tim.h:1136:22:void LL_TIM_DisableCounter(TIM_TypeDef*)	16	static
+stm32f4xx_ll_tim.h:1158:22:void LL_TIM_EnableUpdateEvent(TIM_TypeDef*)	16	static
+stm32f4xx_ll_tim.h:1169:22:void LL_TIM_DisableUpdateEvent(TIM_TypeDef*)	16	static
+stm32f4xx_ll_tim.h:1305:22:void LL_TIM_EnableARRPreload(TIM_TypeDef*)	16	static
+stm32f4xx_ll_tim.h:1420:22:void LL_TIM_SetPrescaler(TIM_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_tim.h:1447:22:void LL_TIM_SetAutoReload(TIM_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_tim.h:1923:22:void LL_TIM_OC_DisableFast(TIM_TypeDef*, uint32_t)	24	static
+stm32f4xx_ll_tim.h:1967:22:void LL_TIM_OC_EnablePreload(TIM_TypeDef*, uint32_t)	24	static
+stm32f4xx_ll_tim.h:2118:22:void LL_TIM_OC_SetCompareCH1(TIM_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_tim.h:2135:22:void LL_TIM_OC_SetCompareCH2(TIM_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_tim.h:2738:22:void LL_TIM_SetTriggerOutput(TIM_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_tim.h:2804:22:void LL_TIM_DisableMasterSlaveMode(TIM_TypeDef*)	16	static
+stm32f4xx_ll_tim.h:3967:22:void LL_TIM_GenerateEvent_UPDATE(TIM_TypeDef*)	16	static
+uhal_tim.cpp:8:6:void UHAL_TIM5_PWM::initialize()	88	static
+uhal_tim.cpp:76:6:void UHAL_TIM5_PWM::holdOnUpdateEvent()	8	static
+uhal_tim.cpp:80:6:void UHAL_TIM5_PWM::releaseUpdateEvent()	8	static
+uhal_tim.cpp:84:6:void UHAL_TIM5_PWM::updateEventGenerating()	8	static
+uhal_tim.cpp:98:6:void UHAL_TIM5_PWM::setPrescaler(UHAL_TIM5_PWM::thisTimerPrescaler_T)	16	static
+uhal_tim.cpp:107:6:void UHAL_TIM5_PWM::setAutoReload(UHAL_TIM5_PWM::thisTimerType_T)	16	static
+uhal_tim.cpp:119:6:void UHAL_TIM5_PWM::setCaptureCompareCH1(UHAL_TIM5_PWM::thisTimerType_T)	16	static
+uhal_tim.cpp:129:6:void UHAL_TIM5_PWM::setCaptureCompareCH2(UHAL_TIM5_PWM::thisTimerType_T)	16	static
+uhal_tim.cpp:138:6:auto UHAL_TIM5_PWM::enableGPIOClock()	8	static
+uhal_tim.cpp:142:6:auto UHAL_TIM5_PWM::disableGPIOClock()	8	static
+uhal_tim.cpp:146:6:auto UHAL_TIM5_PWM::enablePerihClock()	8	static
+uhal_tim.cpp:150:6:auto UHAL_TIM5_PWM::disablePerihClock()	8	static
+uhal_tim.cpp:154:6:void UHAL_TIM5_PWM::enableInterrupt()	8	static
+uhal_tim.cpp:159:6:void UHAL_TIM5_PWM::disableInterrupt()	8	static
+uhal_tim.cpp:163:6:void UHAL_TIM5_PWM::startCounter()	8	static
+uhal_tim.cpp:172:6:void UHAL_TIM5_PWM::stopCounter()	8	static
+uhal_tim.cpp:181:6:void UHAL_TIM5_PWM::developing::firstRun()	8	static

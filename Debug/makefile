@@ -81,8 +81,8 @@ all: main-build
 main-build: CarMotionSim_Sampler.elf secondary-outputs
 
 # Tool invocations
-CarMotionSim_Sampler.elf: $(OBJS) $(USER_OBJS) D:\PROJECTS\CAR\ MOTION\ SIMULATOR\ GAMING\ GEAR\ PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "CarMotionSim_Sampler.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CarMotionSim_Sampler.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+CarMotionSim_Sampler.elf: $(OBJS) $(USER_OBJS) G:\Other\ computers\My\ Laptop\ (1)\D\PROJECTS\CAR\ MOTION\ SIMULATOR\ GAMING\ GEAR\ PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "CarMotionSim_Sampler.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"G:\Other computers\My Laptop (1)\D\PROJECTS\CAR MOTION SIMULATOR GAMING GEAR PROJECT\Stm32f407_CarMotionSim\CarMotionSim_Sampler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CarMotionSim_Sampler.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -129,8 +129,8 @@ void UHAL_ADC::initialize2()
 	 LL_DMA_SetPeriphBurstxfer(DMA2, LL_DMA_STREAM_0, LL_DMA_PBURST_SINGLE);
 
 	  /* ADC1 interrupt Init */
-	  NVIC_SetPriority(ADC_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),1, 1));
-	  NVIC_EnableIRQ(ADC_IRQn);
+	//  NVIC_SetPriority(ADC_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),1, 1));
+	 // NVIC_EnableIRQ(ADC_IRQn);
 
 	  /* USER CODE BEGIN ADC1_Init 1 */
 

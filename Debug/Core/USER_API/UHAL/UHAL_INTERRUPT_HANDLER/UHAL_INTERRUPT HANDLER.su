@@ -1,0 +1,8 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+std_function.h:255:5:std::_Function_base::_Function_base()	16	static
+std_function.h:257:5:std::_Function_base::~_Function_base()	16	static
+std_function.h:396:7:)>::function() [with _Res = void; _ArgTypes = {}]	16	static
+std_function.h:369:11:std::function<void()>::~function()	16	static
+UHAL_INTERRUPT HANDLER.hpp:11:44:void __static_initialization_and_destruction_0(int, int)	16	static
+UHAL_INTERRUPT HANDLER.hpp:11:44:hpp)	8	static
+UHAL_INTERRUPT HANDLER.hpp:11:44:hpp)	8	static

@@ -17,37 +17,54 @@ stm32f4xx_ll_system.h:1542:22:void LL_FLASH_SetLatency(uint32_t)	16	static
 stm32f4xx_ll_system.h:1568:26:uint32_t LL_FLASH_GetLatency()	4	static
 stm32f4xx_ll_pwr.h:507:22:void LL_PWR_SetRegulVoltageScaling(uint32_t)	16	static
 stm32f4xx_ll_dma.h:1650:26:uint32_t LL_DMA_IsActiveFlag_HT0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:1661:26:uint32_t LL_DMA_IsActiveFlag_HT1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:1738:26:uint32_t LL_DMA_IsActiveFlag_TC0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:1749:26:uint32_t LL_DMA_IsActiveFlag_TC1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:1826:26:uint32_t LL_DMA_IsActiveFlag_TE0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:1837:26:uint32_t LL_DMA_IsActiveFlag_TE1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:1914:26:uint32_t LL_DMA_IsActiveFlag_DME0(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:2002:26:uint32_t LL_DMA_IsActiveFlag_FE0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:2013:26:uint32_t LL_DMA_IsActiveFlag_FE1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:2090:22:void LL_DMA_ClearFlag_HT0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:2101:22:void LL_DMA_ClearFlag_HT1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:2178:22:void LL_DMA_ClearFlag_TC0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:2189:22:void LL_DMA_ClearFlag_TC1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:2266:22:void LL_DMA_ClearFlag_TE0(DMA_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:2277:22:void LL_DMA_ClearFlag_TE1(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:2354:22:void LL_DMA_ClearFlag_DME0(DMA_TypeDef*)	16	static
 stm32f4xx_ll_dma.h:2442:22:void LL_DMA_ClearFlag_FE0(DMA_TypeDef*)	16	static
-stm32f4xx_ll_usart.h:1793:26:uint32_t LL_USART_IsActiveFlag_RXNE(USART_TypeDef*)	16	static
-stm32f4xx_ll_usart.h:1815:26:uint32_t LL_USART_IsActiveFlag_TXE(USART_TypeDef*)	16	static
-stm32f4xx_ll_usart.h:1980:22:void LL_USART_ClearFlag_RXNE(USART_TypeDef*)	16	static
+stm32f4xx_ll_dma.h:2453:22:void LL_DMA_ClearFlag_FE1(DMA_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1738:26:uint32_t LL_USART_IsActiveFlag_PE(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1749:26:uint32_t LL_USART_IsActiveFlag_FE(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1760:26:uint32_t LL_USART_IsActiveFlag_NE(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1771:26:uint32_t LL_USART_IsActiveFlag_ORE(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1782:26:uint32_t LL_USART_IsActiveFlag_IDLE(USART_TypeDef*)	16	static
+stm32f4xx_ll_usart.h:1878:22:void LL_USART_ClearFlag_PE(USART_TypeDef*)	24	static
+stm32f4xx_ll_usart.h:1897:22:void LL_USART_ClearFlag_FE(USART_TypeDef*)	24	static
+stm32f4xx_ll_usart.h:1916:22:void LL_USART_ClearFlag_NE(USART_TypeDef*)	24	static
+stm32f4xx_ll_usart.h:1935:22:void LL_USART_ClearFlag_ORE(USART_TypeDef*)	24	static
+stm32f4xx_ll_usart.h:1954:22:void LL_USART_ClearFlag_IDLE(USART_TypeDef*)	24	static
 char_traits.h:329:7:static constexpr std::size_t std::char_traits<char>::length(const char_type*)	24	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 basic_string.h:6562:3:std::string std::__cxx11::to_string(long unsigned int)	24	static
 stm32f4xx_ll_adc.h:4288:26:uint32_t LL_ADC_IsActiveFlag_EOCS(ADC_TypeDef*)	16	static
 stm32f4xx_ll_adc.h:4299:26:uint32_t LL_ADC_IsActiveFlag_OVR(ADC_TypeDef*)	16	static
 stm32f4xx_ll_adc.h:4341:22:void LL_ADC_ClearFlag_EOCS(ADC_TypeDef*)	16	static
-main.cpp:72:9:simtool getData(std::array<unsigned char, 12>)	32	static
+main.cpp:54:10:uint16_t swap2byte(uint16_t)	24	static
+main.cpp:62:17:uint16_t Rev16(uint16_t)	16	static,ignoring_inline_asm
+main.cpp:95:9:simtool getData(std::array<unsigned char, 12>)	32	static
 array:138:7:constexpr const value_type* std::array<_Tp, _Nm>::end() const [with _Tp = unsigned char; unsigned int _Nm = 10]	16	static
 array:130:7:constexpr const value_type* std::array<_Tp, _Nm>::begin() const [with _Tp = unsigned char; unsigned int _Nm = 10]	16	static
-main.cpp:88:15:getData(std::array<unsigned char, 10>&, uint8_t&, uint8_t&, uint8_t&)::<lambda(unsigned char*)>	16	static
-main.cpp:78:6:void getData(std::array<unsigned char, 10>&, uint8_t&, uint8_t&, uint8_t&)	72	static
-main.cpp:130:5:int main()	8	static
-main.cpp:169:8:void USART6_IRQHandler()	16	static
-main.cpp:187:8:void DMA2_Stream0_IRQHandler()	8	static
-main.cpp:219:8:void DMA2_Stream1_IRQHandler()	8	static
-main.cpp:225:8:void ADC_IRQHandler()	8	static
-main.cpp:249:6:void SystemClock_Config()	8	static
-main.cpp:291:6:void Error_Handler()	4	static,ignoring_inline_asm
-main.cpp:310:6:void assert_failed(uint8_t*, uint32_t)	120	static
+main.cpp:111:15:getData(std::array<unsigned char, 10>&, uint8_t&, uint8_t&, uint8_t&)::<lambda(unsigned char*)>	16	static
+main.cpp:101:6:void getData(std::array<unsigned char, 10>&, uint8_t&, uint8_t&, uint8_t&)	72	static
+main.cpp:153:5:int main()	8	static
+main.cpp:187:8:void USART6_IRQHandler()	32	static
+main.cpp:214:8:void DMA2_Stream0_IRQHandler()	8	static
+main.cpp:246:8:void DMA2_Stream1_IRQHandler()	8	static
+main.cpp:286:8:void ADC_IRQHandler()	8	static
+main.cpp:310:6:void SystemClock_Config()	8	static
+main.cpp:348:6:void Error_Handler()	4	static,ignoring_inline_asm
+main.cpp:367:6:void assert_failed(uint8_t*, uint32_t)	120	static
 char_traits.h:100:7:static constexpr bool __gnu_cxx::char_traits<_CharT>::eq(const char_type&, const char_type&) [with _CharT = char]	16	static
 char_traits.h:161:5:static constexpr std::size_t __gnu_cxx::char_traits<_CharT>::length(const char_type*) [with _CharT = char]	24	static
 string_conversions.h:99:5:) [with _String = std::__cxx11::basic_string<char>; _CharT = char]	44	dynamic

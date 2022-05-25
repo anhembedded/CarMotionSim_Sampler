@@ -1,0 +1,50 @@
+core_cm4.h:1676:26:uint32_t __NVIC_GetPriorityGrouping()	4	static
+core_cm4.h:1688:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+core_cm4.h:1724:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
+core_cm4.h:1816:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+core_cm4.h:1863:26:uint32_t NVIC_EncodePriority(uint32_t, uint32_t, uint32_t)	40	static
+stm32f4xx_ll_bus.h:411:22:void LL_AHB1_GRP1_EnableClock(uint32_t)	24	static
+stm32f4xx_ll_bus.h:1706:22:void LL_APB2_GRP1_EnableClock(uint32_t)	24	static
+stm32f4xx_ll_dma.h:515:22:void LL_DMA_DisableStream(DMA_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_dma.h:535:26:uint32_t LL_DMA_IsEnabledStream(DMA_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_dma.h:596:22:void LL_DMA_SetDataTransferDirection(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:644:22:void LL_DMA_SetMode(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:691:22:void LL_DMA_SetPeriphIncMode(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:736:22:void LL_DMA_SetMemoryIncMode(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:782:22:void LL_DMA_SetPeriphSize(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:829:22:void LL_DMA_SetMemorySize(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:922:22:void LL_DMA_SetStreamPriorityLevel(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:1020:22:void LL_DMA_SetChannelSelection(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:1073:22:void LL_DMA_SetMemoryBurstxfer(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:1122:22:void LL_DMA_SetPeriphBurstxfer(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_dma.h:1297:22:void LL_DMA_EnableFifoMode(DMA_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_dma.h:1322:22:void LL_DMA_SetFIFOThreshold(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+stm32f4xx_ll_adc.h:2491:22:void LL_ADC_REG_SetSequencerRanks(ADC_TypeDef*, uint32_t, uint32_t)	40	static,ignoring_inline_asm
+stm32f4xx_ll_adc.h:2723:22:void LL_ADC_REG_SetFlagEndOfConversion(ADC_TypeDef*, uint32_t)	16	static
+stm32f4xx_ll_adc.h:3277:22:void LL_ADC_SetChannelSamplingTime(ADC_TypeDef*, uint32_t, uint32_t)	56	static,ignoring_inline_asm
+stm32f4xx_ll_adc.h:3868:22:void LL_ADC_Enable(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:3879:22:void LL_ADC_Disable(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:3890:26:uint32_t LL_ADC_IsEnabled(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:3919:22:void LL_ADC_REG_StartConversionSWStart(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:3987:26:uint16_t LL_ADC_REG_ReadConversionData12(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:4288:26:uint32_t LL_ADC_IsActiveFlag_EOCS(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:4352:22:void LL_ADC_ClearFlag_OVR(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:4573:22:void LL_ADC_EnableIT_EOCS(ADC_TypeDef*)	16	static
+stm32f4xx_ll_adc.h:4584:22:void LL_ADC_EnableIT_OVR(ADC_TypeDef*)	16	static
+UHAL_ADC.cpp:15:6:void UHAL_ADC::enable()	8	static
+UHAL_ADC.cpp:20:6:void UHAL_ADC::disable()	8	static
+UHAL_ADC.cpp:24:6:void UHAL_ADC::enableInterrupt()	8	static
+UHAL_ADC.cpp:33:6:void UHAL_ADC::enableGPIOClock()	8	static
+UHAL_ADC.cpp:37:6:void UHAL_ADC::disableGPIOClock()	4	static
+UHAL_ADC.cpp:41:6:void UHAL_ADC::enablePerihClock()	8	static
+UHAL_ADC.cpp:45:6:void UHAL_ADC::disablePerihClock()	4	static
+UHAL_ADC.cpp:49:6:void UHAL_ADC::on()	8	static
+UHAL_ADC.cpp:53:6:void UHAL_ADC::off()	8	static
+UHAL_ADC.cpp:58:6:void UHAL_ADC::startConversion()	8	static
+UHAL_ADC.cpp:64:6:void UHAL_ADC::recoverAdcFormOverrun(uintptr_t, uintptr_t, uint16_t)	24	static
+UHAL_ADC.cpp:75:21:UHAL_ADC::thisADC_T UHAL_ADC::readAdcConversionRegister()	8	static
+UHAL_ADC.cpp:78:6:void UHAL_ADC::initialize2()	80	static
+UHAL_ADC.cpp:166:6:void UHAL_ADC::initialize()	80	static
+UHAL_ADC.cpp:226:6:void UHAL_ADC::disableInterrupt()	8	static
+UHAL_ADC.cpp:230:21:UHAL_ADC::thisADC_T UHAL_ADC::fristTest(uintptr_t)	16	static
+UHAL_ADC.cpp:241:6:void UHAL_ADC::DMAReInitForRecover()	8	static

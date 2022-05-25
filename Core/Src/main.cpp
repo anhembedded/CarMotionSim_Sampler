@@ -18,6 +18,7 @@
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 #include "gpio.h"
 #include "main_cpp.hpp"
@@ -42,8 +43,30 @@ auto dmaCompTrans = 0;
 auto dmaTransError = 0;
 auto dmaFifoOverUnder = 0;
 auto dmaDirectModeERROR = 0;
+auto usartDMA = 0;
 auto usartRXNE = 0;
-uint8_t usartBuffer [15];
+auto usartInterrupt{0};
+auto usartData {0};
+auto usartErro = 0;
+auto usartIdel = 0;
+uint16_t usartBuffer [10];
+
+uint16_t swap2byte(uint16_t towByte)
+{
+	auto hibyte = (towByte & 0xff00U) >> 8;
+	auto lobyte  = (towByte & 0xffU);
+	return lobyte << 8 | hibyte;
+}
+
+
+inline uint16_t Rev16(uint16_t a)
+{
+  asm ("rev16 %1,%0"
+          : "=r" (a)
+          : "r" (a));
+  return a;
+}
+
 // std::array<UHAL_ADC::thisADC_T,2> adcBuffer {0};
 uint16_t adcBuffer[15]{0};
 
@@ -137,16 +160,12 @@ int main()
 
   SystemClock_Config();
   MX_GPIO_Init();
+  
+  UHAL_USART6::developing::fristRun(reinterpret_cast<uintptr_t>(&usartBuffer), 8);
 
-
-  UHAL_USART6::developing::fristRun(reinterpret_cast<uintptr_t>(&usartBuffer), 9);
-
-    
-
-  // UHAL_TIM5_PWM::developing::firstRun();
+ //  UHAL_TIM5_PWM::developing::firstRun();
 
   UHAL_DMA2::DMA_ADC1::initialize2();
-  UHAL_DMA2::DMA_ADC1::enableInterrupt();
   UHAL_ADC::initialize2();
   UHAL_DMA2::DMA_ADC1::enableInterrupt();
   UHAL_ADC::enableInterrupt();
@@ -155,12 +174,11 @@ int main()
   UHAL_DMA2::DMA_ADC1::setNumberOfDataTransfer(2);
   UHAL_DMA2::DMA_ADC1::enable();
   UHAL_ADC::enable();
-
   UHAL_ADC::startConversion();
   while (true)
   {
 
-    UHAL_ADC::startConversion();
+
   }
 }
 
@@ -170,16 +188,25 @@ extern "C"
   {
     using namespace UHAL_USART6;
     using namespace UHAL_USART6::flag_IT;
-
-    if (TXE::isSet())
+    usartInterrupt++;
+    if(IDLE::isSet())
     {
-
+    	UHAL_DMA2::DMA_USART6::disable();
+        waitUntil(UHAL_DMA2::DMA_USART6::isDisabled());
+    	UHAL_DMA2::DMA_USART6::setNumberOfDataTransfer(8);
+    	UHAL_DMA2::DMA_USART6::enable();
+    	usartIdel++;
+    	IDLE::clear();
     }
-
-    if (RXNE::isSet())
+    if(PE::isSet() || NF::isSet()||FE::isSet()||ORE::isSet())
     {
-    	usartRXNE++;
-    	RXNE::clear();
+    	usartErro++;
+    	UHAL_DMA2::DMA_USART6::disable();
+    	waitUntil(UHAL_DMA2::DMA_USART6::isDisabled());
+    	PE::clear();
+    	NF::clear();
+    	FE::clear();
+    	ORE::clear();
     }
     NVIC_ClearPendingIRQ(UHAL_USART6::thisIRQn);
   }
@@ -187,39 +214,73 @@ extern "C"
   void DMA2_Stream0_IRQHandler()
   {
     dmaInterrupt++;
-
-    if (UHAL_DMA2::DMA_ADC1::flag_IT::DMEIF::isSet())
+    using namespace UHAL_DMA2::DMA_ADC1;
+    if (flag_IT::DMEIF::isSet())
     {
       dmaDirectModeERROR++;
-      UHAL_DMA2::DMA_ADC1::flag_IT::DMEIF::clear();
+      flag_IT::DMEIF::clear();
     }
-    if (UHAL_DMA2::DMA_ADC1::flag_IT::HTIF::isSet())
+    if (flag_IT::HTIF::isSet())
     {
       dmaHalfTrans++;
-      UHAL_DMA2::DMA_ADC1::flag_IT::HTIF::clear();
+     flag_IT::HTIF::clear();
     }
-    if (UHAL_DMA2::DMA_ADC1::flag_IT::TCIF::isSet())
+    if (flag_IT::TCIF::isSet())
     {
       dmaCompTrans++;
-      UHAL_DMA2::DMA_ADC1::flag_IT::TCIF::clear();
+      flag_IT::TCIF::clear();
     }
-    if (UHAL_DMA2::DMA_ADC1::flag_IT::TEIF::isSet())
+    if (flag_IT::TEIF::isSet())
     {
       dmaTransError++;
-      UHAL_DMA2::DMA_ADC1::flag_IT::TEIF::clear();
+      flag_IT::TEIF::clear();
     }
-    if (UHAL_DMA2::DMA_ADC1::flag_IT::FEIF::isSet())
+    if (flag_IT::FEIF::isSet())
     {
       dmaFifoOverUnder++;
-      UHAL_DMA2::DMA_ADC1::flag_IT::FEIF::clear();
+      flag_IT::FEIF::clear();
     }
-    NVIC_ClearPendingIRQ(DMA2_Stream0_IRQn);
+    NVIC_ClearPendingIRQ(thisIRQn);
   }
 
   void DMA2_Stream1_IRQHandler()
   {
+	  using namespace UHAL_DMA2::DMA_USART6;
+	  usartDMA ++;
+	  if (flag_IT::DMEIF::isSet())
+	      {
+	        dmaDirectModeERROR++;
+	        flag_IT::DMEIF::clear();
+	      }
 
-    NVIC_ClearPendingIRQ(DMA2_Stream1_IRQn);
+	      if (flag_IT::HTIF::isSet())
+	      {
+	        dmaHalfTrans++;
+	       flag_IT::HTIF::clear();
+	      }
+
+	      if (flag_IT::TCIF::isSet())
+	      {
+	    	 usartBuffer[4] = Rev16(usartBuffer[0]);
+	    	 usartBuffer[5] = Rev16(usartBuffer[1]);
+	    	 usartBuffer[6] = Rev16(usartBuffer[2]);
+	        dmaCompTrans++;
+	        flag_IT::TCIF::clear();
+	      }
+
+	      if (flag_IT::TEIF::isSet())
+	      {
+	        dmaTransError++;
+	        flag_IT::TEIF::clear();
+	      }
+
+	      if (flag_IT::FEIF::isSet())
+	      {
+	        dmaFifoOverUnder++;
+	        flag_IT::FEIF::clear();
+	      }
+
+    NVIC_ClearPendingIRQ(thisIRQn);
   }
 
   void ADC_IRQHandler()
@@ -279,10 +340,6 @@ void SystemClock_Config(void)
   LL_Init1msTick(168000000);
   LL_SetSystemCoreClock(168000000);
 }
-
-/* USER CODE BEGIN 4 */
-
-/* USER CODE END 4 */
 
 /**
  * @brief  This function is executed in case of error occurrence.

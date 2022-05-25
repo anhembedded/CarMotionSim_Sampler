@@ -18,7 +18,7 @@ void UHAL_DMA2::DMA_ADC1::initialize2()
 	
 	  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_DMA2);
 
-	  NVIC_SetPriority(thisIRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),0, 0));
+	  NVIC_SetPriority(thisIRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),1, 1));
 	  NVIC_EnableIRQ(thisIRQn);
 	
 }
@@ -100,3 +100,14 @@ void UHAL_DMA2::DMA_USART6::initialize() {
     NVIC_SetPriority(thisIRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),0, 0));
     NVIC_EnableIRQ(thisIRQn);
 }
+
+void UHAL_DMA2::DMA_USART6::disable() {
+    LL_DMA_DisableStream(thisInstance, thisStream);
+}
+
+uint8_t UHAL_DMA2::DMA_USART6::isDisabled()
+{
+	return !LL_DMA_IsEnabledStream(thisInstance, thisStream);
+}
+
+

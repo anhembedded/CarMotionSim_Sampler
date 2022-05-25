@@ -22,6 +22,7 @@ namespace UHAL_DMA2 /// @brief for ADC1
          void setBufferAddress(uintptr_t bufferAddress);
          void setPeripheralADDress(const uintptr_t address);
          void enable();
+         void disable();
          void setNumberOfDataTransfer(uint16_t numb);
        void initialize();
        void initialize2();
@@ -48,7 +49,7 @@ namespace UHAL_DMA2 /// @brief for ADC1
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
           }
-            namespace TCIF // Transfer complete
+          namespace TCIF // Transfer complete
           {
             __SFI auto isSet()
             {
@@ -65,7 +66,7 @@ namespace UHAL_DMA2 /// @brief for ADC1
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
           }
-            namespace TEIF // Transfer error
+          namespace TEIF // Transfer error
           {
             __SFI auto isSet()
             {
@@ -82,7 +83,7 @@ namespace UHAL_DMA2 /// @brief for ADC1
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
           }
-            namespace FEIF // FIFO overrun/underrun
+          namespace FEIF // FIFO overrun/underrun
           {
            __SFI auto isSet()
             {
@@ -132,7 +133,11 @@ namespace UHAL_DMA2 /// @brief for ADC1
          void setBufferAddress(uintptr_t bufferAddress);
          void setPeripheralADDress(const uintptr_t address);
          void enable();
-         void setNumberOfDataTransfer(uint16_t numb);
+         void disable();
+         uint8_t isDisabled();
+
+
+        void setNumberOfDataTransfer(uint16_t numb);
        void initialize();
        void initialize2();
        void enableInterrupt();
@@ -145,66 +150,67 @@ namespace UHAL_DMA2 /// @brief for ADC1
           {
             __SFI auto isSet() 
             {
-               return LL_DMA_IsActiveFlag_HT0(thisInstance);
+               return LL_DMA_IsActiveFlag_HT1(thisInstance);
             }
             __SFI auto clear()
             {
-               LL_DMA_ClearFlag_HT0(thisInstance);
+               LL_DMA_ClearFlag_HT1(thisInstance);
             }         
             __SFI auto enableInterrupt()
             {
-               LL_DMA_IsEnabledIT_HT(thisInstance, thisStream);
+               LL_DMA_EnableIT_HT(thisInstance, thisStream);
             }
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
           }
-            namespace TCIF // Transfer complete
+          namespace TCIF // Transfer complete
           {
             __SFI auto isSet()
             {
-               return LL_DMA_IsActiveFlag_TC0(thisInstance);
+               return LL_DMA_IsActiveFlag_TC1(thisInstance);
             }
             __SFI auto clear()  
             {
-                LL_DMA_ClearFlag_TC0(thisInstance);
+                LL_DMA_ClearFlag_TC1(thisInstance);
             }       
             __SFI auto enableInterrupt()
             {
-                LL_DMA_IsEnabledIT_TC(thisInstance, thisStream);
+                LL_DMA_EnableIT_TC(thisInstance, thisStream);
             }
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
           }
-            namespace TEIF // Transfer error
+          namespace TEIF // Transfer error
           {
             __SFI auto isSet()
             {
-               return LL_DMA_IsActiveFlag_TE0(thisInstance);
+               return LL_DMA_IsActiveFlag_TE1(thisInstance);
             }
             __SFI auto clear()  
             {
-                LL_DMA_ClearFlag_TE0(thisInstance);
+                LL_DMA_ClearFlag_TE1(thisInstance);
             }       
             __SFI auto enableInterrupt()
             {
-                LL_DMA_IsEnabledIT_TE(thisInstance, thisStream);
+                LL_DMA_EnableIT_TE(thisInstance, thisStream);
             }
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
           }
-            namespace FEIF // FIFO overrun/underrun
+          namespace FEIF // FIFO overrun/underrun
           {
            __SFI auto isSet()
             {
-               return LL_DMA_IsActiveFlag_FE0(thisInstance);
+               return LL_DMA_IsActiveFlag_FE1(thisInstance);
             }
             __SFI auto clear()  
             {
-                LL_DMA_ClearFlag_FE0(thisInstance);
+                LL_DMA_ClearFlag_FE1(thisInstance);
+
             }       
             __SFI auto enableInterrupt()
             {
-                LL_DMA_IsEnabledIT_FE(thisInstance, thisStream);
+                LL_DMA_EnableIT_FE(thisInstance, thisStream);
             }
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();
@@ -222,7 +228,7 @@ namespace UHAL_DMA2 /// @brief for ADC1
             }       
             __SFI auto enableInterrupt()
             {
-                LL_DMA_IsEnabledIT_DME(thisInstance, thisStream);
+                LL_DMA_EnableIT_DME(thisInstance, thisStream);
             }
             __SFI auto isEnableInterrupt() ;
              [[deprecated("this flag no pending")]] __SFI auto clearPendingBit();

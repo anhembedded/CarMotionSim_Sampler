@@ -11,10 +11,10 @@
 				<Option working_dir="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CarMotionSim_Sampler.elf">
@@ -50,10 +50,10 @@
 					<Add directory="c:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 CarMotionSim_Sampler.elf"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 CarMotionSim_Sampler.elf"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CarMotionSim_Sampler.elf/fast">
@@ -89,30 +89,30 @@
 					<Add directory="c:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 CarMotionSim_Sampler.elf/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 CarMotionSim_Sampler.elf/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROJECTS/CAR MOTION SIMULATOR GAMING GEAR PROJECT/Stm32f407_CarMotionSim/CarMotionSim_Sampler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
