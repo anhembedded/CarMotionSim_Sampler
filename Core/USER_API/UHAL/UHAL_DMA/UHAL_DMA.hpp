@@ -123,12 +123,12 @@ namespace UHAL_DMA2 /// @brief for ADC1
       void firstRun();
 
     }
-    namespace DMA_USART6
+    namespace DMA_USART1
     {
        const decltype(DMA2) thisInstance = DMA2;
-       constexpr auto  thisStream = LL_DMA_STREAM_1;
-       constexpr auto thisChannel = LL_DMA_CHANNEL_5;
-         constexpr auto thisIRQn = DMA2_Stream1_IRQn;
+       constexpr auto  thisStream = LL_DMA_STREAM_5;
+       constexpr auto thisChannel = LL_DMA_CHANNEL_4;
+         constexpr auto thisIRQn = DMA2_Stream5_IRQn;
          
          void setBufferAddress(uintptr_t bufferAddress);
          void setPeripheralADDress(const uintptr_t address);

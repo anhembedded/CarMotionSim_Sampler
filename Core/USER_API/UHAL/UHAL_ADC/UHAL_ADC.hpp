@@ -51,7 +51,6 @@ namespace UHAL_ADC /// @brief this namespace for the Hardware abstract layer of 
         return LL_AHB1_GRP1_IsEnabledClock(LL_AHB1_GRP1_PERIPH_GPIOA);
     }
 
-
     /**
      * @brief   Initiation for the ADC1 to use
      * @param   None
@@ -73,8 +72,8 @@ namespace UHAL_ADC /// @brief this namespace for the Hardware abstract layer of 
      * @author Trần Hoàng Anh        
      *          
      */
+
     void initialize();
-    void initialize2();
 
 /**
   * @brief  Enable the selected ADC instance.
@@ -189,7 +188,10 @@ namespace UHAL_ADC /// @brief this namespace for the Hardware abstract layer of 
 
     void DMAReInitForRecover();
     thisADC_T fristTest(uintptr_t addressBuffer);
-
+    namespace developing
+	{
+    	void firstRun(uintptr_t addressBuffer);
+	}
 }
 
 #endif // CARMOTIONSIM_SAMPLER_UHAL_ADC_HPP

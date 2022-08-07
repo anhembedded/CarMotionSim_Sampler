@@ -5,22 +5,14 @@
 #include "uhal_tim.hpp"
 
 
-void UHAL_TIM5_PWM::initialize() {
-    /* USER CODE BEGIN TIM5_Init 0 */
+void UHAL_TIM5_PWM::initialize(uint16_t frequency) {
 
-    /* USER CODE END TIM5_Init 0 */
 
     LL_TIM_InitTypeDef TIM_InitStruct = {0};
     LL_TIM_OC_InitTypeDef TIM_OC_InitStruct = {0};
-
     LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 
     LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM5);
-
-    /* TIM5 DMA Init */
-
-    /* TIM5_CH1 Init */
-
 
     /* TIM5 interrupt Init */
   //  NVIC_SetPriority(TIM5_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
@@ -29,9 +21,9 @@ void UHAL_TIM5_PWM::initialize() {
     /* USER CODE BEGIN TIM5_Init 1 */
 
     /* USER CODE END TIM5_Init 1 */
-    TIM_InitStruct.Prescaler = 01211;
+    TIM_InitStruct.Prescaler = frequency; // 1 -> 41Khz, 0xffff -> 1.25hz
     TIM_InitStruct.CounterMode = LL_TIM_COUNTERMODE_UP;
-    TIM_InitStruct.Autoreload = 255;
+    TIM_InitStruct.Autoreload = 1023;
     TIM_InitStruct.ClockDivision = LL_TIM_CLOCKDIVISION_DIV1;
     LL_TIM_Init(TIM5, &TIM_InitStruct);
 
@@ -43,8 +35,9 @@ void UHAL_TIM5_PWM::initialize() {
     TIM_OC_InitStruct.OCMode = LL_TIM_OCMODE_PWM1;
     TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_ENABLE; // enable Signal
     TIM_OC_InitStruct.OCNState = LL_TIM_OCSTATE_DISABLE;
-    TIM_OC_InitStruct.CompareValue = 255;
     TIM_OC_InitStruct.OCPolarity = LL_TIM_OCPOLARITY_HIGH;
+
+
     LL_TIM_OC_Init(TIM5, LL_TIM_CHANNEL_CH1, &TIM_OC_InitStruct);
     LL_TIM_OC_DisableFast(TIM5, LL_TIM_CHANNEL_CH1);
 
@@ -113,7 +106,6 @@ void UHAL_TIM5_PWM::setAutoReload(UHAL_TIM5_PWM::thisTimerType_T autoReloadVar) 
 
     LL_TIM_SetAutoReload(thisInstance, autoReloadVar);
 
-
 }
 
 void UHAL_TIM5_PWM::setCaptureCompareCH1(UHAL_TIM5_PWM::thisTimerType_T captureCompareVar) {
@@ -181,19 +173,15 @@ void UHAL_TIM5_PWM::stopCounter() {
 void UHAL_TIM5_PWM::developing::firstRun() {
 
     /*!< Pos assert */
-	initialize();
+	initialize(100);
     if constexpr(systemDebug == debug_T::debugOn)
     {
         assert_param(isPeripheralClKEnabled());
         assert_param(isGPIOClKEnabled());
     }
 
-
     setCaptureCompareCH1(100);
     setCaptureCompareCH2(200);
-
     startCounter();
-
-
    
 }

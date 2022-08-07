@@ -53,6 +53,7 @@ namespace UHAL_TIM5_PWM /// @brief User hardware abstraction layer for timer 5 w
     const decltype(GPIOA) thisInstanceGPIO = GPIOA;
     /*!< Timer Interrupt line's number */
     const auto thisIRQn = TIM5_IRQn;
+    constexpr auto resolution = 0x3FFU;
     /*!< Timer "counting register Type" */
     typedef uint32_t thisTimerType_T;
     /*!< Timer "prescaler Type" */
@@ -75,20 +76,19 @@ namespace UHAL_TIM5_PWM /// @brief User hardware abstraction layer for timer 5 w
         return LL_AHB1_GRP1_IsEnabledClock(LL_AHB1_GRP1_PERIPH_GPIOA);
     }
 
-    void initialize();
+    void initialize(uint16_t frequency);
 
     __SFI auto enable(); ///@note No implement
     __SFI auto disable();	///@note No implement
 
     void startCounter();
-
     void stopCounter();
-
-    void upCountingDirection();     /// init
+    // Not Used
+   /* void upCountingDirection();     /// init
     void downCountingDirection();   /// init
     void selectTimerClock();        /// External or anything's else. init
     void channelPwmModeSelection(); /// init
-    void enablePreloadForChannel(); /// init
+    void enablePreloadForChannel(); /// init*/
 
     void holdOnUpdateEvent();
 
@@ -104,29 +104,25 @@ namespace UHAL_TIM5_PWM /// @brief User hardware abstraction layer for timer 5 w
 
     void setCaptureCompareCH1(thisTimerType_T captureCompareVar); /// @note must be smaller than autoReloadVar
     void setCaptureCompareCH2(thisTimerType_T captureCompareVar); /// @note must be smaller than autoReloadVar
-    //todo: Examination flag for Interrupts
+
+
     void enableInterrupt();
-    //todo: Examination flag for Interrupts
     void disableInterrupt();
-
-     auto enableGPIOClock();
-
-     auto disableGPIOClock();
-
-     auto enablePerihClock();
-
-     auto disablePerihClock();
+    auto enableGPIOClock();
+    auto disableGPIOClock();
+    auto enablePerihClock();
+    auto disablePerihClock();
 
     namespace flag_IT::flagX
     {
 
-        __SFI auto isSet();
+      //  __SFI auto isSet();
 
-        __SFI auto clear();
+      //  __SFI auto clear();
 
-        __SFI auto enableInterrupt();
+      //  __SFI auto enableInterrupt();
 
-        __SFI auto clearPendingBit();
+       // __SFI auto clearPendingBit();
     }
     namespace developing
     {

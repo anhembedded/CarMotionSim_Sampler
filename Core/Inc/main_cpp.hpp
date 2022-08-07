@@ -25,7 +25,7 @@ enum class debug_T
 
 
 #define DEBUG_MODE 1
-constexpr auto systemDebug = debug_T::debugOn;
+constexpr auto systemDebug = debug_T::debugOff;
 
 
 #define __SFI __STATIC_FORCEINLINE
