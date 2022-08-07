@@ -1,0 +1,723 @@
+<VisioDocument>
+  <StyleSheets/>
+  <Masters/>
+  <Pages>
+    <Page ID="0">
+      <PageSheet>
+        <PageProps>
+          <PageWidth>13.1806</PageWidth>
+          <PageHeight>22.3611</PageHeight>
+        </PageProps>
+      </PageSheet>
+      <Shapes>
+        <Shape ID="1">
+          <XForm>
+            <PinX>6.59722</PinX>
+            <PinY>11.1806</PinY>
+            <Width>13.0833</Width>
+            <Height>22.25</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+          </XForm>
+          <Fill>
+            <FillForegnd F="RGB(255,255,255)"/>
+          </Fill>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(255,255,254)"/>
+            <LinePattern>1</LinePattern>
+          </Line>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </MoveTo>
+            <LineTo IX="2">
+              <X F="Width*0">0</X>
+              <Y F="Height*1">22.25</Y>
+            </LineTo>
+            <LineTo IX="3">
+              <X F="Width*1">13.0833</X>
+              <Y F="Height*1">22.25</Y>
+            </LineTo>
+            <LineTo IX="4">
+              <X F="Width*1">13.0833</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="5">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+          </Geom>
+        </Shape>
+        <Shape ID="2">
+          <XForm>
+            <PinX>2.86806</PinX>
+            <PinY>14.875</PinY>
+            <Width>4.375</Width>
+            <Height>5.5</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+          </XForm>
+          <TextXForm>
+            <TxtPinX F="Width*0.5"></TxtPinX>
+            <TxtPinY F="Height*0.5"></TxtPinY>
+            <TxtWidth F="Width*0.85"></TxtWidth>
+            <TxtHeight F="Height*0.75"></TxtHeight>
+            <TxtLocPinX F="0.5*TxtWidth"/>
+            <TxtLocPinY F="0.5*TxtHeight"/>
+            <TxtAngle F="0"/>
+          </TextXForm>
+          <Fill>
+            <FillForegnd F="RGB(255,255,255)"/>
+          </Fill>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(144,196,228)"/>
+            <LinePattern>1</LinePattern>
+          </Line>
+          <Char IX="0">
+            <Font F="FONTTOID(&quot;Arial&quot;)">0</Font>
+            <Color F="RGB(0,0,0)"/>
+            <Style>0</Style>
+            <Size>0.166667</Size>
+          </Char>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0.980952">4.29167</X>
+              <Y F="Height*1">5.5</Y>
+            </MoveTo>
+            <LineTo IX="2">
+              <X F="Width*0">0</X>
+              <Y F="Height*1">5.5</Y>
+            </LineTo>
+            <LineTo IX="3">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="4">
+              <X F="Width*1">4.375</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="5">
+              <X F="Width*1">4.375</X>
+              <Y F="Height*0.984848">5.41667</Y>
+            </LineTo>
+            <LineTo IX="6">
+              <X F="Width*0.980952">4.29167</X>
+              <Y F="Height*1">5.5</Y>
+            </LineTo>
+            <MoveTo IX="7">
+              <X F="Width*0.980952">4.29167</X>
+              <Y F="Height*1">5.5</Y>
+            </MoveTo>
+            <LineTo IX="8">
+              <X F="Width*0.980952">4.29167</X>
+              <Y F="Height*0.984848">5.41667</Y>
+            </LineTo>
+            <MoveTo IX="9">
+              <X F="Width*1">4.375</X>
+              <Y F="Height*0.984848">5.41667</Y>
+            </MoveTo>
+            <LineTo IX="10">
+              <X F="Width*0.980952">4.29167</X>
+              <Y F="Height*0.984848">5.41667</Y>
+            </LineTo>
+          </Geom>
+          <Text>
+
+Print
+▲
+
+- write_error: int
+
++ flush () Virtual
++ availableForWrite () Virtual
++ write (int) Pure Virtual
++ ~Print ()
++ write (buffer: const char *,size: size_t )
++ println ()
++ printNumber (n: unsigned long ,base: int )
++ printFloat (number: double ,digits: int )
++ print (n: double ,digits: int )
++ operator= (Print &amp;&amp;)
++ getWriteError ()
++ clearWriteError ()
++ Print ()
+# setWriteError (err: int )
+</Text>
+          <Connection IX="0">
+            <X F="Width*0.666667">2.91667</X>
+            <Y F="Height*0">0</Y>
+          </Connection>
+        </Shape>
+        <Shape ID="3">
+          <XForm>
+            <PinX>5.26389</PinX>
+            <PinY>5.84028</PinY>
+            <Width>10.4167</Width>
+            <Height>11.5694</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+          </XForm>
+          <TextXForm>
+            <TxtPinX F="Width*0.5"></TxtPinX>
+            <TxtPinY F="Height*0.5"></TxtPinY>
+            <TxtWidth F="Width*0.85"></TxtWidth>
+            <TxtHeight F="Height*0.75"></TxtHeight>
+            <TxtLocPinX F="0.5*TxtWidth"/>
+            <TxtLocPinY F="0.5*TxtHeight"/>
+            <TxtAngle F="0"/>
+          </TextXForm>
+          <Fill>
+            <FillForegnd F="RGB(255,255,255)"/>
+          </Fill>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(144,196,228)"/>
+            <LinePattern>1</LinePattern>
+          </Line>
+          <Char IX="0">
+            <Font F="FONTTOID(&quot;Arial&quot;)">0</Font>
+            <Color F="RGB(0,0,0)"/>
+            <Style>0</Style>
+            <Size>0.166667</Size>
+          </Char>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0.992">10.3333</X>
+              <Y F="Height*1">11.5694</Y>
+            </MoveTo>
+            <LineTo IX="2">
+              <X F="Width*0">0</X>
+              <Y F="Height*1">11.5694</Y>
+            </LineTo>
+            <LineTo IX="3">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="4">
+              <X F="Width*1">10.4167</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="5">
+              <X F="Width*1">10.4167</X>
+              <Y F="Height*0.992797">11.4861</Y>
+            </LineTo>
+            <LineTo IX="6">
+              <X F="Width*0.992">10.3333</X>
+              <Y F="Height*1">11.5694</Y>
+            </LineTo>
+            <MoveTo IX="7">
+              <X F="Width*0.992">10.3333</X>
+              <Y F="Height*1">11.5694</Y>
+            </MoveTo>
+            <LineTo IX="8">
+              <X F="Width*0.992">10.3333</X>
+              <Y F="Height*0.992797">11.4861</Y>
+            </LineTo>
+            <MoveTo IX="9">
+              <X F="Width*1">10.4167</X>
+              <Y F="Height*0.992797">11.4861</Y>
+            </MoveTo>
+            <LineTo IX="10">
+              <X F="Width*0.992">10.3333</X>
+              <Y F="Height*0.992797">11.4861</Y>
+            </LineTo>
+          </Geom>
+          <Text>
+▲
+LiquidCrystal
+
+
++ _rw_pin: int
++ _rs_pin: int
++ _row_offsets: int [4]
++ _numlines: int
++ _initialized: int
++ _enable_pin: int
++ _displaymode: int
++ _displayfunction: int
++ _displaycontrol: int
++ _data_pins: int [8]
+
++ ~LiquidCrystal ()
++ write8bits (value: int )
++ write4bits (value: int )
++ write (buffer: const char *,size: size_t )
++ setRowOffsets (row0: int ,row1: int ,row2: int ,row3: int )
++ setCursor (col: int ,row: int )
++ send (value: int ,mode: int )
++ scrollDisplayRight ()
++ scrollDisplayLeft ()
++ rightToLeft ()
++ operator= (LiquidCrystal &amp;&amp;)
++ noDisplay ()
++ noCursor ()
++ noBlink ()
++ noAutoscroll ()
++ leftToRight ()
++ init (fourbitmode: int ,rs: int ,rw: int ,enable: int ,d0: int ,d1: int ,d2: int ,d3: int ,d4: int ,d5: int ,d6: int ,d7: int )
++ home ()
++ display ()
++ cursor ()
++ createChar (location: int ,charmap: int [] )
++ command (value: int )
++ clear ()
++ blink ()
++ begin (cols: int ,lines: int ,dotsize: int )
++ autoscroll ()
++ LiquidCrystal (LiquidCrystal &amp;&amp;)
+- pulseEnable ()
+</Text>
+          <Connection IX="0">
+            <X F="Width*0.352">3.66667</X>
+            <Y F="Height*1">11.5694</Y>
+          </Connection>
+          <Connection IX="1">
+            <X F="Width*0.648">6.75</X>
+            <Y F="Height*1">11.5694</Y>
+          </Connection>
+        </Shape>
+        <Shape ID="4">
+          <XForm>
+            <PinX F="(BeginX+EndX)/2"/>
+            <PinY F="(BeginY+EndY)/2"/>
+            <Width F="SQRT((EndX-BeginX)^2+(EndY-BeginY)^2)"/>
+            <Height>0.0067371</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+            <Angle F="ATAN2(EndY-BeginY,EndX-BeginX)"/>
+          </XForm>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(78,140,185)"/>
+            <LinePattern>1</LinePattern>
+            <BeginArrow>0</BeginArrow>
+            <EndArrow>4</EndArrow>
+          </Line>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0"/>
+              <Y F="Height*0.5"/>
+            </MoveTo>
+            <SplineStart IX="2">
+              <X F="Width*0.30719"/>
+              <Y F="Height*1"/>
+              <A>0</A>
+              <B>0</B>
+              <C>1</C>
+              <D>3</D>
+            </SplineStart>
+            <SplineKnot IX="3">
+              <X F="Width*0.581699"/>
+              <Y F="Height*0"/>
+              <A>0</A>
+            </SplineKnot>
+            <SplineKnot IX="4">
+              <X F="Width*1"/>
+              <Y F="Height*0.5"/>
+              <A>0</A>
+            </SplineKnot>
+            <NoFill>1</NoFill>
+          </Geom>
+          <XForm1D>
+            <BeginX F="PAR(PNT(Sheet.3!Connections.X1,SHEET.3!Connections.Y1))"/>
+            <BeginY F="PAR(PNT(Sheet.3!Connections.X1,SHEET.3!Connections.Y1))"/>
+            <EndX F="PAR(PNT(Sheet.2!Connections.X1,SHEET.2!Connections.Y1))"/>
+            <EndY F="PAR(PNT(Sheet.2!Connections.X1,SHEET.2!Connections.Y1))"/>
+          </XForm1D>
+        </Shape>
+        <Shape ID="5">
+          <XForm>
+            <PinX>7.67361</PinX>
+            <PinY>14.875</PinY>
+            <Width>4.73611</Width>
+            <Height>4.44444</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+          </XForm>
+          <TextXForm>
+            <TxtPinX F="Width*0.5"></TxtPinX>
+            <TxtPinY F="Height*0.5"></TxtPinY>
+            <TxtWidth F="Width*0.85"></TxtWidth>
+            <TxtHeight F="Height*0.75"></TxtHeight>
+            <TxtLocPinX F="0.5*TxtWidth"/>
+            <TxtLocPinY F="0.5*TxtHeight"/>
+            <TxtAngle F="0"/>
+          </TextXForm>
+          <Fill>
+            <FillForegnd F="RGB(255,255,255)"/>
+          </Fill>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(144,196,228)"/>
+            <LinePattern>1</LinePattern>
+          </Line>
+          <Char IX="0">
+            <Font F="FONTTOID(&quot;Arial&quot;)">0</Font>
+            <Color F="RGB(0,0,0)"/>
+            <Style>0</Style>
+            <Size>0.166667</Size>
+          </Char>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0.982405">4.65278</X>
+              <Y F="Height*1">4.44444</Y>
+            </MoveTo>
+            <LineTo IX="2">
+              <X F="Width*0">0</X>
+              <Y F="Height*1">4.44444</Y>
+            </LineTo>
+            <LineTo IX="3">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="4">
+              <X F="Width*1">4.73611</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="5">
+              <X F="Width*1">4.73611</X>
+              <Y F="Height*0.98125">4.36111</Y>
+            </LineTo>
+            <LineTo IX="6">
+              <X F="Width*0.982405">4.65278</X>
+              <Y F="Height*1">4.44444</Y>
+            </LineTo>
+            <MoveTo IX="7">
+              <X F="Width*0.982405">4.65278</X>
+              <Y F="Height*1">4.44444</Y>
+            </MoveTo>
+            <LineTo IX="8">
+              <X F="Width*0.982405">4.65278</X>
+              <Y F="Height*0.98125">4.36111</Y>
+            </LineTo>
+            <MoveTo IX="9">
+              <X F="Width*1">4.73611</X>
+              <Y F="Height*0.98125">4.36111</Y>
+            </MoveTo>
+            <LineTo IX="10">
+              <X F="Width*0.982405">4.65278</X>
+              <Y F="Height*0.98125">4.36111</Y>
+            </LineTo>
+          </Geom>
+          <Text>
+▲
+uhal_stm32f407_platform
+▲
+
++ arduino_port: const int
+
++ millis () Virtual
++ micros () Virtual
++ delayMicroseconds (us: unsigned int ) Virtual
++ delay (ms: unsigned long ) Virtual
++ ~uhal_stm32f407_platform ()
++ uhal_stm32f407_platform ()
++ pinMode (pin: int ,mode: int )
++ operator= (uhal_stm32f407_platform &amp;&amp;)
++ digitalWrite (pin: int ,val: int )
++ digitalRead (pin: int )
+</Text>
+          <Connection IX="0">
+            <X F="Width*0.375367">1.77778</X>
+            <Y F="Height*0">0</Y>
+          </Connection>
+          <Connection IX="1">
+            <X F="Width*0.498534">2.36111</X>
+            <Y F="Height*1">4.44444</Y>
+          </Connection>
+        </Shape>
+        <Shape ID="6">
+          <XForm>
+            <PinX F="(BeginX+EndX)/2"/>
+            <PinY F="(BeginY+EndY)/2"/>
+            <Width F="SQRT((EndX-BeginX)^2+(EndY-BeginY)^2)"/>
+            <Height>0.00942171</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0"/>
+            <Angle F="ATAN2(EndY-BeginY,EndX-BeginX)"/>
+          </XForm>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(78,140,185)"/>
+            <LinePattern>1</LinePattern>
+            <BeginArrow>0</BeginArrow>
+            <EndArrow>4</EndArrow>
+          </Line>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0"/>
+              <Y F="Height*0"/>
+            </MoveTo>
+            <SplineStart IX="2">
+              <X F="Width*0.322668"/>
+              <Y F="Height*0.692308"/>
+              <A>0</A>
+              <B>0</B>
+              <C>1</C>
+              <D>3</D>
+            </SplineStart>
+            <SplineKnot IX="3">
+              <X F="Width*0.632743"/>
+              <Y F="Height*1"/>
+              <A>0</A>
+            </SplineKnot>
+            <SplineKnot IX="4">
+              <X F="Width*1"/>
+              <Y F="Height*0"/>
+              <A>0</A>
+            </SplineKnot>
+            <NoFill>1</NoFill>
+          </Geom>
+          <XForm1D>
+            <BeginX F="PAR(PNT(Sheet.3!Connections.X2,SHEET.3!Connections.Y2))"/>
+            <BeginY F="PAR(PNT(Sheet.3!Connections.X2,SHEET.3!Connections.Y2))"/>
+            <EndX F="PAR(PNT(Sheet.5!Connections.X1,SHEET.5!Connections.Y1))"/>
+            <EndY F="PAR(PNT(Sheet.5!Connections.X1,SHEET.5!Connections.Y1))"/>
+          </XForm1D>
+        </Shape>
+        <Shape ID="7">
+          <XForm>
+            <PinX>7.66667</PinX>
+            <PinY>20.2153</PinY>
+            <Width>4.97222</Width>
+            <Height>4.18056</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+          </XForm>
+          <TextXForm>
+            <TxtPinX F="Width*0.5"></TxtPinX>
+            <TxtPinY F="Height*0.5"></TxtPinY>
+            <TxtWidth F="Width*0.85"></TxtWidth>
+            <TxtHeight F="Height*0.75"></TxtHeight>
+            <TxtLocPinX F="0.5*TxtWidth"/>
+            <TxtLocPinY F="0.5*TxtHeight"/>
+            <TxtAngle F="0"/>
+          </TextXForm>
+          <Fill>
+            <FillForegnd F="RGB(255,255,255)"/>
+          </Fill>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(144,196,228)"/>
+            <LinePattern>1</LinePattern>
+          </Line>
+          <Char IX="0">
+            <Font F="FONTTOID(&quot;Arial&quot;)">0</Font>
+            <Color F="RGB(0,0,0)"/>
+            <Style>0</Style>
+            <Size>0.166667</Size>
+          </Char>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0.98324">4.88889</X>
+              <Y F="Height*1">4.18056</Y>
+            </MoveTo>
+            <LineTo IX="2">
+              <X F="Width*0">0</X>
+              <Y F="Height*1">4.18056</Y>
+            </LineTo>
+            <LineTo IX="3">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="4">
+              <X F="Width*1">4.97222</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="5">
+              <X F="Width*1">4.97222</X>
+              <Y F="Height*0.980066">4.09722</Y>
+            </LineTo>
+            <LineTo IX="6">
+              <X F="Width*0.98324">4.88889</X>
+              <Y F="Height*1">4.18056</Y>
+            </LineTo>
+            <MoveTo IX="7">
+              <X F="Width*0.98324">4.88889</X>
+              <Y F="Height*1">4.18056</Y>
+            </MoveTo>
+            <LineTo IX="8">
+              <X F="Width*0.98324">4.88889</X>
+              <Y F="Height*0.980066">4.09722</Y>
+            </LineTo>
+            <MoveTo IX="9">
+              <X F="Width*1">4.97222</X>
+              <Y F="Height*0.980066">4.09722</Y>
+            </MoveTo>
+            <LineTo IX="10">
+              <X F="Width*0.98324">4.88889</X>
+              <Y F="Height*0.980066">4.09722</Y>
+            </LineTo>
+          </Geom>
+          <Text>
+
+Arduino
+▲
+
+
++ pinMode (int,int) Pure Virtual
++ millis () Pure Virtual
++ micros () Pure Virtual
++ digitalWrite (int,int) Pure Virtual
++ digitalRead (int) Pure Virtual
++ delayMicroseconds (int: unsigned ) Pure Virtual
++ delay (long: unsigned ) Pure Virtual
++ ~Arduino ()
++ operator= (Arduino &amp;&amp;)
++ Arduino ()
+</Text>
+          <Connection IX="0">
+            <X F="Width*0.5">2.48611</X>
+            <Y F="Height*0">0</Y>
+          </Connection>
+        </Shape>
+        <Shape ID="8">
+          <XForm>
+            <PinX F="(BeginX+EndX)/2"/>
+            <PinY F="(BeginY+EndY)/2"/>
+            <Width F="SQRT((EndX-BeginX)^2+(EndY-BeginY)^2)"/>
+            <Height>0</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0"/>
+            <Angle F="ATAN2(EndY-BeginY,EndX-BeginX)"/>
+          </XForm>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(78,140,185)"/>
+            <LinePattern>1</LinePattern>
+            <BeginArrow>0</BeginArrow>
+            <EndArrow>4</EndArrow>
+          </Line>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0"/>
+              <Y F="Height*0"/>
+            </MoveTo>
+            <SplineStart IX="2">
+              <X F="Width*0.310811"/>
+              <Y F="Height*0"/>
+              <A>0</A>
+              <B>0</B>
+              <C>1</C>
+              <D>3</D>
+            </SplineStart>
+            <SplineKnot IX="3">
+              <X F="Width*0.621622"/>
+              <Y F="Height*0"/>
+              <A>0</A>
+            </SplineKnot>
+            <SplineKnot IX="4">
+              <X F="Width*1"/>
+              <Y F="Height*0"/>
+              <A>0</A>
+            </SplineKnot>
+            <NoFill>1</NoFill>
+          </Geom>
+          <XForm1D>
+            <BeginX F="PAR(PNT(Sheet.5!Connections.X2,SHEET.5!Connections.Y2))"/>
+            <BeginY F="PAR(PNT(Sheet.5!Connections.X2,SHEET.5!Connections.Y2))"/>
+            <EndX F="PAR(PNT(Sheet.7!Connections.X1,SHEET.7!Connections.Y1))"/>
+            <EndY F="PAR(PNT(Sheet.7!Connections.X1,SHEET.7!Connections.Y1))"/>
+          </XForm1D>
+        </Shape>
+        <Shape ID="9">
+          <XForm>
+            <PinX>11.9375</PinX>
+            <PinY>5.84028</PinY>
+            <Width>2.40278</Width>
+            <Height>2.59722</Height>
+            <LocPinX F="Width*0.5"/>
+            <LocPinY F="Height*0.5"/>
+          </XForm>
+          <TextXForm>
+            <TxtPinX F="Width*0.5"></TxtPinX>
+            <TxtPinY F="Height*0.5"></TxtPinY>
+            <TxtWidth F="Width*0.85"></TxtWidth>
+            <TxtHeight F="Height*0.75"></TxtHeight>
+            <TxtLocPinX F="0.5*TxtWidth"/>
+            <TxtLocPinY F="0.5*TxtHeight"/>
+            <TxtAngle F="0"/>
+          </TextXForm>
+          <Fill>
+            <FillForegnd F="RGB(255,255,255)"/>
+          </Fill>
+          <Line>
+            <LineWeight>0.0138889</LineWeight>
+            <LineColor F="RGB(144,196,228)"/>
+            <LinePattern>1</LinePattern>
+          </Line>
+          <Char IX="0">
+            <Font F="FONTTOID(&quot;Arial&quot;)">0</Font>
+            <Color F="RGB(0,0,0)"/>
+            <Style>0</Style>
+            <Size>0.166667</Size>
+          </Char>
+          <Geom IX="0">
+            <MoveTo IX="1">
+              <X F="Width*0.965318">2.31944</X>
+              <Y F="Height*1">2.59722</Y>
+            </MoveTo>
+            <LineTo IX="2">
+              <X F="Width*0">0</X>
+              <Y F="Height*1">2.59722</Y>
+            </LineTo>
+            <LineTo IX="3">
+              <X F="Width*0">0</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="4">
+              <X F="Width*1">2.40278</X>
+              <Y F="Height*0">0</Y>
+            </LineTo>
+            <LineTo IX="5">
+              <X F="Width*1">2.40278</X>
+              <Y F="Height*0.967914">2.51389</Y>
+            </LineTo>
+            <LineTo IX="6">
+              <X F="Width*0.965318">2.31944</X>
+              <Y F="Height*1">2.59722</Y>
+            </LineTo>
+            <MoveTo IX="7">
+              <X F="Width*0.965318">2.31944</X>
+              <Y F="Height*1">2.59722</Y>
+            </MoveTo>
+            <LineTo IX="8">
+              <X F="Width*0.965318">2.31944</X>
+              <Y F="Height*0.967914">2.51389</Y>
+            </LineTo>
+            <MoveTo IX="9">
+              <X F="Width*1">2.40278</X>
+              <Y F="Height*0.967914">2.51389</Y>
+            </MoveTo>
+            <LineTo IX="10">
+              <X F="Width*0.965318">2.31944</X>
+              <Y F="Height*0.967914">2.51389</Y>
+            </LineTo>
+          </Geom>
+          <Text>
+
+simtool
+
+
++ traction: int
++ sway: int
++ heave: int
+
++ simtool (simtool &amp;&amp;)
+</Text>
+        </Shape>
+      </Shapes>
+      <Connects>
+        <Connect ToPart="100" ToSheet="2" FromPart="12" FromSheet="4"/>
+        <Connect ToPart="100" ToSheet="3" FromPart="9" FromSheet="4"/>
+        <Connect ToPart="100" ToSheet="5" FromPart="12" FromSheet="6"/>
+        <Connect ToPart="101" ToSheet="3" FromPart="9" FromSheet="6"/>
+        <Connect ToPart="100" ToSheet="7" FromPart="12" FromSheet="8"/>
+        <Connect ToPart="101" ToSheet="5" FromPart="9" FromSheet="8"/>
+      </Connects>
+    </Page>
+  </Pages>
+</VisioDocument>

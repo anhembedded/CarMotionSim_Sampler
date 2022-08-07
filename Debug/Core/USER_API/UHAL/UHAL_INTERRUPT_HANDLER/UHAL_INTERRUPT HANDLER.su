@@ -1,0 +1,7 @@
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:240:5:std::_Function_base::_Function_base()	16	static
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:242:5:std::_Function_base::~_Function_base()	16	static
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:330:7:)>::function() [with _Res = void; _ArgTypes = {}]	16	static
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:303:11:std::function<void()>::~function()	16	static
+../Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT HANDLER.hpp:11:44:void __static_initialization_and_destruction_0(int, int)	16	static
+../Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT HANDLER.hpp:11:44:hpp)	8	static
+../Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT HANDLER.hpp:11:44:hpp)	8	static

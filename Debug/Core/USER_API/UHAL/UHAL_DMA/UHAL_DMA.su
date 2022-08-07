@@ -1,0 +1,34 @@
+../Drivers/CMSIS/Include/core_cm4.h:1676:26:uint32_t __NVIC_GetPriorityGrouping()	4	static
+../Drivers/CMSIS/Include/core_cm4.h:1688:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+../Drivers/CMSIS/Include/core_cm4.h:1816:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+../Drivers/CMSIS/Include/core_cm4.h:1863:26:uint32_t NVIC_EncodePriority(uint32_t, uint32_t, uint32_t)	40	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:495:22:void LL_DMA_EnableStream(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:515:22:void LL_DMA_DisableStream(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:535:26:uint32_t LL_DMA_IsEnabledStream(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:969:22:void LL_DMA_SetDataLength(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1437:22:void LL_DMA_SetMemoryAddress(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1460:22:void LL_DMA_SetPeriphAddress(DMA_TypeDef*, uint32_t, uint32_t)	24	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2547:22:void LL_DMA_EnableIT_HT(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2567:22:void LL_DMA_EnableIT_TE(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2587:22:void LL_DMA_EnableIT_TC(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2607:22:void LL_DMA_EnableIT_DME(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2627:22:void LL_DMA_EnableIT_FE(DMA_TypeDef*, uint32_t)	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h:411:22:void LL_AHB1_GRP1_EnableClock(uint32_t)	24	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:9:6:void UHAL_DMA2::DMA_ADC1::enablePerihClock()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:12:6:void UHAL_DMA2::DMA_ADC1::setBufferAddress(uintptr_t)	16	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:16:6:void UHAL_DMA2::DMA_ADC1::initialize2()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:26:6:void UHAL_DMA2::DMA_ADC1::enable()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:30:6:void UHAL_DMA2::DMA_ADC1::setNumberOfDataTransfer(uint16_t)	16	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:34:6:void UHAL_DMA2::DMA_ADC1::setPeripheralADDress(uintptr_t)	16	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:38:6:void UHAL_DMA2::DMA_ADC1::enableInterrupt()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:47:6:void UHAL_DMA2::DMA_ADC1::initialize()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:59:6:void UHAL_DMA2::DMA_USART1::enablePerihClock()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:62:6:void UHAL_DMA2::DMA_USART1::setBufferAddress(uintptr_t)	16	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:66:6:void UHAL_DMA2::DMA_USART1::initialize2()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:77:6:void UHAL_DMA2::DMA_USART1::enable()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:81:6:void UHAL_DMA2::DMA_USART1::setNumberOfDataTransfer(uint16_t)	16	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:85:6:void UHAL_DMA2::DMA_USART1::setPeripheralADDress(uintptr_t)	16	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:89:6:void UHAL_DMA2::DMA_USART1::enableInterrupt()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:98:6:void UHAL_DMA2::DMA_USART1::initialize()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:104:6:void UHAL_DMA2::DMA_USART1::disable()	8	static
+../Core/USER_API/UHAL/UHAL_DMA/UHAL_DMA.cpp:108:9:uint8_t UHAL_DMA2::DMA_USART1::isDisabled()	8	static
