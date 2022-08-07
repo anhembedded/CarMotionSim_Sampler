@@ -36,7 +36,6 @@
 auto adcOverrun{0};
 auto adcComp{0};
 auto dmaInterrupt{0};
-uint16_t readADC{0};
 uint16_t readADC2{0};
 auto dmaHalfTrans = 0;
 auto dmaCompTrans = 0;
@@ -67,8 +66,9 @@ inline uint16_t Rev16(uint16_t a)
   return a;
 }
 
-// std::array<UHAL_ADC::thisADC_T,2> adcBuffer {0};
-uint16_t adcBuffer[15]{0};
+
+volatile uint16_t adcBuffer[15]{0};
+
 
 uint32_t timer5CounterVal{};
 
@@ -140,8 +140,6 @@ void getData(std::array<uint8_t, 10> &data, uint8_t &surge, uint8_t &sway, uint8
   }
 }
 
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "EndlessLoop"
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config();
 
@@ -160,55 +158,45 @@ int main()
 
   SystemClock_Config();
   MX_GPIO_Init();
-  
-  UHAL_USART6::developing::fristRun(reinterpret_cast<uintptr_t>(&usartBuffer), 8);
+  UHAL_USART1::developing::fristRun(reinterpret_cast<uintptr_t>(&usartBuffer), 8);
+    // UHAL_TIM5_PWM::developing::firstRun();
+  //UHAL_ADC::developing::firstRun(reinterpret_cast<uintptr_t>(adcBuffer));
 
- //  UHAL_TIM5_PWM::developing::firstRun();
-
-  UHAL_DMA2::DMA_ADC1::initialize2();
-  UHAL_ADC::initialize2();
-  UHAL_DMA2::DMA_ADC1::enableInterrupt();
-  UHAL_ADC::enableInterrupt();
-  UHAL_DMA2::DMA_ADC1::setBufferAddress(reinterpret_cast<uintptr_t>(&adcBuffer));
-  UHAL_DMA2::DMA_ADC1::setPeripheralADDress(reinterpret_cast<uintptr_t>(&ADC1->DR));
-  UHAL_DMA2::DMA_ADC1::setNumberOfDataTransfer(2);
-  UHAL_DMA2::DMA_ADC1::enable();
-  UHAL_ADC::enable();
-  UHAL_ADC::startConversion();
   while (true)
   {
-
+	  UHAL_USART1::send('A');
+	  LL_mDelay(100);
 
   }
 }
 
 extern "C"
 {
-  void USART6_IRQHandler(void)
+  void USART1_IRQHandler(void)
   {
-    using namespace UHAL_USART6;
-    using namespace UHAL_USART6::flag_IT;
+    using namespace UHAL_USART1;
+    using namespace UHAL_USART1::flag_IT;
     usartInterrupt++;
     if(IDLE::isSet())
     {
-    	UHAL_DMA2::DMA_USART6::disable();
-        waitUntil(UHAL_DMA2::DMA_USART6::isDisabled());
-    	UHAL_DMA2::DMA_USART6::setNumberOfDataTransfer(8);
-    	UHAL_DMA2::DMA_USART6::enable();
+    	UHAL_DMA2::DMA_USART1::disable();
+    	waitUntil(UHAL_DMA2::DMA_USART1::isDisabled());
+    	UHAL_DMA2::DMA_USART1::setNumberOfDataTransfer(8);
+    	UHAL_DMA2::DMA_USART1::enable();
     	usartIdel++;
     	IDLE::clear();
     }
     if(PE::isSet() || NF::isSet()||FE::isSet()||ORE::isSet())
     {
     	usartErro++;
-    	UHAL_DMA2::DMA_USART6::disable();
-    	waitUntil(UHAL_DMA2::DMA_USART6::isDisabled());
+    	UHAL_DMA2::DMA_USART1::disable();
+    	waitUntil(UHAL_DMA2::DMA_USART1::isDisabled());
     	PE::clear();
     	NF::clear();
     	FE::clear();
     	ORE::clear();
     }
-    NVIC_ClearPendingIRQ(UHAL_USART6::thisIRQn);
+    NVIC_ClearPendingIRQ(UHAL_USART1::thisIRQn);
   }
 
   void DMA2_Stream0_IRQHandler()
@@ -240,12 +228,13 @@ extern "C"
       dmaFifoOverUnder++;
       flag_IT::FEIF::clear();
     }
+
     NVIC_ClearPendingIRQ(thisIRQn);
   }
 
-  void DMA2_Stream1_IRQHandler()
+  void DMA2_Stream5_IRQHandler()
   {
-	  using namespace UHAL_DMA2::DMA_USART6;
+	  using namespace UHAL_DMA2::DMA_USART1;
 	  usartDMA ++;
 	  if (flag_IT::DMEIF::isSet())
 	      {
@@ -297,7 +286,7 @@ extern "C"
     {
       adcOverrun++;
       // todo implement this recover for overrun.
-      //  UHAL_ADC::recoverAdcFormOverrun(reinterpret_cast<uintptr_t>(&adcBuffer[0]));
+      // UHAL_ADC::recoverAdcFormOverrun(reinterpret_cast<uintptr_t>(&adcBuffer[0]));
     }
     NVIC_ClearPendingIRQ(ADC_IRQn);
   }
@@ -374,7 +363,7 @@ void assert_failed(uint8_t *file, uint32_t line)
   std::string _file = reinterpret_cast<const char *>(file);
   std::string _line = std::to_string(line);
   std::string msg = _line + _file + '\n';
-  UHAL_USART6::send(msg);
+  UHAL_USART1::send(msg);
 }
 #endif /* USE_FULL_ASSERT */
 

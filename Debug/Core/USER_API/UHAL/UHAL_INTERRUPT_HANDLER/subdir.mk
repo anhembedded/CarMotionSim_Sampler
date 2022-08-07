@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (10.3-2021.10)
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
@@ -21,7 +21,7 @@ Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.o: ../Core/USE
 clean: clean-Core-2f-USER_API-2f-UHAL-2f-UHAL_INTERRUPT_HANDLER
 
 clean-Core-2f-USER_API-2f-UHAL-2f-UHAL_INTERRUPT_HANDLER:
-	-$(RM) ./Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.d ./Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.o
+	-$(RM) ./Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.d ./Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.o ./Core/USER_API/UHAL/UHAL_INTERRUPT_HANDLER/UHAL_INTERRUPT\ HANDLER.su
 
 .PHONY: clean-Core-2f-USER_API-2f-UHAL-2f-UHAL_INTERRUPT_HANDLER
 

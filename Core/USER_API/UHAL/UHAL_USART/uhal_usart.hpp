@@ -5,11 +5,11 @@
 #include "../UHAL_DMA/UHAL_DMA.hpp"
 #include "string"
 
-namespace UHAL_USART6
+namespace UHAL_USART1
 {
 
-	const decltype(USART6) thisInstance = USART6;
-	const auto thisIRQn = USART6_IRQn;
+	const decltype(USART1) thisInstance = USART1;
+	const auto thisIRQn = USART1_IRQn;
 	typedef uint8_t data_T;
 
 	void initialize(uint32_t baudRate = 115200);
@@ -218,12 +218,12 @@ namespace UHAL_USART6
 
 
 
-__STATIC_FORCEINLINE auto UHAL_USART6::flag_IT::TC::isSet()
+__STATIC_FORCEINLINE auto UHAL_USART1::flag_IT::TC::isSet()
 {
 	return LL_USART_IsActiveFlag_TC(thisInstance);
 }
 
-__SFI auto UHAL_USART6::flag_IT::TC::clear()
+__SFI auto UHAL_USART1::flag_IT::TC::clear()
 {
 	if constexpr (systemDebug == debug_T::debugOn)
 	{
@@ -233,31 +233,31 @@ __SFI auto UHAL_USART6::flag_IT::TC::clear()
 	LL_USART_ClearFlag_TC(thisInstance);
 }
 
-__SFI auto UHAL_USART6::flag_IT::TC::enableIT()
+__SFI auto UHAL_USART1::flag_IT::TC::enableIT()
 {
 	LL_USART_EnableIT_TC(thisInstance);
 }
 
-__SFI auto UHAL_USART6::flag_IT::TC::clearPendingBit()
+__SFI auto UHAL_USART1::flag_IT::TC::clearPendingBit()
 {
 	return UHAL_ERROR::DEPRECATED;
 }
-auto UHAL_USART6::flag_IT::TXE::isSet()
+auto UHAL_USART1::flag_IT::TXE::isSet()
 {
 	return LL_USART_IsActiveFlag_TXE(thisInstance);
 }
 
-auto UHAL_USART6::flag_IT::TXE::enableIT()
+auto UHAL_USART1::flag_IT::TXE::enableIT()
 {
 	LL_USART_EnableIT_TXE(thisInstance);
 }
 
-auto UHAL_USART6::flag_IT::TXE::clearPendingBit()
+auto UHAL_USART1::flag_IT::TXE::clearPendingBit()
 {
 	return UHAL_ERROR::DEPRECATED;
 }
 
-auto UHAL_USART6::flag_IT::TXE::clear()
+auto UHAL_USART1::flag_IT::TXE::clear()
 {
 	return UHAL_ERROR::DEPRECATED;
 }
